@@ -8,26 +8,21 @@
 
 namespace InterInvest\Bundle\Aspone\Src\Services;
 
-use Doctrine\ORM\EntityManager;
-use InterInvest\AsponeBundle\Entity\Deposit;
-use InterInvest\Bundle\Aspone\Src\Entity\AsponeDeclaration;
 use InterInvest\Bundle\Aspone\Src\Entity\AsponeDeposit;
+use InterInvest\Bundle\Aspone\Src\Entity\AsponeDeclaration;
 use InterInvest\Bundle\Aspone\Src\Services\Formulaire;
 use InterInvest\Bundle\Aspone\Src\Services\SOAP;
 
-class _Deposit
+class Deposit
 {
-    /* @var $em EntityManager */
-    private $em;
     /* @var $sFormulaire Formulaire */
     private $sFormulaire;
 
     private $type;
     private $test;
 
-    public function __construct(EntityManager $em, Formulaire $sFormulaire)
+    public function __construct(Formulaire $sFormulaire)
     {
-        $this->em = $em;
         $this->sFormulaire = $sFormulaire;
     }
 
@@ -45,15 +40,15 @@ class _Deposit
         foreach($declarations as $declaration) {
             if ($i == 0) {
                 /* @var $deposit AsponeDeposit */
-                $deposit = new Deposit();
-                $deposit->setEtat(Deposit::ETAT_NON_FINI)
+                $deposit = new AsponeDeposit();
+                $deposit->setEtat(0)
                     ->setIsTest($this->test)
                     ->setType($this->type);
             }
 
             $this->sFormulaire->init($declaration);
             if($this->sFormulaire->saveXml()){
-                $deposit->addDeclaration($declaration);
+                $deposit-> addDeclaration($declaration);
                 $i++;
             }
 

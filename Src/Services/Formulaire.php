@@ -20,18 +20,15 @@ class Formulaire
     protected $declaration;
     /* @var $sDictionnaire Dictionnaire */
     protected $sDictionnaire;
-    /* @var $container Container */
-    protected $container;
 
 
-    public function __construct(Container $container, Dictionnaire $sDictionnaire)
+    public function __construct(Dictionnaire $sDictionnaire)
     {
         $this->sDictionnaire = $sDictionnaire;
-        $this->container = $container;
     }
 
 
-    public function init(AsponeDeclaration $declaration, $millesime)
+    public function init(AsponeDeclaration $declaration)
     {
         $this->declaration = $declaration;
 

@@ -85,7 +85,7 @@ class AsponeDeposit
     private $istest = false;
 
     /**
-     * @var Deposit
+     * @var AsponeDeclaration
      *
      * @ORM\OneToMany(targetEntity="InterInvest\Bundle\Aspone\src\Entity\AsponeDeclaration")
      * @ORM\JoinColumns({
@@ -268,7 +268,7 @@ class AsponeDeposit
 
 
     /**
-     * @return Deposit
+     * @return AsponeDeclaration
      */
     public function getDeclarations()
     {
