@@ -3,21 +3,21 @@
   "description": "version 2 Aspone",
   "type": "bundle",
   "require": {
-    "symfony/http-kernel": "3.3.*"
+    "symfony/http-kernel": ">=2.8"
   },
   "autoload": {
     "psr-4": {
-      "interinvest\\AsponeBundle\\": "src/"
+      "interinvest\\Aspone2Bundle\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "interinvest\\AsponeBundle\\Tests\\": "tests/"
+      "interinvest\\Aspone2Bundle\\Tests\\": "tests/"
     }
   },
   "require-dev": {
-    "symfony/framework-bundle": "3.3.*",
-    "symfony/yaml": "^3.3",
-    "symfony/console": "3.3.*"
+    "symfony/framework-bundle": ">=2.8",
+    "symfony/yaml": ">=2.8",
+    "symfony/console": ">=2.8"
   }
 }
