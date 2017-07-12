@@ -1,0 +1,21 @@
+InterInvest\Bundle\Aspone\src\Entity\Tdfc\ListeFormulairesType:
+    properties:
+        identif:
+            expose: true
+            access_type: public_method
+            serialized_name: Identif
+            accessor:
+                getter: getIdentif
+                setter: setIdentif
+            type: InterInvest\Bundle\Aspone\src\Entity\Tdfc\FormulaireType
+        formulaire:
+            expose: true
+            access_type: public_method
+            serialized_name: Formulaire
+            accessor:
+                getter: getFormulaire
+                setter: setFormulaire
+            xml_list:
+                inline: true
+                entry_name: Formulaire
+            type: array<InterInvest\Bundle\Aspone\src\Entity\Tdfc\FormulaireDeclaratifType>
