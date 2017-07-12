@@ -1,0 +1,23 @@
+{
+  "name": "interinvest/asponeBundle",
+  "description": "version 2 Aspone",
+  "type": "bundle",
+  "require": {
+    "symfony/http-kernel": "3.3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "interinvest\\AsponeBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "interinvest\\AsponeBundle\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "symfony/framework-bundle": "3.3.*",
+    "symfony/yaml": "^3.3",
+    "symfony/console": "3.3.*"
+  }
+}
