@@ -1,5 +1,5 @@
 {
-  "name": "interinvest/asponeBundle",
+  "name": "InterInvest/Aspone2Bundle",
   "description": "version 2 Aspone",
   "type": "bundle",
   "require": {
@@ -7,12 +7,12 @@
   },
   "autoload": {
     "psr-4": {
-      "interinvest\\Aspone2Bundle\\": "src/"
+      "InterInvest\\Aspone2Bundle\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "interinvest\\Aspone2Bundle\\Tests\\": "tests/"
+      "InterInvest\\Aspone2Bundle\\Tests\\": "tests/"
     }
   },
   "require-dev": {

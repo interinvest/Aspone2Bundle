@@ -1,7 +1,6 @@
 <?php
 namespace InterInvest\Aspone2Bundle\Tests\App;
 
-use InterInvest\Aspone2Bundle\AsponeBundle;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
@@ -11,7 +10,7 @@ class AppKernel extends Kernel
     {
         return [
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new AsponeBundle(),
+            new \InterInvest\Aspone2Bundle\Aspone2Bundle(),
         ];
     }
 
