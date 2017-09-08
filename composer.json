@@ -7,12 +7,12 @@
   },
   "autoload": {
     "psr-4": {
-      "interinvest\\AsponeBundle\\": "src/"
+      "interinvest\\Aspone2Bundle\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "interinvest\\AsponeBundle\\Tests\\": "tests/"
+      "interinvest\\Aspone2Bundle\\Tests\\": "tests/"
     }
   },
   "require-dev": {

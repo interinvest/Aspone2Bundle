@@ -9,9 +9,6 @@ use Doctrine\ORM\Mapping as ORM;
  * AsponeDeclaration
  * @ORM\Entity()
  * @ORM\Table(name="aspone_declaration")
- * @ORM\InheritanceType("SINGLE_TABLE")
- * @ORM\DiscriminatorColumn(name="type", type="string")
- * @ORM\DiscriminatorMap({"IDT" = "AsponeDeclarationIDT", "RBT" = "AsponeDeclarationRBT", "IDF" = "AsponeDeclarationIDF"})
  */
 abstract class AsponeDeclaration
 {
@@ -102,6 +99,17 @@ abstract class AsponeDeclaration
     protected $historiques;
 
 
+    abstract public function getType();
+    abstract public function setType($type);
+    abstract public function getGroupe();
+
+    /**
+     * @return InterfaceDeclarable
+     */
+    abstract public function getDeclarable();
+
+
+
     public function __get($name)
     {
         return False;
@@ -155,6 +163,7 @@ abstract class AsponeDeclaration
     {
         return $this->identifiant;
     }
+
 
     /**
      * Set etat
@@ -303,7 +312,7 @@ abstract class AsponeDeclaration
     /**
      * Set deposit
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeposit $deposit
+     * @param AsponeDeposit $deposit
      *
      * @return AsponeDeclaration
      */
@@ -317,7 +326,7 @@ abstract class AsponeDeclaration
     /**
      * Get deposit
      *
-     * @return \InterInvest\Aspone2Bundle\Entity\AsponeDeposit
+     * @return AsponeDeposit
      */
     public function getDeposit()
     {
@@ -327,11 +336,11 @@ abstract class AsponeDeclaration
     /**
      * Add historique
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $historique
+     * @param AsponeDeclarationHistorique $historique
      *
      * @return AsponeDeclaration
      */
-    public function addHistorique(\InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $historique)
+    public function addHistorique(AsponeDeclarationHistorique $historique)
     {
         $this->historiques[] = $historique;
 
@@ -341,9 +350,9 @@ abstract class AsponeDeclaration
     /**
      * Remove historique
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $historique
+     * @param AsponeDeclarationHistorique $historique
      */
-    public function removeHistorique(\InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $historique)
+    public function removeHistorique(AsponeDeclarationHistorique $historique)
     {
         $this->historiques->removeElement($historique);
     }
