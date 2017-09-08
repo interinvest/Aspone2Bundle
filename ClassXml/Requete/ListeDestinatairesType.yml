@@ -1,0 +1,10 @@
+InterInvest\Aspone2Bundle\ClassXml\Requete\ListeDestinatairesType:
+    properties:
+        destinataire:
+            expose: true
+            access_type: public_method
+            serialized_name: Destinataire
+            accessor:
+                getter: getDestinataire
+                setter: setDestinataire
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\DestinataireType

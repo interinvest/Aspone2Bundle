@@ -1,0 +1,131 @@
+InterInvest\Aspone2Bundle\ClassXml\Requete\OccurrenceType:
+    properties:
+        numero:
+            expose: true
+            access_type: public_method
+            serialized_name: Numero
+            accessor:
+                getter: getNumero
+                setter: setNumero
+            xml_attribute: true
+            type: string
+        valeur:
+            expose: true
+            access_type: public_method
+            serialized_name: Valeur
+            accessor:
+                getter: getValeur
+                setter: setValeur
+            type: string
+        identifiant:
+            expose: true
+            access_type: public_method
+            serialized_name: Identifiant
+            accessor:
+                getter: getIdentifiant
+                setter: setIdentifiant
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\Identifiant
+        designation:
+            expose: true
+            access_type: public_method
+            serialized_name: Designation
+            accessor:
+                getter: getDesignation
+                setter: setDesignation
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\Designation
+        designationSuite1:
+            expose: true
+            access_type: public_method
+            serialized_name: DesignationSuite1
+            accessor:
+                getter: getDesignationSuite1
+                setter: setDesignationSuite1
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\DesignationSuite1
+        designationSuite2:
+            expose: true
+            access_type: public_method
+            serialized_name: DesignationSuite2
+            accessor:
+                getter: getDesignationSuite2
+                setter: setDesignationSuite2
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\DesignationSuite2
+        adresseNumero:
+            expose: true
+            access_type: public_method
+            serialized_name: AdresseNumero
+            accessor:
+                getter: getAdresseNumero
+                setter: setAdresseNumero
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\AdresseNumero
+        adresseType:
+            expose: true
+            access_type: public_method
+            serialized_name: AdresseType
+            accessor:
+                getter: getAdresseType
+                setter: setAdresseType
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\AdresseType
+        adresseVoie:
+            expose: true
+            access_type: public_method
+            serialized_name: AdresseVoie
+            accessor:
+                getter: getAdresseVoie
+                setter: setAdresseVoie
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\AdresseVoie
+        adresseComplement:
+            expose: true
+            access_type: public_method
+            serialized_name: AdresseComplement
+            accessor:
+                getter: getAdresseComplement
+                setter: setAdresseComplement
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\AdresseComplement
+        adresseHameau:
+            expose: true
+            access_type: public_method
+            serialized_name: AdresseHameau
+            accessor:
+                getter: getAdresseHameau
+                setter: setAdresseHameau
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\AdresseHameau
+        adresseCodePostal:
+            expose: true
+            access_type: public_method
+            serialized_name: AdresseCodePostal
+            accessor:
+                getter: getAdresseCodePostal
+                setter: setAdresseCodePostal
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\AdresseCodePostal
+        adresseVille:
+            expose: true
+            access_type: public_method
+            serialized_name: AdresseVille
+            accessor:
+                getter: getAdresseVille
+                setter: setAdresseVille
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\AdresseVille
+        adresseCodePays:
+            expose: true
+            access_type: public_method
+            serialized_name: AdresseCodePays
+            accessor:
+                getter: getAdresseCodePays
+                setter: setAdresseCodePays
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\AdresseCodePays
+        telephone:
+            expose: true
+            access_type: public_method
+            serialized_name: Telephone
+            accessor:
+                getter: getTelephone
+                setter: setTelephone
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\Telephone
+        email:
+            expose: true
+            access_type: public_method
+            serialized_name: Email
+            accessor:
+                getter: getEmail
+                setter: setEmail
+            type: InterInvest\Aspone2Bundle\ClassXml\Requete\Email

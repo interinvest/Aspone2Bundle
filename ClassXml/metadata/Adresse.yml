@@ -1,0 +1,3 @@
+InterInvest\Aspone2Bundle\ClassXml\Tva\Adresse:
+    xml_root_name: 'ns-cc60411c:Adresse'
+    xml_root_namespace: InterInvest\Aspone2Bundle\ClassXml\Tva

@@ -1,0 +1,3 @@
+InterInvest\Aspone2Bundle\ClassXml\Tva\Declaration:
+    xml_root_name: 'ns-cc60411c:Declaration'
+    xml_root_namespace: InterInvest\Aspone2Bundle\ClassXml\Tva
