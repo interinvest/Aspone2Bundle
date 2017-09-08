@@ -1,0 +1,9 @@
+xsd2php:
+  namespaces:
+    'InterInvest\Aspone2Bundle\ClassXml\Tva': 'InterInvest\Aspone2Bundle\ClassXml\Tva'
+  destinations_php:
+    'InterInvest\Aspone2Bundle\ClassXml\Tva': src/InterInvest/Aspone2Bundle/ClassXml/Tva
+  destinations_jms:
+    'InterInvest\Aspone2Bundle\ClassXml\Tva': src/InterInvest/Aspone2Bundle/ClassXml/metadata
+  naming_strategy: short
+  path_generator: psr4

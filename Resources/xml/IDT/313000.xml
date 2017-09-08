@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<XmlEdi><test>1</test><groupeFonctionnel><declaration><redacteur><siret>38384866000106</siret><designation>ENT_EDI_TVA</designation><designationSuite1>Inter Invest</designationSuite1></redacteur><listeFormulaires><identif><millesime>2017</millesime></identif><formulaire><millesime>2017</millesime></formulaire></listeFormulaires></declaration></groupeFonctionnel></XmlEdi>
