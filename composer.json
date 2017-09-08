@@ -4,7 +4,7 @@
   "type": "bundle",
   "license": "MIT",
   "require": {
-    "symfony/http-kernel": "3.3.*"
+    "symfony/http-kernel": ">=2.8"
   },
   "autoload": {
     "psr-4": {
