@@ -10,7 +10,7 @@ namespace InterInvest\Aspone2Bundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AsponeBundle extends bundle
+class Aspone2Bundle extends bundle
 {
 
 }

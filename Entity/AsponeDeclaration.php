@@ -102,10 +102,6 @@ abstract class AsponeDeclaration
     abstract public function getType();
     abstract public function setType($type);
     abstract public function getGroupe();
-
-    /**
-     * @return InterfaceDeclarable
-     */
     abstract public function getDeclarable();
 
 

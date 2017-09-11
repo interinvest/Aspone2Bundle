@@ -11,9 +11,6 @@ namespace InterInvest\Aspone2Bundle\Entity;
 
 interface InterfaceDeclarable
 {
-    // get objet déclarable
-    public function getAsponeDeclaration();
-
     // Rédacteur
     public function getRedacteurSiret();
     public function getRedacteurDesignation();
