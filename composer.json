@@ -19,6 +19,7 @@
   "require-dev": {
     "symfony/framework-bundle": ">=2.0",
     "symfony/yaml": ">=2.8",
-    "symfony/console": ">=2.8"
+    "symfony/console": ">=2.8",
+    "jms/serializer": ">= 0.9"
   }
 }

@@ -100,7 +100,7 @@ abstract class AsponeDeclaration
 
 
     abstract public function getType();
-    abstract public function setType($type);
+    abstract public function setType();
     abstract public function getGroupe();
     abstract public function getDeclarable();
 

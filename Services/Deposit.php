@@ -50,7 +50,7 @@ class Deposit
 
             $this->sFormulaire->init($declaration);
             if($this->sFormulaire->saveXml()){
-                $deposit->addDeclaration($declaration->getAsponeDeclaration());
+                $deposit->addDeclaration($declaration);
                 $i++;
             }
 
