@@ -85,14 +85,6 @@ class AsponeDeposit
      */
     private $istest = false;
 
-    /**
-     *
-     * @ORM\OneToMany(targetEntity="AsponeDeclaration", mappedBy="deposit")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id", referencedColumnName="deposit_id")
-     * })
-     */
-    private $declarations;
 
     /**
      * @var ArrayCollection

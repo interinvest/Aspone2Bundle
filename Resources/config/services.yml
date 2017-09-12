@@ -5,8 +5,8 @@ services:
 
     aspone.services.dictionnaire:
         class: InterInvest\Aspone2Bundle\Services\Dictionnaire
-    aspone.services.soap:
-        class: InterInvest\Aspone2Bundle\Services\SOAP
+#    aspone.services.soap:
+#        class: InterInvest\Aspone2Bundle\Services\SOAP
     aspone.services.deposit:
         class: InterInvest\Aspone2Bundle\Services\Deposit
         arguments: ["@doctrine.orm.entity_manager", "@aspone.services.formulaire"]

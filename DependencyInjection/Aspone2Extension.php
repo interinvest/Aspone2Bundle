@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class InterInvestAspone2Extension extends Extension
+class Aspone2Extension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -21,7 +21,15 @@ class InterInvestAspone2Extension extends Extension
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
-
+        foreach ($config as $key => $param) {
+            if (!is_array($param)) {
+                $container->setParameter('aspone2.' . $key, $param);
+            } else {
+                foreach ($param as $k => $v) {
+                    $container->setParameter('aspone2.' . $key . '.' . $k, $v);
+                }
+            }
+        }
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
     }

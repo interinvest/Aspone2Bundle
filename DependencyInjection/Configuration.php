@@ -20,9 +20,44 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('inter_invest_aspone2');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+            ->children()
+            ->scalarNode('username')->defaultValue('ASPONE')->end()
+            ->scalarNode('context')->defaultValue('http://aspone.fr/mb/webservices')->end()
+            ->scalarNode('password')->isRequired()->end()
+            ->scalarNode('contextLogin')->isRequired()->end()
+            ->scalarNode('contextPassword')->isRequired()->end()
+            ->scalarNode('declarationRepository')->isRequired()->end()
+            ->enumNode('archive')
+            ->isRequired()
+            ->values(array('yes', 'no'))
+            ->end()
+            ->scalarNode('xmlPath')->isRequired()->end()
+//            ->arrayNode('wsdl')
+//            ->addDefaultsIfNotSet()
+//            ->children()
+//            ->scalarNode('teledeclarations')->defaultValue('https://services-teleprocedures.aspone.fr/ws/deposit?wsdl')->end()
+//            ->scalarNode('monitoring')->defaultValue('https://services-teleprocedures.aspone.fr/ws/monitoring?wsdl')->end()
+//            ->end()
+//            ->end()
+//            ->arrayNode('location')
+//            ->addDefaultsIfNotSet()
+//            ->children()
+//            ->scalarNode('teledeclarations')->defaultValue('https://services-teleprocedures.aspone.fr/ws/deposit')->end()
+//            ->scalarNode('monitoring')->defaultValue('https://services-teleprocedures.aspone.fr/ws/monitoring')->end()
+//            ->end()
+//            ->end()
+//            ->arrayNode('serviceVersion')
+//            ->addDefaultsIfNotSet()
+//            ->children()
+//            ->scalarNode('1')->defaultValue('http://www.cegedim.com/aspone/mb/webservices')->end()
+//            ->scalarNode('0')->defaultValue('http://aspone.fr/mb/webservices')->end()
+//            ->end()
+//            ->end()
+//            ->end()
+//            ->end()
+        ;
+
 
         return $treeBuilder;
     }

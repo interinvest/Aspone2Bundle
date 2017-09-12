@@ -10,10 +10,6 @@ namespace InterInvest\Aspone2Bundle\Services;
 
 use Doctrine\ORM\EntityManager;
 use InterInvest\Aspone2Bundle\Entity\AsponeDeposit;
-use InterInvest\Aspone2Bundle\Entity\AsponeDeclaration;
-use InterInvest\Aspone2Bundle\Entity\DeclarableTVA;
-use InterInvest\Aspone2Bundle\Services\Formulaire;
-use InterInvest\Aspone2Bundle\Services\SOAP;
 
 class Deposit
 {

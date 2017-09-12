@@ -24,7 +24,7 @@ class Formulaire
 {
     /* @var $container Container */
     protected $container;
-    /* @var $declaration Entity\InterfaceDeclarable \*/
+    /* @var $declarable AsponeDeclaration \*/
     protected $declarable;
     /* @var $sDictionnaire Dictionnaire */
     protected $sDictionnaire;
@@ -41,8 +41,8 @@ class Formulaire
     {
         $this->declarable = $declarable;
 
-        $formulaires = explode(',', $this->declarable->getAsponeDeclaration()->getFormulaires());
-        $this->sDictionnaire->init($this->declarable->getAsponeDeclaration()->getGroupe(), $this->declarable->getAsponeDeclaration()->getMillesime(), $formulaires);
+        $formulaires = explode(',', $this->declarable->getFormulaires());
+        $this->sDictionnaire->init($this->declarable->getGroupe(), $this->declarable->getMillesime(), $formulaires);
 
     }
 
@@ -97,7 +97,7 @@ class Formulaire
 
     public function getXml()
     {
-        $cheminBase = "InterInvest\\Aspone2Bundle\\ClassXml\\".ucfirst(strtolower($this->declarable->getAsponeDeclaration()->getGroupe()));
+        $cheminBase = "InterInvest\\Aspone2Bundle\\ClassXml\\".ucfirst(strtolower($this->declarable->getGroupe()));
 
         // XmlEdi
         $cheminXmlEdi = $cheminBase."\\XmlEdi";
@@ -161,10 +161,9 @@ class Formulaire
 
 
         foreach($this->sDictionnaire->getZones() as $formulaire => $zones){
-            var_dump($formulaire);
             $cheminFormulaireType = $formulaire == "T-IDENTIF" ? $cheminBase."\\FormulaireType" : $cheminBase."\\FormulaireDeclaratifType";
             $noeudForm = new $cheminFormulaireType();
-            $noeudForm->setMillesime($this->declarable->getAsponeDeclaration()->getMillesime());
+            $noeudForm->setMillesime($this->declarable->getMillesime());
 
             foreach($zones as $zone => $valeurs){
                 foreach($valeurs as $valeur) {
@@ -194,16 +193,16 @@ class Formulaire
 
         // on supprime les élements vide
         $doc = new \DOMDocument();
-        $doc->preserveWhiteSpace = false;
+//        $doc->preserveWhiteSpace = false;
         $doc->loadxml($xml);
-
-        $xpath = new \DOMXPath($doc);
-
-        for($i=1;$i<=3;$i++) {
-            foreach ($xpath->query('//*[not(node())]') as $node) {
-                $node->parentNode->removeChild($node);
-            }
-        }
+//
+//        $xpath = new \DOMXPath($doc);
+//
+//        for($i=1;$i<=3;$i++) {
+//            foreach ($xpath->query('//*[not(node())]') as $node) {
+//                $node->parentNode->removeChild($node);
+//            }
+//        }
 
 
         return $doc->savexml();
@@ -212,7 +211,7 @@ class Formulaire
 
     public function getXmlPath()
     {
-        return __DIR__ . '/../Resources/xml/' . $this->declarable->getAsponeDeclaration()->getType();
+        return $this->container->get('kernel')->getRootDir().$this->container->getParameter('aspone2.xmlPath') . $this->declarable->getType();
     }
 
     public function saveXml()
@@ -225,9 +224,9 @@ class Formulaire
 //        }
 
         if(!is_dir($this->getXmlPath())){
-            mkdir($this->getXmlPath());
+            @mkdir($this->getXmlPath());
         }
-        $xml->saveXML($this->getXmlPath().'/'.$this->declarable->getAsponeDeclaration()->getId() . '.xml');
+        $xml->saveXML($this->getXmlPath().'/'.$this->declarable->getId() . '.xml');
 
         return true;
     }

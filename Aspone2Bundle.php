@@ -12,5 +12,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class Aspone2Bundle extends bundle
 {
-
+    public function getContainerExtension()
+    {
+        return new Aspone2Extension();
+    }
 }

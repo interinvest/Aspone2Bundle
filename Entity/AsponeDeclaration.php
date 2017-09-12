@@ -7,8 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * AsponeDeclaration
- * @ORM\Entity()
- * @ORM\Table(name="aspone_declaration")
+ * @ORM\MappedSuperclass
  */
 abstract class AsponeDeclaration
 {
@@ -81,7 +80,7 @@ abstract class AsponeDeclaration
     /**
      * @var AsponeDeposit
      *
-     * @ORM\ManyToOne(targetEntity="AsponeDeposit", inversedBy="declarations")
+     * @ORM\ManyToOne(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeposit")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="deposit_id", referencedColumnName="id")
      * })
@@ -91,19 +90,12 @@ abstract class AsponeDeclaration
     /**
      * @var ArrayCollection
      *
-     * @ORM\OneToMany(targetEntity="AsponeDeclarationHistorique", mappedBy="declaration")
+     * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique", mappedBy="declaration")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id", referencedColumnName="declaration_id")
      * })
      */
     protected $historiques;
-
-
-    abstract public function getType();
-    abstract public function setType();
-    abstract public function getGroupe();
-    abstract public function getDeclarable();
-
 
 
     public function __get($name)
@@ -158,6 +150,23 @@ abstract class AsponeDeclaration
     public function getIdentifiant()
     {
         return $this->identifiant;
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string $type
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
     }
 
 
