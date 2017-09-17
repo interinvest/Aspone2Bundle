@@ -1,6 +1,6 @@
 <?php
 
-namespace InterInvest\Aspone2Bundle\Entity\Tdfc;
+namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
 
 /**
  * Class representing RedevableType
@@ -27,7 +27,7 @@ class RedevableType
     private $designationSuite1 = null;
 
     /**
-     * @property \InterInvest\Aspone2Bundle\Entity\Tdfc\Adresse $adresse
+     * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\Adresse $adresse
      */
     private $adresse = null;
 
@@ -110,7 +110,7 @@ class RedevableType
     /**
      * Gets as adresse
      *
-     * @return \InterInvest\Aspone2Bundle\Entity\Tdfc\Adresse
+     * @return \InterInvest\Aspone2Bundle\ClassXml\Tdfc\Adresse
      */
     public function getAdresse()
     {
@@ -120,10 +120,10 @@ class RedevableType
     /**
      * Sets a new adresse
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\Tdfc\Adresse $adresse
+     * @param \InterInvest\Aspone2Bundle\ClassXml\Tdfc\Adresse $adresse
      * @return self
      */
-    public function setAdresse(\InterInvest\Aspone2Bundle\Entity\Tdfc\Adresse $adresse)
+    public function setAdresse(\InterInvest\Aspone2Bundle\ClassXml\Tdfc\Adresse $adresse)
     {
         $this->adresse = $adresse;
         return $this;

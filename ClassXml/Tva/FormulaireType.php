@@ -2,6 +2,9 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing FormulaireType
  *
@@ -12,12 +15,14 @@ class FormulaireType
 {
 
     /**
+     * @Serializer\XmlAttribute()
      * @property string $millesime
      */
     private $millesime = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\ZoneType[] $zone
+     * @Serializer\XmlList(inline = true, entry = "Zone")
      */
     private $zone = array(
         

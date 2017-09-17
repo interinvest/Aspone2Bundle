@@ -1,6 +1,9 @@
 <?php
 
-namespace InterInvest\Aspone2Bundle\Entity\Tdfc;
+namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
+
+
+use JMS\Serializer\Annotation as Serializer;
 
 /**
  * Class representing FormulaireType
@@ -13,11 +16,13 @@ class FormulaireType
 
     /**
      * @property string $millesime
+     * @Serializer\XmlAttribute()
      */
     private $millesime = null;
 
     /**
-     * @property \InterInvest\Aspone2Bundle\Entity\Tdfc\ZoneType[] $zone
+     * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\ZoneType[] $zone
+     * @Serializer\XmlList(inline = true, entry = "Zone")
      */
     private $zone = array(
         
@@ -49,9 +54,9 @@ class FormulaireType
      * Adds as zone
      *
      * @return self
-     * @param \InterInvest\Aspone2Bundle\Entity\Tdfc\ZoneType $zone
+     * @param \InterInvest\Aspone2Bundle\ClassXml\Tdfc\ZoneType $zone
      */
-    public function addToZone(\InterInvest\Aspone2Bundle\Entity\Tdfc\ZoneType $zone)
+    public function addToZone(\InterInvest\Aspone2Bundle\ClassXml\Tdfc\ZoneType $zone)
     {
         $this->zone[] = $zone;
         return $this;
@@ -82,7 +87,7 @@ class FormulaireType
     /**
      * Gets as zone
      *
-     * @return \InterInvest\Aspone2Bundle\Entity\Tdfc\ZoneType[]
+     * @return \InterInvest\Aspone2Bundle\ClassXml\Tdfc\ZoneType[]
      */
     public function getZone()
     {
@@ -92,7 +97,7 @@ class FormulaireType
     /**
      * Sets a new zone
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\Tdfc\ZoneType[] $zone
+     * @param \InterInvest\Aspone2Bundle\ClassXml\Tdfc\ZoneType[] $zone
      * @return self
      */
     public function setZone(array $zone)

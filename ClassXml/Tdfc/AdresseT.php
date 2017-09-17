@@ -1,15 +1,18 @@
 <?php
 
-namespace InterInvest\AsponeBundle\Entity\Paiement;
+namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
+
+use JMS\Serializer\Annotation as Serializer;
 
 /**
- * Class representing AdresseVille
+ * Class representing AdresseT
  */
-class AdresseVille
+class AdresseT
 {
 
     /**
      * @property string $__value
+     * @Serializer\XmlValue()
      */
     private $__value = null;
 

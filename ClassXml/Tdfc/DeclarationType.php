@@ -2,6 +2,8 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
 
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing DeclarationType
  *
@@ -13,11 +15,13 @@ class DeclarationType
 
     /**
      * @property string $type
+     * @Serializer\XmlAttribute()
      */
     private $type = null;
 
     /**
      * @property string $reference
+     * @Serializer\XmlAttribute()
      */
     private $reference = null;
 
@@ -44,6 +48,7 @@ class DeclarationType
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\DestinataireType[]
      * $listeDestinataires
+     * @Serializer\XmlList(inline = false, entry = "Destinataire")
      */
     private $listeDestinataires = null;
 

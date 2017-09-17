@@ -4,8 +4,8 @@
 
 namespace InterInvest\Aspone2Bundle\Services;
 
-use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\BaseTypesHandler;
-use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\XmlSchemaDateHandler;
+//use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\BaseTypesHandler;
+//use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\XmlSchemaDateHandler;
 use InterInvest\Aspone2Bundle\Entity\AsponeDeclaration;
 use InterInvest\Aspone2Bundle\ClassXml\Tva;
 use JMS\Serializer\Handler\HandlerRegistryInterface;
@@ -13,6 +13,7 @@ use JMS\Serializer\Serializer;
 use Symfony\Component\DependencyInjection\Container;
 use InterInvest\Aspone2Bundle\Entity;
 use JMS\Serializer\SerializerBuilder;
+use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 
@@ -50,35 +51,39 @@ class Formulaire
     public function getXmlAdresse($cheminBase, $name)
     {
         $cheminAdresseNumero = $cheminBase."\\AdresseNumero";
-        $getAdresseNumero = "getAdresseNumero".$name;
+        $getAdresseNumero = "get'.$name.'AdresseNumero";
         $adresseNumero = new $cheminAdresseNumero($this->declarable->$getAdresseNumero());
 
-        $cheminAdresseType = $cheminBase."\\AdresseT";
-        $getAdresseType = "getAdresseType".$name;
+        if($name == 'TVA') {
+            $cheminAdresseType = $cheminBase . "\\AdresseT";
+        } else {
+            $cheminAdresseType = $cheminBase . "\\AdresseType";
+        }
+        $getAdresseType = "get'.$name.'AdresseType";
         $adresseType = new $cheminAdresseType($this->declarable->$getAdresseType());
 
         $cheminAdresseVoie = $cheminBase."\\AdresseVoie";
-        $getAdresseVoie = "getAdresseVoie".$name;
+        $getAdresseVoie = "get".$name."AdresseVoie";
         $adresseVoie = new $cheminAdresseVoie($this->declarable->$getAdresseVoie());
 
         $cheminAdresseComplement = $cheminBase."\\AdresseComplement";
-        $getAdresseComplement = "getAdresseComplement".$name;
+        $getAdresseComplement = "get".$name."AdresseComplement";
         $adresseComplement = new $cheminAdresseComplement($this->declarable->$getAdresseComplement());
 
         $cheminAdresseHameau = $cheminBase."\\AdresseHameau";
-        $getAdresseHameau = "getAdresseHameau".$name;
+        $getAdresseHameau = "get".$name."AdresseHameau";
         $adresseHameau = new $cheminAdresseHameau($this->declarable->$getAdresseHameau());
 
         $cheminAdresseCodePostal = $cheminBase."\\AdresseCodePostal";
-        $getAdresseCodePostal = "getAdresseCodePostal".$name;
+        $getAdresseCodePostal = "get".$name."AdresseCodePostal";
         $adresseCodePostal = new $cheminAdresseCodePostal($this->declarable->$getAdresseCodePostal());
 
         $cheminAdresseVille = $cheminBase."\\AdresseVille";
-        $getAdresseVille = "getAdresseVille".$name;
+        $getAdresseVille = "get".$name."AdresseVille";
         $adresseVille = new $cheminAdresseVille($this->declarable->$getAdresseVille());
 
         $cheminAdresseCodePays = $cheminBase."\\AdresseCodePays";
-        $getAdresseCodePays = "getAdresseCodePays".$name;
+        $getAdresseCodePays = "get".$name."AdresseCodePays";
         $adresseCodePays = new $cheminAdresseCodePays($this->declarable->$getAdresseCodePays());
 
         $cheminAdresse = $cheminBase."\\Adresse";
@@ -113,11 +118,11 @@ class Formulaire
         // - - - Emetteur
         $cheminEmetteur = $cheminBase."\\EmetteurType";
         $emetteur = new $cheminEmetteur();
-        $emetteur->setSiret($this->declarable->getSiretEmmeteur())
-            ->setDesignation($this->declarable->getDesignationEmmeteur())
-            ->setDesignationSuite1($this->declarable->getDesignationSuite1Emmeteur())
+        $emetteur->setSiret($this->declarable->getEmmeteurSiret())
+            ->setDesignation($this->declarable->getEmmeteurDesignation())
+            ->setDesignationSuite1($this->declarable->getEmmeteurDesignationSuite1())
             ->setAdresse($this->getXmlAdresse($cheminBase, 'Emetteur'))
-            ->setReferenceDossier($this->declarable->getReferenceDossierEmmeteur());
+            ->setReferenceDossier($this->declarable->getEmmeteurReferenceDossier());
         $declaration->setEmetteur($emetteur);
         // - - - Redacteur
         $cheminRedacteur = $cheminBase."\\RedacteurType";
@@ -130,51 +135,55 @@ class Formulaire
         // - - - Redevable
         $cheminRedevable = $cheminBase."\\RedevableType";
         $redevable = new $cheminRedevable();
-        $redevable->setIdentifiant($this->declarable->getSiretRedevable())
-            ->setDesignation($this->declarable->getDesignationRedevable())
-            ->setDesignationSuite1($this->declarable->getDesignationSuite1Redevable())
+        $redevable->setIdentifiant($this->declarable->getRedevableIdentifiant())
+            ->setDesignation($this->declarable->getRedevableDesignation())
+            ->setDesignationSuite1($this->declarable->getRedevableDesignationSuite1())
             ->setAdresse($this->getXmlAdresse($cheminBase, 'Redevable'))
-            ->setReferenceDossier($this->declarable->getReferenceDossierRedevable())
-            ->setRof($this->declarable->getRofRedevable());
+            ->setReferenceDossier($this->declarable->getRedevableReferenceDossier())
+            ->setRof($this->declarable->getRedevableROF());
         $declaration->setRedevable($redevable);
         // - - - PartenaireEdi
         $cheminPartenaireEdi = $cheminBase."\\PartenaireEdiType";
         $partenaireEdi = new $cheminPartenaireEdi();
-        $partenaireEdi->setIdentifiant($this->declarable->getIdentifiantPartenaireEdi())
-            ->setDesignation($this->declarable->getDesignationPartenaireEdi())
-            ->setDesignationSuite1($this->declarable->getDesignationSuite1PartenaireEdi())
+        $partenaireEdi->setIdentifiant($this->declarable->getPartenaireEdiIdentifiant())
+            ->setDesignation($this->declarable->getPartenaireEdiDesignation())
+            ->setDesignationSuite1($this->declarable->getPartenaireEdiDesignationSuite1())
             ->setAdresse($this->getXmlAdresse($cheminBase, 'PartenaireEdi'))
-            ->setReferenceDossier($this->declarable->getReferenceDossierPartenaireEdi());
+            ->setReferenceDossier($this->declarable->getPartenaireEdiReferenceDossier());
         $declaration->setPartenaireEdi($partenaireEdi);
         // - - - ListeDestinataire
         $cheminDestinataireType = $cheminBase."\\DestinataireType";
         $listeDestinataire = new $cheminDestinataireType();
-        $listeDestinataire->setIdentifiant($this->declarable->getIdentifiantDestinataire())
-            ->setDesignation($this->declarable->getDesignationDestinataire())
-            ->setDesignationSuite1($this->declarable->getDesignationSuite1Destinataire())
+        $listeDestinataire->setIdentifiant($this->declarable->getDestinataireIdentifiant())
+            ->setDesignation($this->declarable->getDestinataireDesignation())
+            ->setDesignationSuite1($this->declarable->getDestinataireDesignationSuite1())
             ->setAdresse($this->getXmlAdresse($cheminBase, 'Destinataire'))
-            ->setReferenceDossier($this->declarable->getReferenceDossierDestinataire());
-        $declaration->addToListeDestinataires($listeDestinataire);
+            ->setReferenceDossier($this->declarable->getDestinataireReferenceDossier());
+        $declaration-> addToListeDestinataires($listeDestinataire);
         // - - - ListeFormulaire
         $cheminDestinataireType = $cheminBase."\\ListeFormulairesType";
         $listeFormulaire = new $cheminDestinataireType();
 
 
         foreach($this->sDictionnaire->getZones() as $formulaire => $zones){
-            $cheminFormulaireType = $formulaire == "T-IDENTIF" ? $cheminBase."\\FormulaireType" : $cheminBase."\\FormulaireDeclaratifType";
+            $cheminFormulaireType = in_array($formulaire, ["T-IDENTIF","F-IDENTIF"]) ? $cheminBase."\\FormulaireType" : $cheminBase."\\FormulaireDeclaratifType";
             $noeudForm = new $cheminFormulaireType();
             $noeudForm->setMillesime($this->declarable->getMillesime());
 
             foreach($zones as $zone => $valeurs){
+                $cheminZoneType = $cheminBase . "\\ZoneType";
+                $noeudZone = new $cheminZoneType();
                 foreach($valeurs as $valeur) {
-                    $cheminZoneType = $cheminBase . "\\ZoneType";
-                    $noeudZone = new $cheminZoneType();
-                    $noeudZone->{"set" . ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower($valeur)) . ucfirst(strtolower($zone))}());
+                    //var_dump($formulaire.'-'.$zone.'-'.$valeur);
+                    $noeudZone->setId($zone);
+                    $noeudZone->{"set". ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower($valeur)) . ucfirst(strtolower($zone))}());
+                }
+                if(!empty($noeudZone)) {
                     $noeudForm->addToZone($noeudZone);
                 }
             }
 
-            if($formulaire == "T-IDENTIF") {
+            if(in_array($formulaire, ["T-IDENTIF","F-IDENTIF"])) {
                 $listeFormulaire->setIdentif($noeudForm);
             } else {
                 $listeFormulaire->addToFormulaire($noeudForm);
@@ -184,29 +193,34 @@ class Formulaire
         $declaration->setListeFormulaires($listeFormulaire);
         $groupeFonctionnel->setDeclaration([$declaration]);
 
-
-        $encoders = array(new XmlEncoder('XmlEdi', LIBXML_NOBLANKS));
-        $normalizers = array(new ObjectNormalizer());
-
-        $serializer = new \Symfony\Component\Serializer\Serializer($normalizers, $encoders);
+        $serializer = SerializerBuilder::create()->build();
         $xml = $serializer->serialize($xmlEdi, 'xml');
 
         // on supprime les élements vide
         $doc = new \DOMDocument();
-//        $doc->preserveWhiteSpace = false;
+        $doc->preserveWhiteSpace = false;
         $doc->loadxml($xml);
-//
-//        $xpath = new \DOMXPath($doc);
-//
-//        for($i=1;$i<=3;$i++) {
-//            foreach ($xpath->query('//*[not(node())]') as $node) {
-//                $node->parentNode->removeChild($node);
-//            }
-//        }
+        $xpath = new \DOMXPath($doc);
 
+        for($i=1;$i<=6;$i++) {
+            foreach ($xpath->query('//*[string-length() = 0]') as $node) {
+                $node->parentNode->removeChild($node);
+            }
+
+            foreach ($xpath->query('//*[not(node())]') as $node) {
+                $node->parentNode->removeChild($node);
+            }
+        }
 
         return $doc->savexml();
     }
+
+
+    public function getXmlByFile()
+    {
+        return file_get_contents($this->getXmlPath().'/'.$this->declarable->getId() . '.xml');
+    }
+
 
 
     public function getXmlPath()

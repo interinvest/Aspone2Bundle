@@ -2,6 +2,8 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing DeclarationType
  *
@@ -12,11 +14,13 @@ class DeclarationType
 {
 
     /**
+     * @Serializer\XmlAttribute()
      * @property string $type
      */
     private $type = null;
 
     /**
+     * @Serializer\XmlAttribute()
      * @property string $reference
      */
     private $reference = null;
@@ -45,8 +49,10 @@ class DeclarationType
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\DestinataireType[]
      * $listeDestinataires
+     * @Serializer\XmlList(inline = false, entry = "Destinataire")
      */
     private $listeDestinataires = null;
+
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\ListeFormulairesType

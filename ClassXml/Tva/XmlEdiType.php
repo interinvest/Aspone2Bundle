@@ -2,16 +2,21 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing XmlEdiType
  *
  *
  * XSD Type: XmlEdi
+ *
+ * @Serializer\XmlDiscriminator(cdata=false)
  */
 class XmlEdiType
 {
 
     /**
+     * @Serializer\XmlAttribute()
      * @property string $test
      */
     private $test = null;

@@ -2,6 +2,8 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing TexteLibre3
  */
@@ -10,6 +12,7 @@ class TexteLibre3
 
     /**
      * @property string $__value
+     * @Serializer\XmlValue()
      */
     private $__value = null;
 

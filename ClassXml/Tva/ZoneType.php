@@ -2,6 +2,8 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing ZoneType
  *
@@ -13,6 +15,7 @@ class ZoneType
 
     /**
      * @property string $id
+     * @Serializer\XmlAttribute()
      */
     private $id = null;
 

@@ -1,6 +1,8 @@
 <?php
 
-namespace InterInvest\Aspone2Bundle\Entity\Tdfc;
+namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
+
+use JMS\Serializer\Annotation as Serializer;
 
 /**
  * Class representing AdresseDivisionTerritoriale
@@ -10,6 +12,7 @@ class AdresseDivisionTerritoriale
 
     /**
      * @property string $__value
+     * @Serializer\XmlValue()
      */
     private $__value = null;
 

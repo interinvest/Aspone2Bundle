@@ -2,49 +2,234 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
 
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing AdresseType
+ *
+ *
+ * XSD Type: Adresse
  */
 class AdresseType
 {
 
     /**
-     * @property string $__value
+     * @property string $adresseNumero
+     *
      */
-    private $__value = null;
+    private $adresseNumero = null;
 
     /**
-     * Construct
+     * @property string $adresseT
      *
-     * @param string $value
      */
-    public function __construct($value)
+    private $adresseT = null;
+
+    /**
+     * @property string $adresseVoie
+     * @Serializer\SerializedName("AdresseType")
+     */
+    private $adresseVoie = null;
+
+    /**
+     * @property string $adresseComplement
+     */
+    private $adresseComplement = null;
+
+    /**
+     * @property string $adresseHameau
+     */
+    private $adresseHameau = null;
+
+    /**
+     * @property string $adresseCodePostal
+     */
+    private $adresseCodePostal = null;
+
+    /**
+     * @property string $adresseVille
+     */
+    private $adresseVille = null;
+
+    /**
+     * @property string $adresseCodePays
+     */
+    private $adresseCodePays = null;
+
+    /**
+     * Gets as adresseNumero
+     *
+     * @return string
+     */
+    public function getAdresseNumero()
     {
-        $this->value($value);
+        return $this->adresseNumero;
     }
 
     /**
-     * Gets or sets the inner value
+     * Sets a new adresseNumero
      *
-     * @param string $value
-     * @return string
+     * @param string $adresseNumero
+     * @return self
      */
-    public function value()
+    public function setAdresseNumero($adresseNumero)
     {
-        if ($args = func_get_args()) {
-            $this->__value = $args[0];
-        }
-        return $this->__value;
+        $this->adresseNumero = $adresseNumero;
+        return $this;
     }
 
     /**
-     * Gets a string value
+     * Gets as adresseT
      *
      * @return string
      */
-    public function __toString()
+    public function getAdresseT()
     {
-        return strval($this->__value);
+        return $this->adresseT;
+    }
+
+    /**
+     * Sets a new adresseT
+     *
+     * @param string $adresseT
+     * @return self
+     */
+    public function setAdresseT($adresseT)
+    {
+        $this->adresseT = $adresseT;
+        return $this;
+    }
+
+    /**
+     * Gets as adresseVoie
+     *
+     * @return string
+     */
+    public function getAdresseVoie()
+    {
+        return $this->adresseVoie;
+    }
+
+    /**
+     * Sets a new adresseVoie
+     *
+     * @param string $adresseVoie
+     * @return self
+     */
+    public function setAdresseVoie($adresseVoie)
+    {
+        $this->adresseVoie = $adresseVoie;
+        return $this;
+    }
+
+    /**
+     * Gets as adresseComplement
+     *
+     * @return string
+     */
+    public function getAdresseComplement()
+    {
+        return $this->adresseComplement;
+    }
+
+    /**
+     * Sets a new adresseComplement
+     *
+     * @param string $adresseComplement
+     * @return self
+     */
+    public function setAdresseComplement($adresseComplement)
+    {
+        $this->adresseComplement = $adresseComplement;
+        return $this;
+    }
+
+    /**
+     * Gets as adresseHameau
+     *
+     * @return string
+     */
+    public function getAdresseHameau()
+    {
+        return $this->adresseHameau;
+    }
+
+    /**
+     * Sets a new adresseHameau
+     *
+     * @param string $adresseHameau
+     * @return self
+     */
+    public function setAdresseHameau($adresseHameau)
+    {
+        $this->adresseHameau = $adresseHameau;
+        return $this;
+    }
+
+    /**
+     * Gets as adresseCodePostal
+     *
+     * @return string
+     */
+    public function getAdresseCodePostal()
+    {
+        return $this->adresseCodePostal;
+    }
+
+    /**
+     * Sets a new adresseCodePostal
+     *
+     * @param string $adresseCodePostal
+     * @return self
+     */
+    public function setAdresseCodePostal($adresseCodePostal)
+    {
+        $this->adresseCodePostal = $adresseCodePostal;
+        return $this;
+    }
+
+    /**
+     * Gets as adresseVille
+     *
+     * @return string
+     */
+    public function getAdresseVille()
+    {
+        return $this->adresseVille;
+    }
+
+    /**
+     * Sets a new adresseVille
+     *
+     * @param string $adresseVille
+     * @return self
+     */
+    public function setAdresseVille($adresseVille)
+    {
+        $this->adresseVille = $adresseVille;
+        return $this;
+    }
+
+    /**
+     * Gets as adresseCodePays
+     *
+     * @return string
+     */
+    public function getAdresseCodePays()
+    {
+        return $this->adresseCodePays;
+    }
+
+    /**
+     * Sets a new adresseCodePays
+     *
+     * @param string $adresseCodePays
+     * @return self
+     */
+    public function setAdresseCodePays($adresseCodePays)
+    {
+        $this->adresseCodePays = $adresseCodePays;
+        return $this;
     }
 
 

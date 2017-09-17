@@ -2,6 +2,9 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing GroupeFonctionnelType
  *
@@ -12,12 +15,14 @@ class GroupeFonctionnelType
 {
 
     /**
+     * @Serializer\XmlAttribute()
      * @property string $type
      */
     private $type = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\Declaration[] $declaration
+     * @Serializer\XmlList(inline = true, entry = "Declaration")
      */
     private $declaration = array(
         

@@ -15,6 +15,7 @@ class AdresseType
 
     /**
      * @property string $adresseNumero
+     *
      */
     private $adresseNumero = null;
 

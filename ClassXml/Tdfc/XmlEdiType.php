@@ -1,23 +1,27 @@
 <?php
 
-namespace InterInvest\Aspone2Bundle\Entity\Tdfc;
+namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
+
+use JMS\Serializer\Annotation as Serializer;
 
 /**
  * Class representing XmlEdiType
  *
  *
  * XSD Type: XmlEdi
+ * @Serializer\XmlRoot("XmlEdi")
  */
 class XmlEdiType
 {
 
     /**
      * @property string $test
+     * @Serializer\XmlAttribute()
      */
     private $test = null;
 
     /**
-     * @property \InterInvest\Aspone2Bundle\Entity\Tdfc\GroupeFonctionnelType
+     * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\GroupeFonctionnelType
      * $groupeFonctionnel
      */
     private $groupeFonctionnel = null;
@@ -47,7 +51,7 @@ class XmlEdiType
     /**
      * Gets as groupeFonctionnel
      *
-     * @return \InterInvest\Aspone2Bundle\Entity\Tdfc\GroupeFonctionnelType
+     * @return \InterInvest\Aspone2Bundle\ClassXml\Tdfc\GroupeFonctionnelType
      */
     public function getGroupeFonctionnel()
     {
@@ -57,11 +61,11 @@ class XmlEdiType
     /**
      * Sets a new groupeFonctionnel
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\Tdfc\GroupeFonctionnelType
+     * @param \InterInvest\Aspone2Bundle\ClassXml\Tdfc\GroupeFonctionnelType
      * $groupeFonctionnel
      * @return self
      */
-    public function setGroupeFonctionnel(\InterInvest\Aspone2Bundle\Entity\Tdfc\GroupeFonctionnelType $groupeFonctionnel)
+    public function setGroupeFonctionnel(\InterInvest\Aspone2Bundle\ClassXml\Tdfc\GroupeFonctionnelType $groupeFonctionnel)
     {
         $this->groupeFonctionnel = $groupeFonctionnel;
         return $this;

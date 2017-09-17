@@ -59,6 +59,9 @@ class Dictionnaire
             if (isset(self::$data["T-IDENTIF"][$annee])) {
                 $zones["T-IDENTIF"] = self::$data["T-IDENTIF"][$annee];
             }
+            if (isset(self::$data["F-IDENTIF"][$annee])) {
+                $zones["F-IDENTIF"] = self::$data["F-IDENTIF"][$annee];
+            }
         }
 
         return $zones;

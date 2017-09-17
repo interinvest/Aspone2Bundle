@@ -1,6 +1,9 @@
 <?php
 
-namespace InterInvest\Aspone2Bundle\Entity\Tdfc;
+namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
+
+
+use JMS\Serializer\Annotation as Serializer;
 
 /**
  * Class representing GroupeFonctionnelType
@@ -17,7 +20,8 @@ class GroupeFonctionnelType
     private $type = null;
 
     /**
-     * @property \InterInvest\Aspone2Bundle\Entity\Tdfc\Declaration[] $declaration
+     * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\Declaration[] $declaration
+     * @Serializer\XmlList(inline = true, entry = "Declaration")
      */
     private $declaration = array(
         
@@ -49,9 +53,9 @@ class GroupeFonctionnelType
      * Adds as declaration
      *
      * @return self
-     * @param \InterInvest\Aspone2Bundle\Entity\Tdfc\Declaration $declaration
+     * @param \InterInvest\Aspone2Bundle\ClassXml\Tdfc\Declaration $declaration
      */
-    public function addToDeclaration(\InterInvest\Aspone2Bundle\Entity\Tdfc\Declaration $declaration)
+    public function addToDeclaration(\InterInvest\Aspone2Bundle\ClassXml\Tdfc\Declaration $declaration)
     {
         $this->declaration[] = $declaration;
         return $this;
@@ -82,7 +86,7 @@ class GroupeFonctionnelType
     /**
      * Gets as declaration
      *
-     * @return \InterInvest\Aspone2Bundle\Entity\Tdfc\Declaration[]
+     * @return \InterInvest\Aspone2Bundle\ClassXml\Tdfc\Declaration[]
      */
     public function getDeclaration()
     {
@@ -92,7 +96,7 @@ class GroupeFonctionnelType
     /**
      * Sets a new declaration
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\Tdfc\Declaration[] $declaration
+     * @param \InterInvest\Aspone2Bundle\ClassXml\Tdfc\Declaration[] $declaration
      * @return self
      */
     public function setDeclaration(array $declaration)

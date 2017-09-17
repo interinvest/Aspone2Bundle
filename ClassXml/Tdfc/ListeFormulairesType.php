@@ -1,6 +1,8 @@
 <?php
 
-namespace InterInvest\Aspone2Bundle\Entity\Tdfc;
+namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
+
+use JMS\Serializer\Annotation as Serializer;
 
 /**
  * Class representing ListeFormulairesType
@@ -12,13 +14,14 @@ class ListeFormulairesType
 {
 
     /**
-     * @property \InterInvest\Aspone2Bundle\Entity\Tdfc\FormulaireType $identif
+     * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireType $identif
      */
     private $identif = null;
 
     /**
-     * @property \InterInvest\Aspone2Bundle\Entity\Tdfc\FormulaireDeclaratifType[]
+     * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireDeclaratifType[]
      * $formulaire
+     *
      */
     private $formulaire = array(
         
@@ -27,7 +30,7 @@ class ListeFormulairesType
     /**
      * Gets as identif
      *
-     * @return \InterInvest\Aspone2Bundle\Entity\Tdfc\FormulaireType
+     * @return \InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireType
      */
     public function getIdentif()
     {
@@ -37,10 +40,10 @@ class ListeFormulairesType
     /**
      * Sets a new identif
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\Tdfc\FormulaireType $identif
+     * @param \InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireType $identif
      * @return self
      */
-    public function setIdentif(\InterInvest\Aspone2Bundle\Entity\Tdfc\FormulaireType $identif)
+    public function setIdentif(\InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireType $identif)
     {
         $this->identif = $identif;
         return $this;
@@ -50,10 +53,10 @@ class ListeFormulairesType
      * Adds as formulaire
      *
      * @return self
-     * @param \InterInvest\Aspone2Bundle\Entity\Tdfc\FormulaireDeclaratifType
+     * @param \InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireDeclaratifType
      * $formulaire
      */
-    public function addToFormulaire(\InterInvest\Aspone2Bundle\Entity\Tdfc\FormulaireDeclaratifType $formulaire)
+    public function addToFormulaire(\InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireDeclaratifType $formulaire)
     {
         $this->formulaire[] = $formulaire;
         return $this;
@@ -84,7 +87,7 @@ class ListeFormulairesType
     /**
      * Gets as formulaire
      *
-     * @return \InterInvest\Aspone2Bundle\Entity\Tdfc\FormulaireDeclaratifType[]
+     * @return \InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireDeclaratifType[]
      */
     public function getFormulaire()
     {
@@ -94,7 +97,7 @@ class ListeFormulairesType
     /**
      * Sets a new formulaire
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\Tdfc\FormulaireDeclaratifType[]
+     * @param \InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireDeclaratifType[]
      * $formulaire
      * @return self
      */

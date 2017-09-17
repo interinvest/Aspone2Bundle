@@ -2,6 +2,8 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
 
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing AdresseCodePostal
  */
@@ -10,6 +12,7 @@ class AdresseCodePostal
 
     /**
      * @property string $__value
+     * @Serializer\XmlValue()
      */
     private $__value = null;
 

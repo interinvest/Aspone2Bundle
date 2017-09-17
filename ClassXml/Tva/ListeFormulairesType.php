@@ -19,6 +19,7 @@ class ListeFormulairesType
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\FormulaireDeclaratifType[]
      * $formulaire
+     *
      */
     private $formulaire = array(
         
