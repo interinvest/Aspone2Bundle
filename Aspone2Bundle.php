@@ -8,8 +8,8 @@
 
 namespace InterInvest\Aspone2Bundle;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle;
 use InterInvest\Aspone2Bundle\DependencyInjection\Aspone2Extension;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class Aspone2Bundle extends bundle
 {
