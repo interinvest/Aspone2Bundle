@@ -1,12 +1,14 @@
 services:
     aspone.services.formulaire:
         class: InterInvest\Aspone2Bundle\Services\Formulaire
-        arguments: ["@service_container", "@aspone.services.dictionnaire"]
+        arguments: ["@kernel", "@aspone.services.dictionnaire"]
 
     aspone.services.dictionnaire:
         class: InterInvest\Aspone2Bundle\Services\Dictionnaire
-#    aspone.services.soap:
-#        class: InterInvest\Aspone2Bundle\Services\SOAP
+        arguments: ["@kernel"]
+    aspone.services.soap:
+        class: InterInvest\Aspone2Bundle\Services\SOAP
+        arguments: ["@kernel"]
     aspone.services.deposit:
         class: InterInvest\Aspone2Bundle\Services\Deposit
         arguments: ["@doctrine.orm.entity_manager", "@aspone.services.formulaire"]

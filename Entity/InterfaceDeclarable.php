@@ -28,5 +28,4 @@ interface InterfaceDeclarable
 
     // Destinataire
     public function getDestinataireDesignation();
-
 }

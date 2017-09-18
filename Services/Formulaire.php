@@ -4,8 +4,6 @@
 
 namespace InterInvest\Aspone2Bundle\Services;
 
-//use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\BaseTypesHandler;
-//use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\XmlSchemaDateHandler;
 use InterInvest\Aspone2Bundle\Entity\AsponeDeclaration;
 use InterInvest\Aspone2Bundle\ClassXml\Tva;
 use JMS\Serializer\Handler\HandlerRegistryInterface;
@@ -14,6 +12,7 @@ use Symfony\Component\DependencyInjection\Container;
 use InterInvest\Aspone2Bundle\Entity;
 use JMS\Serializer\SerializerBuilder;
 use Symfony\Component\DomCrawler\Crawler;
+use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 
@@ -23,17 +22,17 @@ use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
  */
 class Formulaire
 {
-    /* @var $container Container */
-    protected $container;
+    /* @var $kernel Kernel */
+    protected $kernel;
     /* @var $declarable AsponeDeclaration \*/
     protected $declarable;
     /* @var $sDictionnaire Dictionnaire */
     protected $sDictionnaire;
 
 
-    public function __construct(Container $container, Dictionnaire $sDictionnaire)
+    public function __construct(Kernel $kernel, Dictionnaire $sDictionnaire)
     {
-        $this->container = $container;
+        $this->kernel = $kernel;
         $this->sDictionnaire = $sDictionnaire;
     }
 
@@ -174,7 +173,6 @@ class Formulaire
                 $cheminZoneType = $cheminBase . "\\ZoneType";
                 $noeudZone = new $cheminZoneType();
                 foreach($valeurs as $valeur) {
-                    //var_dump($formulaire.'-'.$zone.'-'.$valeur);
                     $noeudZone->setId($zone);
                     $noeudZone->{"set". ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower($valeur)) . ucfirst(strtolower($zone))}());
                 }
@@ -186,6 +184,7 @@ class Formulaire
             if(in_array($formulaire, ["T-IDENTIF","F-IDENTIF"])) {
                 $listeFormulaire->setIdentif($noeudForm);
             } else {
+                $noeudForm->setNom($formulaire);
                 $listeFormulaire->addToFormulaire($noeudForm);
             }
         }
@@ -225,7 +224,7 @@ class Formulaire
 
     public function getXmlPath()
     {
-        return $this->container->get('kernel')->getRootDir().$this->container->getParameter('aspone2.xmlPath') . $this->declarable->getType();
+        return $this->kernel->getRootDir().$this->kernel->getContainer()->getParameter('aspone2.xmlPath') . $this->declarable->getType();
     }
 
     public function saveXml()
@@ -233,9 +232,6 @@ class Formulaire
         $xml = new \SimpleXMLElement($this->getXml());
         $verif = new \DOMDocument();
         $verif->loadXML($xml->asXml());
-//        if (!$verif->schemaValidate(__DIR__ . '/../Resources/xsd/' . 'XmlEdi' . $this->declarable->getAsponeDeclaration()->getGroupe() . '.xsd')) {
-//            throw new \Exception('XML non valide', 0);
-//        }
 
         if(!is_dir($this->getXmlPath())){
             @mkdir($this->getXmlPath());
@@ -244,6 +240,4 @@ class Formulaire
 
         return true;
     }
-
-
 }

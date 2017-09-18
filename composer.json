@@ -1,5 +1,5 @@
 {
-  "name": "interinvest/Aspone2Bundle",
+  "name": "interinvest/aspone2bundle",
   "description": "version 2 Aspone",
   "type": "bundle",
   "license": "MIT",
@@ -8,19 +8,13 @@
   },
   "autoload": {
     "psr-4": {
-      "interinvest\\Aspone2Bundle\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "interinvest\\Aspone2Bundle\\Tests\\": "tests/"
+      "InterInvest\\Aspone2Bundle\\": "vendor/interinvest/Aspone2Bundle/"
     }
   },
   "require-dev": {
     "symfony/framework-bundle": ">=2.0",
     "symfony/yaml": ">=2.8",
     "symfony/console": ">=2.8",
-    "jms/serializer": ">= 1.8",
-    "jms/serializer-bundle ": ">= 2.1"
+    "jms/serializer-bundle": "^2.1"
   }
 }

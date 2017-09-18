@@ -73,7 +73,7 @@ class AsponeDeclarationHistoriqueDetail
     /**
      * @var AsponeDeclarationHistorique
      *
-     * @ORM\ManyToOne(targetEntity="AsponeDeclarationHistorique", inversedBy="details")
+     * @ORM\ManyToOne(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique", inversedBy="details")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="declaration_historique_id", referencedColumnName="id")
      * })

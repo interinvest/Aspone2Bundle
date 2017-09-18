@@ -21,6 +21,7 @@ class ListeFormulairesType
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\FormulaireDeclaratifType[]
      * $formulaire
+     * @Serializer\XmlList(inline = true, entry = "formulaire")
      *
      */
     private $formulaire = array(

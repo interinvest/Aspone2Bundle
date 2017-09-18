@@ -73,16 +73,12 @@ class AsponeDepositHistoriqueDetail
     /**
      * @var AsponeDepositHistorique
      *
-     * @ORM\ManyToOne(targetEntity="AsponeDepositHistorique", inversedBy="details")
+     * @ORM\ManyToOne(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDepositHistorique", inversedBy="details")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="deposit_historique_id", referencedColumnName="id")
      * })
      */
     private $depositHistorique;
-
-
-
-
 
 
 

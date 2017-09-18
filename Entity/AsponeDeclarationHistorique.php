@@ -69,7 +69,7 @@ class AsponeDeclarationHistorique
     private $declaration;
 
     /**
-     * @ORM\OneToMany(targetEntity="AsponeDeclarationHistoriqueDetail", mappedBy="declarationHistorique")
+     * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistoriqueDetail", mappedBy="declarationHistorique")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id", referencedColumnName="declaration_historique_id")
      * })

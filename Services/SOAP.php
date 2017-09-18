@@ -8,21 +8,21 @@
 
 namespace InterInvest\Aspone2Bundle\Services;
 
-
-use Ii\Aspone2Bundle\SoapClient\SoapClient;
-use Symfony\Component\DependencyInjection\Container;
+use II\Bundle\SoapBundle\SoapClient\SoapClient;
+use Symfony\Component\HttpKernel\Kernel;
 
 class SOAP
 {
-    private $container;
+    /* @var $kernel Kernel */
+    private $kernel;
     private $soap;
 
 
 
 
-    public function __construct(Container $container)
+    public function __construct(Kernel $kernel)
     {
-        $this->container = $container;
+        $this->kernel = $kernel;
         $this->initSoap();
     }
 
@@ -31,21 +31,21 @@ class SOAP
     {
         $options = array(
             'soap_version' => SOAP_1_1,
-            'stream_context' => $this->container->getParameter('aspone.context'),
+            'stream_context' => $this->kernel->getContainer()->getParameter('aspone.context'),
             'authentification' => SOAP_AUTHENTICATION_BASIC,
             'trace' => 1
         );
-        $soap = new SoapClient($this->container->getParameter('aspone.wsdl.monitoring'), $options);
+        $soap = new SoapClient($this->kernel->getContainer()->getParameter('aspone.wsdl.monitoring'), $options);
 
-        $soap->setContext($this->container->getParameter('aspone.context'));
-        $soap->setContextLogin($this->container->getParameter('aspone.contextLogin'));
-        $soap->setContextPassword($this->container->getParameter('aspone.contextPassword'));
-        $soap->setPassword($this->container->getParameter('aspone.password'));
-        $soap->setUsername($this->container->getParameter('aspone.username'));
-        $soap->setService($this->container->getParameter('aspone.serviceVersion.0'));
+        $soap->setContext($this->kernel->getContainer()->getParameter('aspone.context'));
+        $soap->setContextLogin($this->kernel->getContainer()->getParameter('aspone.contextLogin'));
+        $soap->setContextPassword($this->kernel->getContainer()->getParameter('aspone.contextPassword'));
+        $soap->setPassword($this->kernel->getContainer()->getParameter('aspone.password'));
+        $soap->setUsername($this->kernel->getContainer()->getParameter('aspone.username'));
+        $soap->setService($this->kernel->getContainer()->getParameter('aspone.serviceVersion.0'));
         $soap->setServiceVersion('1.0');
         $soap->setSoapHeaders();
-        $soap->__setLocation($this->container->getParameter('aspone.location.monitoring'));
+        $soap->__setLocation($this->kernel->getContainer()->getParameter('aspone.location.monitoring'));
 
         $this->soap = $soap;
     }
