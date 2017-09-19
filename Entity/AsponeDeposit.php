@@ -1,6 +1,6 @@
 <?php
 
-namespace InterInvest\Aspone2Bundle\Entity;
+namespace interinvest\aspone2bundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
