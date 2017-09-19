@@ -4,7 +4,8 @@
   "type": "symfony-bundle",
   "license": "MIT",
   "require": {
-    "symfony/http-kernel": ">=2.8"
+    "symfony/http-kernel": ">=2.8",
+    "jms/serializer": ">=1.8.1"
   },
   "autoload": {
     "psr-4": {
@@ -14,7 +15,6 @@
   "require-dev": {
     "symfony/framework-bundle": ">=2.0",
     "symfony/yaml": ">=2.8",
-    "symfony/console": ">=2.8",
-    "jms/serializer-bundle": "^2.1"
+    "symfony/console": ">=2.8"
   }
 }
