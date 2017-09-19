@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Interinvest\\Aspone2Bundle\\": "vendor/interinvest/aspone2bundle/"
+      "InterInvest\\Aspone2Bundle\\": "vendor/interinvest/aspone2bundle/"
     }
   },
   "require-dev": {
