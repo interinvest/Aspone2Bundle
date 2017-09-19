@@ -6,7 +6,7 @@
  * Time: 09:54
  */
 
-namespace interinvest\aspone2bundle\Entity;
+namespace InterInvest\Aspone2Bundle\Entity;
 
 
 trait TraitDeclarable
