@@ -5,7 +5,8 @@
   "license": "MIT",
   "require": {
     "symfony/http-kernel": ">=2.8",
-    "jms/serializer": ">=1.8.1"
+    "jms/serializer": ">=1.8.1",
+    "jms/serializer-bundle": "^2.1"
   },
   "autoload": {
     "psr-4": {
