@@ -38,7 +38,7 @@ class Dictionnaire
 
     public function parseFichier()
     {
-        foreach (glob($this->kernel->locateResource('@Aspone2Bundle/Resources/dictionnaires/*'.$this->groupe.'*.csv')) as $filename) {
+        foreach (glob($this->kernel->locateResource('@Aspone2Bundle/Resources/dictionnaires/').'*'.$this->groupe.'*.csv') as $filename) {
             if (($handle = fopen($filename, "r")) !== FALSE) {
                 while (($line = fgetcsv($handle, 1000, ",")) !== FALSE) {
                     $line = explode(';', $line[0]);

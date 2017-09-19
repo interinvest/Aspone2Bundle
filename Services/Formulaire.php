@@ -217,7 +217,11 @@ class Formulaire
 
     public function getXmlByFile()
     {
-        return file_get_contents($this->getXmlPath().'/'.$this->declarable->getId() . '.xml');
+        if(file_exists($this->getXmlPath().'/'.$this->declarable->getId() . '.xml')) {
+            return file_get_contents($this->getXmlPath() . '/' . $this->declarable->getId() . '.xml');
+        } else {
+            return false;
+        }
     }
 
 
