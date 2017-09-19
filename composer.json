@@ -1,7 +1,7 @@
 {
   "name": "interinvest/aspone2bundle",
   "description": "version 2 Aspone",
-  "type": "bundle",
+  "type": "symfony-bundle",
   "license": "MIT",
   "require": {
     "symfony/http-kernel": ">=2.8"
