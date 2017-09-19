@@ -1,6 +1,6 @@
 <?php
 
-namespace interinvest\aspone2bundle\Entity;
+namespace InterInvest\Aspone2Bundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
