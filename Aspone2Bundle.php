@@ -6,7 +6,7 @@
  * Time: 11:44
  */
 
-namespace interinvest\aspone2bundle;
+namespace I nterinvest\Aspone2Bundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use InterInvest\Aspone2Bundle\DependencyInjection\Aspone2Extension;
