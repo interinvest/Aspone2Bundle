@@ -169,12 +169,14 @@ class Formulaire
             $noeudForm = new $cheminFormulaireType();
             $noeudForm->setMillesime($this->declarable->getMillesime());
 
-            foreach($zones as $zone => $valeurs){
+            foreach($zones as $zone => $baliseXML){
                 $cheminZoneType = $cheminBase . "\\ZoneType";
                 $noeudZone = new $cheminZoneType();
-                foreach($valeurs as $valeur) {
-                    $noeudZone->setId($zone);
-                    $noeudZone->{"set". ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower($valeur)) . ucfirst(strtolower($zone))}());
+                foreach($baliseXML as $valeurs) {
+                    foreach(explode(',', $valeurs) as $valeur) {
+                        $noeudZone->setId($zone);
+                        $noeudZone->{"set" . ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . ucfirst(strtolower($zone))}());
+                    }
                 }
                 if(!empty($noeudZone)) {
                     $noeudForm->addToZone($noeudZone);
