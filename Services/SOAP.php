@@ -8,35 +8,33 @@
 
 namespace InterInvest\Aspone2Bundle\Services;
 
-use II\Bundle\SoapBundle\SoapClient\SoapClient;
+use InterInvest\Aspone2Bundle\Services\SoapClient\SoapClientBuilder;
 use Symfony\Component\HttpKernel\Kernel;
+use InterInvest\Aspone2Bundle\Services\SoapClient\SoapClient;
 
 class SOAP
 {
     /* @var $kernel Kernel */
     private $kernel;
+    /* @var $soap SoapClient */
     private $soap;
-
-
 
 
     public function __construct(Kernel $kernel)
     {
         $this->kernel = $kernel;
-        $this->initSoap();
     }
 
 
-    private function initSoap()
+    public function initSoap()
     {
-        $options = array(
-            'soap_version' => SOAP_1_1,
-            'stream_context' => $this->kernel->getContainer()->getParameter('aspone.context'),
-            'authentification' => SOAP_AUTHENTICATION_BASIC,
-            'trace' => 1
-        );
-        $soap = new SoapClient($this->kernel->getContainer()->getParameter('aspone.wsdl.monitoring'), $options);
+        $builder = new SoapClientBuilder($this->kernel->getContainer()->getParameter('aspone.wsdl.teledeclarations'), array('debug'=>false));
+        $builder->withMtomAttachments();
+        $builder->withTrace(true);
+        $builder->withWsdl($this->kernel->getContainer()->getParameter('aspone.wsdl.teledeclarations'));
 
+        /* @var $soap SoapClient */
+        $soap = $builder->build();
         $soap->setContext($this->kernel->getContainer()->getParameter('aspone.context'));
         $soap->setContextLogin($this->kernel->getContainer()->getParameter('aspone.contextLogin'));
         $soap->setContextPassword($this->kernel->getContainer()->getParameter('aspone.contextPassword'));
@@ -50,6 +48,9 @@ class SOAP
         $this->soap = $soap;
     }
 
+    /**
+     * @return SoapClient
+     */
     public function getSoap()
     {
         return $this->soap;

@@ -16,57 +16,48 @@ class Deposit
     private $em;
     /* @var $sFormulaire Formulaire */
     private $sFormulaire;
+    /* @var $sSOAP SOAP */
+    private $sSOAP;
+    /* @var $deposit AsponeDeposit */
+    private $deposit;
 
-    private $type;
-    private $test;
-
-    public function __construct(EntityManager $em, Formulaire $sFormulaire)
+    public function __construct(EntityManager $em, Formulaire $sFormulaire, SOAP $sSOAP)
     {
         $this->em = $em;
         $this->sFormulaire = $sFormulaire;
+        $this->sSOAP = $sSOAP;
     }
 
 
-    public function init($type, $test)
+    public function init(AsponeDeposit $deposit)
     {
-        $this->type = $type;
-        $this->test = $test;
+        $this->deposit = $deposit;
     }
 
-    public function createDeposit($declarations)
-    {
-        /* @var $deposit AsponeDeposit */
-        $deposit = new AsponeDeposit();
-        $deposit->setEtat(0)
-            ->setIsTest($this->test)
-            ->setType($this->type);
-
-        $i = 0;
-        foreach($declarations as $declaration) {
-
-            $this->sFormulaire->init($declaration);
-            if($this->sFormulaire->saveXml()){
-                $deposit->addDeclaration($declaration);
-                $i++;
-            }
-
-            if($i == 100){
-                $this->em->persist($deposit);
-                $i = 0;
-
-                $deposit = new AsponeDeposit();
-                $deposit->setEtat(0)
-                    ->setIsTest($this->test)
-                    ->setType($this->type);
-            }
-        }
-        $this->em->persist($deposit);
-        $this->em->flush();
-    }
-
-
+    /* @var $deposit AsponeDeposit */
     public function sendDeposit()
     {
+        $xml = "";
+        foreach($this->deposit->getDeclarations() as $declaration){
+            $this->sFormulaire->init($declaration);
+            $xml .= $this->sFormulaire->getXml();
+        }
 
+        $this->sSOAP->initSoap();
+        $soap = $this->sSOAP->getSoap();
+        $soap->addDocument('Depot ' . $this->deposit->getType(), $this->deposit->getType(), $xml);
+
+        $response = $soap->getResponse();
+        if ($response) {
+            $this->deposit->setDateEnvoi(new \DateTime());
+            $this->deposit->setRetourImmediat(strpos($response, 'SUCCESS') === 0 ? AsponeDeposit::ETAT_OK : AsponeDeposit::ETAT_ERREUR);
+            $identif = str_replace(array('SUCCESS', 'ERROR'), '', $response);
+            $this->deposit->setIdentifiant($identif);
+            $this->deposit->setEtat(AsponeDeposit::ETAT_NON_FINI);
+
+            return $response;
+        }
+
+        return false;
     }
 }

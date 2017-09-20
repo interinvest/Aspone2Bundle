@@ -11,4 +11,4 @@ services:
         arguments: ["@kernel"]
     aspone.services.deposit:
         class: InterInvest\Aspone2Bundle\Services\Deposit
-        arguments: ["@doctrine.orm.entity_manager", "@aspone.services.formulaire"]
+        arguments: ["@doctrine.orm.entity_manager", "@aspone.services.formulaire", "@aspone.services.soap"]
