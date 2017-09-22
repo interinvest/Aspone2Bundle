@@ -9,6 +9,3 @@ services:
     aspone.services.soap:
         class: InterInvest\Aspone2Bundle\Services\SOAP
         arguments: ["@kernel"]
-    aspone.services.deposit:
-        class: InterInvest\Aspone2Bundle\Services\Deposit
-        arguments: ["@doctrine.orm.entity_manager", "@aspone.services.formulaire", "@aspone.services.soap"]

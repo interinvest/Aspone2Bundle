@@ -168,7 +168,6 @@ class Formulaire
             $cheminFormulaireType = in_array($formulaire, ["T-IDENTIF","F-IDENTIF"]) ? $cheminBase."\\FormulaireType" : $cheminBase."\\FormulaireDeclaratifType";
             $noeudForm = new $cheminFormulaireType();
             $noeudForm->setMillesime($this->declarable->getMillesime());
-
             foreach($zones as $zone => $baliseXML){
                 $cheminZoneType = $cheminBase . "\\ZoneType";
                 $noeudZone = new $cheminZoneType();
@@ -196,6 +195,7 @@ class Formulaire
 
         $serializer = SerializerBuilder::create()->build();
         $xml = $serializer->serialize($xmlEdi, 'xml');
+
 
         // on supprime les élements vide
         $doc = new \DOMDocument();

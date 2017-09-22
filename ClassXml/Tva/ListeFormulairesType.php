@@ -2,6 +2,8 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+
+use JMS\Serializer\Annotation as Serializer;
 /**
  * Class representing ListeFormulairesType
  *
@@ -18,8 +20,8 @@ class ListeFormulairesType
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\FormulaireDeclaratifType[]
-     * $formulaire
      *
+     * @Serializer\XmlList(inline = true, entry = "formulaire")
      */
     private $formulaire = array(
         

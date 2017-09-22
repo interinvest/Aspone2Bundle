@@ -10,7 +10,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
  * AsponeDeposit
  *
  * @ORM\Table(name="aspone_deposit")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="InterInvest\Aspone2Bundle\Repository\AsponeDepositRepository")
  */
 class AsponeDeposit
 {
@@ -302,41 +302,6 @@ class AsponeDeposit
     public function getIstest()
     {
         return $this->istest;
-    }
-
-    /**
-     * Add declaration
-     *
-     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeclaration $declaration
-     *
-     * @return AsponeDeposit
-     */
-    public function addDeclaration(\InterInvest\Aspone2Bundle\Entity\AsponeDeclaration $declaration)
-    {
-        $this->declarations[] = $declaration;
-        $declaration->setDeposit($this);
-
-        return $this;
-    }
-
-    /**
-     * Remove declaration
-     *
-     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeclaration $declaration
-     */
-    public function removeDeclaration(\InterInvest\Aspone2Bundle\Entity\AsponeDeclaration $declaration)
-    {
-        $this->declarations->removeElement($declaration);
-    }
-
-    /**
-     * Get declarations
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getDeclarations()
-    {
-        return $this->declarations;
     }
 
     /**

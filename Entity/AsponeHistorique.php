@@ -7,18 +7,10 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * AsponeHistorique
  *
+ * @ORM\MappedSuperclass()
  */
 abstract class AsponeHistorique
 {
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $id;
 
     /**
      * @var string
@@ -55,17 +47,27 @@ abstract class AsponeHistorique
      */
     private $date;
 
+    /**
+     * @var AsponeDeposit
+     *
+     * @ORM\ManyToOne(targetEntity="AsponeDeposit", inversedBy="historiques")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="deposit_id", referencedColumnName="id")
+     * })
+     */
+    private $deposit;
 
 
     /**
-     * Get id
+     * @var AsponeDeclaration
      *
-     * @return integer
+     * @ORM\ManyToOne(targetEntity="AsponeDeclaration", inversedBy="historiques")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="declaration_id", referencedColumnName="id")
+     * })
      */
-    public function getId()
-    {
-        return $this->id;
-    }
+    private $declaration;
+
 
     /**
      * Set name
@@ -185,5 +187,54 @@ abstract class AsponeHistorique
     public function getDate()
     {
         return $this->date;
+    }
+
+    /**
+     * Set deposit
+     *
+     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeposit $deposit
+     *
+     *
+     */
+    public function setDeposit(\InterInvest\Aspone2Bundle\Entity\AsponeDeposit $deposit = null)
+    {
+        $this->deposit = $deposit;
+
+        return $this;
+    }
+
+    /**
+     * Get deposit
+     *
+     * @return \InterInvest\Aspone2Bundle\Entity\AsponeDeposit
+     */
+    public function getDeposit()
+    {
+        return $this->deposit;
+    }
+
+
+    /**
+     * Set declaration
+     *
+     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeclaration $declaration
+     *
+     *
+     */
+    public function setDeclaration(\InterInvest\Aspone2Bundle\Entity\AsponeDeclaration $declaration = null)
+    {
+        $this->declaration = $declaration;
+
+        return $this;
+    }
+
+    /**
+     * Get declaration
+     *
+     * @return \InterInvest\Aspone2Bundle\Entity\AsponeDeclaration
+     */
+    public function getDeclaration()
+    {
+        return $this->declaration;
     }
 }

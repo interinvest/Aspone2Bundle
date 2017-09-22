@@ -2,6 +2,10 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+
+
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing FormulaireDeclaratifType
  *
@@ -13,6 +17,7 @@ class FormulaireDeclaratifType extends FormulaireType
 
     /**
      * @property string $nom
+     * @Serializer\XmlAttribute()
      */
     private $nom = null;
 

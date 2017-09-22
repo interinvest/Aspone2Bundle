@@ -12,16 +12,15 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class AsponeDepositHistorique extends AsponeHistorique
 {
-
     /**
-     * @var AsponeDeposit
+     * @var integer
      *
-     * @ORM\ManyToOne(targetEntity="AsponeDeposit", inversedBy="historiques")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="deposit_id", referencedColumnName="id")
-     * })
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $deposit;
+    private $id;
+
 
     /**
      * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDepositHistoriqueDetail", mappedBy="depositHistorique")
@@ -41,28 +40,15 @@ class AsponeDepositHistorique extends AsponeHistorique
 
 
     /**
-     * Set deposit
+     * Get id
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeposit $deposit
-     *
-     * @return AsponeDepositHistorique
+     * @return integer
      */
-    public function setDeposit(\InterInvest\Aspone2Bundle\Entity\AsponeDeposit $deposit = null)
+    public function getId()
     {
-        $this->deposit = $deposit;
-
-        return $this;
+        return $this->id;
     }
 
-    /**
-     * Get deposit
-     *
-     * @return \InterInvest\Aspone2Bundle\Entity\AsponeDeposit
-     */
-    public function getDeposit()
-    {
-        return $this->deposit;
-    }
 
     /**
      * Add detail

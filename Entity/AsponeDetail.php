@@ -7,18 +7,11 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * AsponeDetail
+ *
+ * @ORM\MappedSuperclass()
  */
-abstract class AsponeDetail
+class AsponeDetail
 {
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $id;
 
     /**
      * @var string
@@ -70,16 +63,27 @@ abstract class AsponeDetail
     private $date;
 
 
+    /**
+     * @var AsponeDepositHistorique
+     *
+     * @ORM\ManyToOne(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDepositHistorique", inversedBy="details")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="deposit_historique_id", referencedColumnName="id")
+     * })
+     */
+    private $depositHistorique;
+
 
     /**
-     * Get id
+     * @var AsponeDeclarationHistorique
      *
-     * @return integer
+     * @ORM\ManyToOne(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique", inversedBy="details")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="declaration_historique_id", referencedColumnName="id")
+     * })
      */
-    public function getId()
-    {
-        return $this->id;
-    }
+    private $declarationHistorique;
+
 
     /**
      * Set name
@@ -247,5 +251,53 @@ abstract class AsponeDetail
     public function getDate()
     {
         return $this->date;
+    }
+
+    /**
+     * Set depositHistorique
+     *
+     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDepositHistorique $depositHistorique
+     *
+     *
+     */
+    public function setDepositHistorique(\InterInvest\Aspone2Bundle\Entity\AsponeDepositHistorique $depositHistorique = null)
+    {
+        $this->depositHistorique = $depositHistorique;
+
+        return $this;
+    }
+
+    /**
+     * Get depositHistorique
+     *
+     * @return \InterInvest\Aspone2Bundle\Entity\AsponeDepositHistorique
+     */
+    public function getDepositHistorique()
+    {
+        return $this->depositHistorique;
+    }
+
+    /**
+     * Set declarationHistorique
+     *
+     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $declarationHistorique
+     *
+     *
+     */
+    public function setDeclarationHistorique(\InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $declarationHistorique = null)
+    {
+        $this->declarationHistorique = $declarationHistorique;
+
+        return $this;
+    }
+
+    /**
+     * Get declarationHistorique
+     *
+     * @return \InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique
+     */
+    public function getDeclarationHistorique()
+    {
+        return $this->declarationHistorique;
     }
 }

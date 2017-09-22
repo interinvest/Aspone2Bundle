@@ -13,39 +13,27 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class AsponeDeclarationHistoriqueDetail extends AsponeDetail
 {
-    /**
-     * @var AsponeDeclarationHistorique
-     *
-     * @ORM\ManyToOne(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique", inversedBy="details")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="declaration_historique_id", referencedColumnName="id")
-     * })
-     */
-    private $declarationHistorique;
-
-
 
     /**
-     * Set declarationHistorique
+     * @var integer
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $declarationHistorique
-     *
-     * @return AsponeDeclarationHistoriqueDetail
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    public function setDeclarationHistorique(\InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $declarationHistorique = null)
+    private $id;
+
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
     {
-        $this->declarationHistorique = $declarationHistorique;
-
-        return $this;
+        return $this->id;
     }
 
-    /**
-     * Get declarationHistorique
-     *
-     * @return \InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique
-     */
-    public function getDeclarationHistorique()
-    {
-        return $this->declarationHistorique;
-    }
+
 }

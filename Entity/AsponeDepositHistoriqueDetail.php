@@ -12,38 +12,25 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class AsponeDepositHistoriqueDetail extends AsponeDetail
 {
+
     /**
-     * @var AsponeDepositHistorique
+     * @var integer
      *
-     * @ORM\ManyToOne(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDepositHistorique", inversedBy="details")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="deposit_historique_id", referencedColumnName="id")
-     * })
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $depositHistorique;
+    private $id;
 
 
     /**
-     * Set depositHistorique
+     * Get id
      *
-     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDepositHistorique $depositHistorique
-     *
-     * @return AsponeDepositHistoriqueDetail
+     * @return integer
      */
-    public function setDepositHistorique(\InterInvest\Aspone2Bundle\Entity\AsponeDepositHistorique $depositHistorique = null)
+    public function getId()
     {
-        $this->depositHistorique = $depositHistorique;
-
-        return $this;
+        return $this->id;
     }
 
-    /**
-     * Get depositHistorique
-     *
-     * @return \InterInvest\Aspone2Bundle\Entity\AsponeDepositHistorique
-     */
-    public function getDepositHistorique()
-    {
-        return $this->depositHistorique;
-    }
 }

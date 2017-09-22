@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * AsponeDeclaration
- * @ORM\MappedSuperclass
+ *
  */
 abstract class AsponeDeclaration
 {
