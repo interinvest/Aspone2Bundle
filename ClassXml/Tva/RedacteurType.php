@@ -2,6 +2,8 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+
+use JMS\Serializer\Annotation as Serializer;
 /**
  * Class representing RedacteurType
  *
@@ -13,31 +15,37 @@ class RedacteurType
 
     /**
      * @property string $siret
+     * @Serializer\SerializedName("Siret")
      */
     private $siret = null;
 
     /**
      * @property string $designation
+     * @Serializer\SerializedName("Designation")
      */
     private $designation = null;
 
     /**
      * @property string $designationSuite1
+     * @Serializer\SerializedName("DesignationSuite1")
      */
     private $designationSuite1 = null;
 
     /**
      * @property string $designationSuite2
+     * @Serializer\SerializedName("DesignationSuite2")
      */
     private $designationSuite2 = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\Adresse $adresse
+     * @Serializer\SerializedName("Adresse")
      */
     private $adresse = null;
 
     /**
      * @property string $referenceDossier
+     * @Serializer\SerializedName("ReferenceDossier")
      */
     private $referenceDossier = null;
 

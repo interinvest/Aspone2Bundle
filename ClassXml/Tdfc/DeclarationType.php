@@ -27,16 +27,19 @@ class DeclarationType
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\EmetteurType $emetteur
+     * @Serializer\SerializedName("Emetteur")
      */
     private $emetteur = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\RedacteurType $redacteur
+     * @Serializer\SerializedName("Redacteur")
      */
     private $redacteur = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\RedevableType $redevable
+     * @Serializer\SerializedName("Redevable")
      */
     private $redevable = null;
 
@@ -49,12 +52,14 @@ class DeclarationType
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\DestinataireType[]
      * $listeDestinataires
      * @Serializer\XmlList(inline = false, entry = "Destinataire")
+     * @Serializer\SerializedName("ListeDestinataires")
      */
     private $listeDestinataires = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\ListeFormulairesType
      * $listeFormulaires
+     * @Serializer\SerializedName("ListeFormulaires")
      */
     private $listeFormulaires = null;
 

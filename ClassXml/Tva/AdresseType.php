@@ -15,44 +15,50 @@ class AdresseType
 
     /**
      * @property string $adresseNumero
-     *
+     * @Serializer\SerializedName("AdresseNumero")
      */
     private $adresseNumero = null;
 
     /**
      * @property string $adresseT
+     * @Serializer\SerializedName("AdresseType")
      *
      */
     private $adresseT = null;
 
     /**
      * @property string $adresseVoie
-     * @Serializer\SerializedName("AdresseType")
+     * @Serializer\SerializedName("AdresseVoie")
      */
     private $adresseVoie = null;
 
     /**
      * @property string $adresseComplement
+     * @Serializer\SerializedName("AdresseComplement")
      */
     private $adresseComplement = null;
 
     /**
      * @property string $adresseHameau
+     * @Serializer\SerializedName("AdresseHammeau")
      */
     private $adresseHameau = null;
 
     /**
      * @property string $adresseCodePostal
+     * @Serializer\SerializedName("AdresseCodePostal")
      */
     private $adresseCodePostal = null;
 
     /**
      * @property string $adresseVille
+     * @Serializer\SerializedName("AdresseVille")
      */
     private $adresseVille = null;
 
     /**
      * @property string $adresseCodePays
+     * @Serializer\SerializedName("AdresseCodePays")
      */
     private $adresseCodePays = null;
 

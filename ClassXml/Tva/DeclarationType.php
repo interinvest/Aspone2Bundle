@@ -27,29 +27,33 @@ class DeclarationType
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\EmetteurType $emetteur
+     * @Serializer\SerializedName("Emetteur")
      */
     private $emetteur = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\RedacteurType $redacteur
+     * @Serializer\SerializedName("Redacteur")
      */
     private $redacteur = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\RedevableType $redevable
+     * @Serializer\SerializedName("Redevable")
      */
     private $redevable = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\PartenaireEdiType
      * $partenaireEdi
+     * @Serializer\SerializedName("PartenaireEdi")
      */
     private $partenaireEdi = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\DestinataireType[]
      * $listeDestinataires
-     * @Serializer\XmlList(inline = false, entry = "Destinataire")
+     * @Serializer\XmlList(inline = false, entry = "ListeDestinataires")
      */
     private $listeDestinataires = null;
 
@@ -57,6 +61,7 @@ class DeclarationType
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\ListeFormulairesType
      * $listeFormulaires
+     * @Serializer\SerializedName("ListeFormulaires")
      */
     private $listeFormulaires = null;
 

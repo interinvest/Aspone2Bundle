@@ -15,13 +15,14 @@ class ListeFormulairesType
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\FormulaireType $identif
+     * @Serializer\SerializedName("Identif")
      */
     private $identif = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\FormulaireDeclaratifType[]
      *
-     * @Serializer\XmlList(inline = true, entry = "formulaire")
+     * @Serializer\XmlList(inline = true, entry = "Formulaire")
      */
     private $formulaire = array(
         

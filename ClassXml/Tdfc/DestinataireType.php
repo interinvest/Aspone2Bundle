@@ -2,6 +2,9 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
 
+
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing DestinataireType
  *
@@ -13,31 +16,37 @@ class DestinataireType
 
     /**
      * @property string $designation
+     * @Serializer\SerializedName("Designation")
      */
     private $designation = null;
 
     /**
      * @property string $identifiant
+     * @Serializer\SerializedName("Identifiant")
      */
     private $identifiant = null;
 
     /**
      * @property string $designationSuite1
+     * @Serializer\SerializedName("DesignationSuite1")
      */
     private $designationSuite1 = null;
 
     /**
      * @property string $designationSuite2
+     * @Serializer\SerializedName("DesignationSuite2")
      */
     private $designationSuite2 = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\Adresse $adresse
+     * @Serializer\SerializedName("Adresse")
      */
     private $adresse = null;
 
     /**
      * @property string $referenceDossier
+     * @Serializer\SerializedName("ReferenceDossier")
      */
     private $referenceDossier = null;
 

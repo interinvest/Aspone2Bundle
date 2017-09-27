@@ -141,7 +141,7 @@ class Formulaire
         $emetteur->setSiret($this->declarable->getEmmeteurSiret())
             ->setDesignation($this->declarable->getEmmeteurDesignation())
             ->setDesignationSuite1($this->declarable->getEmmeteurDesignationSuite1())
-            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'Emetteur'))
+            ->setAdresse($this->getXmlAdresse('Emetteur'))
             ->setReferenceDossier($this->declarable->getEmmeteurReferenceDossier());
         $declaration->setEmetteur($emetteur);
         // - - - Redacteur
@@ -150,7 +150,7 @@ class Formulaire
         $redacteur->setSiret($this->declarable->getRedacteurSiret())
             ->setDesignation($this->declarable->getRedacteurDesignation())
             ->setDesignationSuite1($this->declarable->getRedacteurDesignationSuite())
-            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'Redacteur'));
+            ->setAdresse($this->getXmlAdresse('Redacteur'));
         $declaration->setRedacteur($redacteur);
         // - - - Redevable
         $cheminRedevable = $this->getPathClassXml()."\\RedevableType";
@@ -158,7 +158,7 @@ class Formulaire
         $redevable->setIdentifiant($this->declarable->getRedevableIdentifiant())
             ->setDesignation($this->declarable->getRedevableDesignation())
             ->setDesignationSuite1($this->declarable->getRedevableDesignationSuite1())
-            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'Redevable'))
+            ->setAdresse($this->getXmlAdresse('Redevable'))
             ->setReferenceDossier($this->declarable->getRedevableReferenceDossier())
             ->setRof($this->declarable->getRedevableROF());
         $declaration->setRedevable($redevable);
@@ -168,7 +168,7 @@ class Formulaire
         $partenaireEdi->setIdentifiant($this->declarable->getPartenaireEdiIdentifiant())
             ->setDesignation($this->declarable->getPartenaireEdiDesignation())
             ->setDesignationSuite1($this->declarable->getPartenaireEdiDesignationSuite1())
-            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'PartenaireEdi'))
+            ->setAdresse($this->getXmlAdresse('PartenaireEdi'))
             ->setReferenceDossier($this->declarable->getPartenaireEdiReferenceDossier());
         $declaration->setPartenaireEdi($partenaireEdi);
         // - - - ListeDestinataire
@@ -177,7 +177,7 @@ class Formulaire
         $listeDestinataire->setIdentifiant($this->declarable->getDestinataireIdentifiant())
             ->setDesignation($this->declarable->getDestinataireDesignation())
             ->setDesignationSuite1($this->declarable->getDestinataireDesignationSuite1())
-            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'Destinataire'))
+            ->setAdresse($this->getXmlAdresse('Destinataire'))
             ->setReferenceDossier($this->declarable->getDestinataireReferenceDossier());
         $declaration-> addToListeDestinataires($listeDestinataire);
         // - - - ListeFormulaire

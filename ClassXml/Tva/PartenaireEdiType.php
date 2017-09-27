@@ -2,6 +2,10 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tva;
 
+
+use JMS\Serializer\Annotation as Serializer;
+
+
 /**
  * Class representing PartenaireEdiType
  *
@@ -13,26 +17,31 @@ class PartenaireEdiType
 
     /**
      * @property string $identifiant
+     * @Serializer\SerializedName("Identifiant")
      */
     private $identifiant = null;
 
     /**
      * @property string $designation
+     * @Serializer\SerializedName("Designation")
      */
     private $designation = null;
 
     /**
      * @property string $designationSuite1
+     * @Serializer\SerializedName("DesignationSuite1")
      */
     private $designationSuite1 = null;
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\Adresse $adresse
+     * @Serializer\SerializedName("Adresse")
      */
     private $adresse = null;
 
     /**
      * @property string $referenceDossier
+     * @Serializer\SerializedName("ReferenceDossier")
      */
     private $referenceDossier = null;
 

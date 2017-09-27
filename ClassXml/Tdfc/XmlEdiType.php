@@ -23,6 +23,7 @@ class XmlEdiType
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\GroupeFonctionnelType
      * $groupeFonctionnel
+     * @Serializer\SerializedName("GroupeFonctionnel")
      */
     private $groupeFonctionnel = null;
 
