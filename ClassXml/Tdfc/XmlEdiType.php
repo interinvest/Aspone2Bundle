@@ -9,7 +9,7 @@ use JMS\Serializer\Annotation as Serializer;
  *
  *
  * XSD Type: XmlEdi
- * @Serializer\XmlRoot("XmlEdi")
+ * @Serializer\XmlDiscriminator(cdata=false)
  */
 class XmlEdiType
 {

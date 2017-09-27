@@ -24,6 +24,7 @@ class XmlEdiType
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\GroupeFonctionnelType
      * $groupeFonctionnel
+     * @Serializer\SerializedName("GroupeFonctionnel")
      */
     private $groupeFonctionnel = null;
 
