@@ -28,22 +28,23 @@ class SOAP
 
     public function initSoap()
     {
-        $builder = new SoapClientBuilder($this->kernel->getContainer()->getParameter('aspone.wsdl.teledeclarations'), array('debug'=>false));
+        $beSimpleTeledeclaration = $this->kernel->getContainer()->get('besimple.soap.client.builder.teledeclarations');
+        $builder = new SoapClientBuilder($beSimpleTeledeclaration->getWsdl(), array('debug'=>false));
         $builder->withMtomAttachments();
-        $builder->withTrace(true);
-        $builder->withWsdl($this->kernel->getContainer()->getParameter('aspone.wsdl.teledeclarations'));
-
+        $builder->withTrace(1);
+        $builder->withWsdl($beSimpleTeledeclaration->getWsdl());
+        $builder->withSoapVersion11();
         /* @var $soap SoapClient */
         $soap = $builder->build();
-        $soap->setContext($this->kernel->getContainer()->getParameter('aspone.context'));
-        $soap->setContextLogin($this->kernel->getContainer()->getParameter('aspone.contextLogin'));
-        $soap->setContextPassword($this->kernel->getContainer()->getParameter('aspone.contextPassword'));
-        $soap->setPassword($this->kernel->getContainer()->getParameter('aspone.password'));
-        $soap->setUsername($this->kernel->getContainer()->getParameter('aspone.username'));
-        $soap->setService($this->kernel->getContainer()->getParameter('aspone.serviceVersion.0'));
-        $soap->setServiceVersion('1.0');
+        $soap->setContextLogin($this->kernel->getContainer()->getParameter('aspone2.contextLogin'));
+        $soap->setContextPassword($this->kernel->getContainer()->getParameter('aspone2.contextPassword'));
+        $soap->setPassword($this->kernel->getContainer()->getParameter('aspone2.password'));
+        $soap->setUsername($this->kernel->getContainer()->getParameter('aspone2.username'));
+        //$soap->setServiceVersion('1.1');
+        $soap->setContext($this->kernel->getContainer()->getParameter('aspone2.context'));
+        $soap->setService(SOAP_1_1);
         $soap->setSoapHeaders();
-        $soap->__setLocation($this->kernel->getContainer()->getParameter('aspone.location.monitoring'));
+        $soap->__setLocation("http://aspone.fr/mb/webservices");
 
         $this->soap = $soap;
     }

@@ -11,7 +11,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 abstract class AsponeDeclaration
 {
-
     /**
      * @var integer
      *
@@ -315,30 +314,6 @@ abstract class AsponeDeclaration
     }
 
     /**
-     * Set deposit
-     *
-     * @param AsponeDeposit $deposit
-     *
-     * @return AsponeDeclaration
-     */
-    public function setDeposit(\InterInvest\Aspone2Bundle\Entity\AsponeDeposit $deposit = null)
-    {
-        $this->deposit = $deposit;
-
-        return $this;
-    }
-
-    /**
-     * Get deposit
-     *
-     * @return AsponeDeposit
-     */
-    public function getDeposit()
-    {
-        return $this->deposit;
-    }
-
-    /**
      * Add historique
      *
      * @param AsponeDeclarationHistorique $historique
@@ -370,5 +345,30 @@ abstract class AsponeDeclaration
     public function getHistoriques()
     {
         return $this->historiques;
+    }
+
+
+    /**
+     * Set deposit
+     *
+     * @param AsponeDeposit $deposit
+     *
+     * @return AsponeDeclaration
+     */
+    public function setDeposit(AsponeDeposit $deposit = null)
+    {
+        $this->deposit = $deposit;
+
+        return $this;
+    }
+
+    /**
+     * Get deposit
+     *
+     * @return AsponeDeposit
+     */
+    public function getDeposit()
+    {
+        return $this->deposit;
     }
 }

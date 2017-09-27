@@ -10,7 +10,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
  * AsponeDeposit
  *
  * @ORM\Table(name="aspone_deposit")
- * @ORM\Entity(repositoryClass="InterInvest\Aspone2Bundle\Repository\AsponeDepositRepository")
+ * @ORM\Entity()
  */
 class AsponeDeposit
 {
@@ -85,6 +85,11 @@ class AsponeDeposit
      */
     private $istest = false;
 
+
+    /**
+     * @var ArrayCollection
+     */
+    protected $declarations;
 
     /**
      * @var ArrayCollection
@@ -303,6 +308,23 @@ class AsponeDeposit
     {
         return $this->istest;
     }
+
+
+    /**
+     * Add declaration
+     *
+     * @param AsponeDeclaration $declaration
+     *
+     * @return AsponeDeposit
+     */
+    public function addDeclaration(AsponeDeclaration $declaration)
+    {
+        $this->declarations[] = $declaration;
+        $declaration->setDeposit($this);
+
+        return $this;
+    }
+
 
     /**
      * Add historique

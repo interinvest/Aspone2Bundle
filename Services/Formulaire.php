@@ -46,46 +46,61 @@ class Formulaire
 
     }
 
-
-    public function getXmlAdresse($cheminBase, $name)
+    public function getPathClassXml()
     {
-        $cheminAdresseNumero = $cheminBase."\\AdresseNumero";
+        return "InterInvest\\Aspone2Bundle\\ClassXml\\".ucfirst(strtolower($this->declarable->getGroupe()));
+    }
+
+    public function getXml()
+    {
+        if(file_exists($this->getXmlPath().'/'.$this->declarable->getId() . '.xml')) {
+            $xml = file_get_contents($this->getXmlPath() . '/' . $this->declarable->getId() . '.xml');
+        } else {
+            $xml = $this->getSerializeXml($this->getRootXml());
+        }
+
+        return $xml;
+    }
+
+    public function getXmlAdresse($name)
+    {
+        $cheminAdresseNumero = $this->getPathClassXml()."\\AdresseNumero";
         $getAdresseNumero = "get'.$name.'AdresseNumero";
         $adresseNumero = new $cheminAdresseNumero($this->declarable->$getAdresseNumero());
 
         if($name == 'TVA') {
-            $cheminAdresseType = $cheminBase . "\\AdresseT";
+            $cheminAdresseType = $this->getPathClassXml() . "\\AdresseT";
         } else {
-            $cheminAdresseType = $cheminBase . "\\AdresseType";
+            $cheminAdresseType = $this->getPathClassXml() . "\\AdresseType";
         }
         $getAdresseType = "get'.$name.'AdresseType";
         $adresseType = new $cheminAdresseType($this->declarable->$getAdresseType());
 
-        $cheminAdresseVoie = $cheminBase."\\AdresseVoie";
+        $cheminAdresseVoie = $this->getPathClassXml()."\\AdresseVoie";
         $getAdresseVoie = "get".$name."AdresseVoie";
         $adresseVoie = new $cheminAdresseVoie($this->declarable->$getAdresseVoie());
 
-        $cheminAdresseComplement = $cheminBase."\\AdresseComplement";
+        $cheminAdresseComplement = $this->getPathClassXml()."\\AdresseComplement";
         $getAdresseComplement = "get".$name."AdresseComplement";
         $adresseComplement = new $cheminAdresseComplement($this->declarable->$getAdresseComplement());
 
-        $cheminAdresseHameau = $cheminBase."\\AdresseHameau";
+        $cheminAdresseHameau = $this->getPathClassXml()."\\AdresseHameau";
         $getAdresseHameau = "get".$name."AdresseHameau";
         $adresseHameau = new $cheminAdresseHameau($this->declarable->$getAdresseHameau());
 
-        $cheminAdresseCodePostal = $cheminBase."\\AdresseCodePostal";
+        $cheminAdresseCodePostal = $this->getPathClassXml()."\\AdresseCodePostal";
         $getAdresseCodePostal = "get".$name."AdresseCodePostal";
         $adresseCodePostal = new $cheminAdresseCodePostal($this->declarable->$getAdresseCodePostal());
 
-        $cheminAdresseVille = $cheminBase."\\AdresseVille";
+        $cheminAdresseVille = $this->getPathClassXml()."\\AdresseVille";
         $getAdresseVille = "get".$name."AdresseVille";
         $adresseVille = new $cheminAdresseVille($this->declarable->$getAdresseVille());
 
-        $cheminAdresseCodePays = $cheminBase."\\AdresseCodePays";
+        $cheminAdresseCodePays = $this->getPathClassXml()."\\AdresseCodePays";
         $getAdresseCodePays = "get".$name."AdresseCodePays";
         $adresseCodePays = new $cheminAdresseCodePays($this->declarable->$getAdresseCodePays());
 
-        $cheminAdresse = $cheminBase."\\Adresse";
+        $cheminAdresse = $this->getPathClassXml()."\\Adresse";
         $adresse = new $cheminAdresse();
         $adresse->setAdresseNumero($adresseNumero)
             ->setAdresseT($adresseType)
@@ -99,77 +114,83 @@ class Formulaire
         return $adresse;
     }
 
-    public function getXml()
+    public function getRootXml()
     {
-        $cheminBase = "InterInvest\\Aspone2Bundle\\ClassXml\\".ucfirst(strtolower($this->declarable->getGroupe()));
-
         // XmlEdi
-        $cheminXmlEdi = $cheminBase."\\XmlEdi";
+        $cheminXmlEdi = $this->getPathClassXml()."\\XmlEdi";
         $xmlEdi = new $cheminXmlEdi();
         $xmlEdi->setTest(1);
         // - GroupeFonctionnel
-        $cheminGroupeFonctionnel = $cheminBase."\\GroupeFonctionnelType";
+        $cheminGroupeFonctionnel = $this->getPathClassXml()."\\GroupeFonctionnelType";
         $groupeFonctionnel = new $cheminGroupeFonctionnel();
         $xmlEdi->setGroupeFonctionnel($groupeFonctionnel);
+
+        $groupeFonctionnel->setDeclaration([$this->getXmlElementDeclaration()]);
+
+        return $xmlEdi;
+    }
+
+    public function getXmlElementDeclaration()
+    {
         // - - Declaration
-        $cheminDeclaration = $cheminBase."\\Declaration";
+        $cheminDeclaration = $this->getPathClassXml()."\\Declaration";
         $declaration = new $cheminDeclaration();
         // - - - Emetteur
-        $cheminEmetteur = $cheminBase."\\EmetteurType";
+        $cheminEmetteur = $this->getPathClassXml()."\\EmetteurType";
         $emetteur = new $cheminEmetteur();
         $emetteur->setSiret($this->declarable->getEmmeteurSiret())
             ->setDesignation($this->declarable->getEmmeteurDesignation())
             ->setDesignationSuite1($this->declarable->getEmmeteurDesignationSuite1())
-            ->setAdresse($this->getXmlAdresse($cheminBase, 'Emetteur'))
+            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'Emetteur'))
             ->setReferenceDossier($this->declarable->getEmmeteurReferenceDossier());
         $declaration->setEmetteur($emetteur);
         // - - - Redacteur
-        $cheminRedacteur = $cheminBase."\\RedacteurType";
+        $cheminRedacteur = $this->getPathClassXml()."\\RedacteurType";
         $redacteur = new $cheminRedacteur();
         $redacteur->setSiret($this->declarable->getRedacteurSiret())
             ->setDesignation($this->declarable->getRedacteurDesignation())
             ->setDesignationSuite1($this->declarable->getRedacteurDesignationSuite())
-            ->setAdresse($this->getXmlAdresse($cheminBase, 'Redacteur'));
+            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'Redacteur'));
         $declaration->setRedacteur($redacteur);
         // - - - Redevable
-        $cheminRedevable = $cheminBase."\\RedevableType";
+        $cheminRedevable = $this->getPathClassXml()."\\RedevableType";
         $redevable = new $cheminRedevable();
         $redevable->setIdentifiant($this->declarable->getRedevableIdentifiant())
             ->setDesignation($this->declarable->getRedevableDesignation())
             ->setDesignationSuite1($this->declarable->getRedevableDesignationSuite1())
-            ->setAdresse($this->getXmlAdresse($cheminBase, 'Redevable'))
+            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'Redevable'))
             ->setReferenceDossier($this->declarable->getRedevableReferenceDossier())
             ->setRof($this->declarable->getRedevableROF());
         $declaration->setRedevable($redevable);
         // - - - PartenaireEdi
-        $cheminPartenaireEdi = $cheminBase."\\PartenaireEdiType";
+        $cheminPartenaireEdi = $this->getPathClassXml()."\\PartenaireEdiType";
         $partenaireEdi = new $cheminPartenaireEdi();
         $partenaireEdi->setIdentifiant($this->declarable->getPartenaireEdiIdentifiant())
             ->setDesignation($this->declarable->getPartenaireEdiDesignation())
             ->setDesignationSuite1($this->declarable->getPartenaireEdiDesignationSuite1())
-            ->setAdresse($this->getXmlAdresse($cheminBase, 'PartenaireEdi'))
+            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'PartenaireEdi'))
             ->setReferenceDossier($this->declarable->getPartenaireEdiReferenceDossier());
         $declaration->setPartenaireEdi($partenaireEdi);
         // - - - ListeDestinataire
-        $cheminDestinataireType = $cheminBase."\\DestinataireType";
+        $cheminDestinataireType = $this->getPathClassXml()."\\DestinataireType";
         $listeDestinataire = new $cheminDestinataireType();
         $listeDestinataire->setIdentifiant($this->declarable->getDestinataireIdentifiant())
             ->setDesignation($this->declarable->getDestinataireDesignation())
             ->setDesignationSuite1($this->declarable->getDestinataireDesignationSuite1())
-            ->setAdresse($this->getXmlAdresse($cheminBase, 'Destinataire'))
+            ->setAdresse($this->getXmlAdresse($this->getPathClassXml(), 'Destinataire'))
             ->setReferenceDossier($this->declarable->getDestinataireReferenceDossier());
         $declaration-> addToListeDestinataires($listeDestinataire);
         // - - - ListeFormulaire
-        $cheminDestinataireType = $cheminBase."\\ListeFormulairesType";
+        $cheminDestinataireType = $this->getPathClassXml()."\\ListeFormulairesType";
         $listeFormulaire = new $cheminDestinataireType();
 
-
         foreach($this->sDictionnaire->getZones() as $formulaire => $zones){
-            $cheminFormulaireType = in_array($formulaire, ["T-IDENTIF","F-IDENTIF"]) ? $cheminBase."\\FormulaireType" : $cheminBase."\\FormulaireDeclaratifType";
+            $cheminFormulaireType = in_array($formulaire, ["T-IDENTIF","F-IDENTIF"]) ? $this->getPathClassXml()."\\FormulaireType" : $this->getPathClassXml()."\\FormulaireDeclaratifType";
             $noeudForm = new $cheminFormulaireType();
             $noeudForm->setMillesime($this->declarable->getMillesime());
+
             foreach($zones as $zone => $baliseXML){
-                $cheminZoneType = $cheminBase . "\\ZoneType";
+                $cheminZoneType = $this->getPathClassXml() . "\\ZoneType";
                 $noeudZone = new $cheminZoneType();
                 foreach($baliseXML as $valeurs) {
                     foreach(explode(',', $valeurs) as $valeur) {
@@ -191,10 +212,14 @@ class Formulaire
         }
 
         $declaration->setListeFormulaires($listeFormulaire);
-        $groupeFonctionnel->setDeclaration([$declaration]);
 
+        return $declaration;
+    }
+
+    public function getSerializeXml($xml)
+    {
         $serializer = SerializerBuilder::create()->build();
-        $xml = $serializer->serialize($xmlEdi, 'xml');
+        $xml = $serializer->serialize($xml, 'xml');
 
 
         // on supprime les élements vide
@@ -215,17 +240,6 @@ class Formulaire
 
         return $doc->savexml();
     }
-
-
-    public function getXmlByFile()
-    {
-        if(file_exists($this->getXmlPath().'/'.$this->declarable->getId() . '.xml')) {
-            return file_get_contents($this->getXmlPath() . '/' . $this->declarable->getId() . '.xml');
-        } else {
-            return false;
-        }
-    }
-
 
 
     public function getXmlPath()
