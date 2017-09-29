@@ -16,6 +16,9 @@ class GroupeFonctionnelType
 
     /**
      * @property string $type
+     *
+     * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Type")
      */
     private $type = null;
 

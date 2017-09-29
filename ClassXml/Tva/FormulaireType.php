@@ -15,8 +15,9 @@ class FormulaireType
 {
 
     /**
-     * @Serializer\XmlAttribute()
      * @property string $millesime
+     * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Millesime")
      */
     private $millesime = null;
 

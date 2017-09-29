@@ -14,14 +14,18 @@ class DeclarationType
 {
 
     /**
-     * @Serializer\XmlAttribute()
      * @property string $type
+     *
+     * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Type")
      */
     private $type = null;
 
     /**
-     * @Serializer\XmlAttribute()
      * @property string $reference
+     *
+     * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Reference")
      */
     private $reference = null;
 
@@ -51,9 +55,9 @@ class DeclarationType
     private $partenaireEdi = null;
 
     /**
-     * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\DestinataireType[]
-     * $listeDestinataires
-     * @Serializer\XmlList(inline = false, entry = "ListeDestinataires")
+     * @property \InterInvest\Aspone2Bundle\ClassXml\Tva\DestinataireType[] $listeDestinataires
+     * @Serializer\SerializedName("ListeDestinataires")
+     * @Serializer\XmlList(inline = false, entry = "Destinataire")
      */
     private $listeDestinataires = null;
 

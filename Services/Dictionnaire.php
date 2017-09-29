@@ -54,7 +54,7 @@ class Dictionnaire
      */
     public function getZones()
     {
-        $annee = substr($this->annee,-2);
+        $annee = $this->annee;
         $zones = [];
         foreach($this->formulaire as $formulaire) {
             if(isset(self::$data[$formulaire][$annee])) {

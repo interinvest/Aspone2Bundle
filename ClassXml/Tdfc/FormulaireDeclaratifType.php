@@ -18,6 +18,7 @@ class FormulaireDeclaratifType extends FormulaireType
     /**
      * @property string $nom
      * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Nom")
      */
     private $nom = null;
 

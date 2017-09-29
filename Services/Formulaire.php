@@ -42,7 +42,7 @@ class Formulaire
         $this->declarable = $declarable;
 
         $formulaires = explode(',', $this->declarable->getFormulaires());
-        $this->sDictionnaire->init($this->declarable->getGroupe(), $this->declarable->getMillesime(), $formulaires);
+        $this->sDictionnaire->init($this->declarable->getGroupe(), substr($this->declarable->getMillesime(),-2), $formulaires);
 
     }
 
@@ -123,6 +123,7 @@ class Formulaire
         // - GroupeFonctionnel
         $cheminGroupeFonctionnel = $this->getPathClassXml()."\\GroupeFonctionnelType";
         $groupeFonctionnel = new $cheminGroupeFonctionnel();
+        $groupeFonctionnel->setType("INFENT");
         $xmlEdi->setGroupeFonctionnel($groupeFonctionnel);
 
         $groupeFonctionnel->setDeclaration([$this->getXmlElementDeclaration()]);
@@ -135,6 +136,8 @@ class Formulaire
         // - - Declaration
         $cheminDeclaration = $this->getPathClassXml()."\\Declaration";
         $declaration = new $cheminDeclaration();
+        $declaration->setType($this->declarable->getType());
+        $declaration->setReference($this->declarable->getReferenceDeclaration());
         // - - - Emetteur
         $cheminEmetteur = $this->getPathClassXml()."\\EmetteurType";
         $emetteur = new $cheminEmetteur();
@@ -187,7 +190,7 @@ class Formulaire
         foreach($this->sDictionnaire->getZones() as $formulaire => $zones){
             $cheminFormulaireType = in_array($formulaire, ["T-IDENTIF","F-IDENTIF"]) ? $this->getPathClassXml()."\\FormulaireType" : $this->getPathClassXml()."\\FormulaireDeclaratifType";
             $noeudForm = new $cheminFormulaireType();
-            $noeudForm->setMillesime($this->declarable->getMillesime());
+            $noeudForm->setMillesime(substr($this->declarable->getMillesime(),-2));
 
             foreach($zones as $zone => $baliseXML){
                 $cheminZoneType = $this->getPathClassXml() . "\\ZoneType";

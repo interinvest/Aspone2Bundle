@@ -28,23 +28,22 @@ class SOAP
 
     public function initSoap()
     {
-        $beSimpleTeledeclaration = $this->kernel->getContainer()->get('besimple.soap.client.builder.teledeclarations');
-        $builder = new SoapClientBuilder($beSimpleTeledeclaration->getWsdl(), array('debug'=>false));
+        $builder = new SoapClientBuilder($this->kernel->getContainer()->getParameter('aspone2.wsdl.teledeclarations'), array('debug'=>false));
         $builder->withMtomAttachments();
-        $builder->withTrace(1);
-        $builder->withWsdl($beSimpleTeledeclaration->getWsdl());
-        $builder->withSoapVersion11();
+        $builder->withTrace(true);
+        $builder->withWsdl($this->kernel->getContainer()->getParameter('aspone2.wsdl.teledeclarations'));
+
         /* @var $soap SoapClient */
         $soap = $builder->build();
         $soap->setContextLogin($this->kernel->getContainer()->getParameter('aspone2.contextLogin'));
         $soap->setContextPassword($this->kernel->getContainer()->getParameter('aspone2.contextPassword'));
         $soap->setPassword($this->kernel->getContainer()->getParameter('aspone2.password'));
         $soap->setUsername($this->kernel->getContainer()->getParameter('aspone2.username'));
-        //$soap->setServiceVersion('1.1');
+        $soap->setServiceVersion('1.1');
         $soap->setContext($this->kernel->getContainer()->getParameter('aspone2.context'));
-        $soap->setService(SOAP_1_1);
+        $soap->setService($this->kernel->getContainer()->getParameter('aspone2.serviceVersion.1'));
         $soap->setSoapHeaders();
-        $soap->__setLocation("http://aspone.fr/mb/webservices");
+        $soap->__setLocation($this->kernel->getContainer()->getParameter('aspone2.location.teledeclarations'));
 
         $this->soap = $soap;
     }

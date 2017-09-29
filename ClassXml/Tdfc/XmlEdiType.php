@@ -9,7 +9,6 @@ use JMS\Serializer\Annotation as Serializer;
  *
  *
  * XSD Type: XmlEdi
- * @Serializer\XmlDiscriminator(cdata=false)
  */
 class XmlEdiType
 {
@@ -17,6 +16,7 @@ class XmlEdiType
     /**
      * @property string $test
      * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Test")
      */
     private $test = null;
 

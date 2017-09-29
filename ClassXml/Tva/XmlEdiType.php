@@ -11,13 +11,15 @@ use JMS\Serializer\Annotation as Serializer;
  * XSD Type: XmlEdi
  *
  * @Serializer\XmlDiscriminator(cdata=false)
+ * @Serializer\XmlRoot('XmlEdi')
  */
 class XmlEdiType
 {
 
     /**
-     * @Serializer\XmlAttribute()
      * @property string $test
+     * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Test")
      */
     private $test = null;
 

@@ -16,12 +16,14 @@ class DeclarationType
     /**
      * @property string $type
      * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Type")
      */
     private $type = null;
 
     /**
      * @property string $reference
      * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Reference")
      */
     private $reference = null;
 

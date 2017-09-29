@@ -11,8 +11,8 @@ use BeSimple\SoapClient\SoapResponse;
 use BeSimple\SoapClient\WsdlDownloader;
 use BeSimple\SoapCommon\Converter\MtomTypeConverter;
 use BeSimple\SoapCommon\Helper;
-use \SoapVar;
-use \SoapHeader;
+use SoapVar;
+use SoapHeader;
 
 
 class SoapClient extends \SoapClient
@@ -372,10 +372,10 @@ class SoapClient extends \SoapClient
      */
     public function getResponse()
     {
-        $resp = new \DOMDocument('1.0', 'utf-8');
+        $resp = new \DOMDocument('1.0', 'UTF-8');
         $resp->loadXML($this->parseResponse($this->__getLastResponse()));
         $XMLresults = $resp->getElementsByTagName("wsResponse");
-
+        var_dump($this->__getLastResponse()); die;
         if ($XMLresults) {
             return $XMLresults->item(0)->nodeValue;
         }

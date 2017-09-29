@@ -4,7 +4,7 @@ namespace InterInvest\Aspone2Bundle\Services\SoapClient;
 
 use BeSimple\SoapBundle\Soap\SoapClientBuilder as BaseSoapClientBuilder;
 use BeSimple\SoapCommon\Helper;
-use InterInvest\AsponeBundle\SoapClient\SoapClient;
+use InterInvest\Aspone2Bundle\Services\SoapClient\SoapClient;
 
 
 class SoapClientBuilder extends BaseSoapClientBuilder

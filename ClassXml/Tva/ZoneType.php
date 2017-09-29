@@ -21,6 +21,7 @@ class ZoneType
 
     /**
      * @property string $valeur
+     *
      * @Serializer\SerializedName("Valeur")
      */
     private $valeur = null;

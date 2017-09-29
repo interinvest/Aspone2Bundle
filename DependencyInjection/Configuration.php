@@ -18,8 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('inter_invest_aspone2');
-
+        $rootNode = $treeBuilder->root('aspone2');
         $rootNode
             ->children()
             ->scalarNode('username')->defaultValue('ASPONE')->end()
@@ -33,31 +32,29 @@ class Configuration implements ConfigurationInterface
             ->values(array('yes', 'no'))
             ->end()
             ->scalarNode('xmlPath')->isRequired()->end()
-//            ->arrayNode('wsdl')
-//            ->addDefaultsIfNotSet()
-//            ->children()
-//            ->scalarNode('teledeclarations')->defaultValue('https://services-teleprocedures.aspone.fr/ws/deposit?wsdl')->end()
-//            ->scalarNode('monitoring')->defaultValue('https://services-teleprocedures.aspone.fr/ws/monitoring?wsdl')->end()
-//            ->end()
-//            ->end()
-//            ->arrayNode('location')
-//            ->addDefaultsIfNotSet()
-//            ->children()
-//            ->scalarNode('teledeclarations')->defaultValue('https://services-teleprocedures.aspone.fr/ws/deposit')->end()
-//            ->scalarNode('monitoring')->defaultValue('https://services-teleprocedures.aspone.fr/ws/monitoring')->end()
-//            ->end()
-//            ->end()
-//            ->arrayNode('serviceVersion')
-//            ->addDefaultsIfNotSet()
-//            ->children()
-//            ->scalarNode('1')->defaultValue('http://www.cegedim.com/aspone/mb/webservices')->end()
-//            ->scalarNode('0')->defaultValue('http://aspone.fr/mb/webservices')->end()
-//            ->end()
-//            ->end()
-//            ->end()
-//            ->end()
-        ;
-
+            ->arrayNode('wsdl')
+            ->addDefaultsIfNotSet()
+            ->children()
+            ->scalarNode('teledeclarations')->defaultValue('https://services-teleprocedures.aspone.fr/ws/deposit?wsdl')->end()
+            ->scalarNode('monitoring')->defaultValue('https://services-teleprocedures.aspone.fr/ws/monitoring?wsdl')->end()
+            ->end()
+            ->end()
+            ->arrayNode('location')
+            ->addDefaultsIfNotSet()
+            ->children()
+            ->scalarNode('teledeclarations')->defaultValue('https://services-teleprocedures.aspone.fr/ws/deposit')->end()
+            ->scalarNode('monitoring')->defaultValue('https://services-teleprocedures.aspone.fr/ws/monitoring')->end()
+            ->end()
+            ->end()
+            ->arrayNode('serviceVersion')
+            ->addDefaultsIfNotSet()
+            ->children()
+            ->scalarNode('1')->defaultValue('http://www.cegedim.com/aspone/mb/webservices')->end()
+            ->scalarNode('0')->defaultValue('http://aspone.fr/mb/webservices')->end()
+            ->end()
+            ->end()
+            ->end()
+            ->end();
 
         return $treeBuilder;
     }
