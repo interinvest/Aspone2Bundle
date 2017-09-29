@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as Serializer;
  * XSD Type: XmlEdi
  *
  * @Serializer\XmlDiscriminator(cdata=false)
- * @Serializer\XmlRoot('XmlEdi')
+ * @Serializer\XmlRoot("XmlEdi")
  */
 class XmlEdiType
 {
