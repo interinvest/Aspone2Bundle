@@ -375,11 +375,13 @@ class SoapClient extends \SoapClient
         $resp = new \DOMDocument('1.0', 'UTF-8');
         $resp->loadXML($this->parseResponse($this->__getLastResponse()));
         $XMLresults = $resp->getElementsByTagName("wsResponse");
-        var_dump($this->__getLastResponse()); die;
+
+        $reponse = false;
         if ($XMLresults) {
-            return $XMLresults->item(0)->nodeValue;
+            $reponse = $XMLresults->item(0)->nodeValue;
         }
-        return false;
+
+        return $reponse;
     }
 
     /**

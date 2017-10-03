@@ -2,12 +2,15 @@
 
 namespace  InterInvest\Aspone2Bundle\Services\SoapClient;
 
+
+use SoapVar;
+
 class WsseAuth {
     private $Username;
     private $Password;
     private $Nonce;
     private $Created;
-    function __construct($username, $password, $nonce, $created) {
+    function __construct($username, $password, SoapVar $nonce, $created) {
         $this->Username=$username;
         $this->Password = $password;
         $this->Nonce = $nonce;
