@@ -7,6 +7,7 @@ namespace InterInvest\Aspone2Bundle\Services;
 use InterInvest\Aspone2Bundle\Entity\AsponeDeclaration;
 use InterInvest\Aspone2Bundle\ClassXml\Tva;
 use JMS\Serializer\Handler\HandlerRegistryInterface;
+use JMS\Serializer\SerializationContext;
 use JMS\Serializer\Serializer;
 use Symfony\Component\DependencyInjection\Container;
 use InterInvest\Aspone2Bundle\Entity;
@@ -58,6 +59,8 @@ class Formulaire
         } else {
             $xml = $this->getSerializeXml($this->getRootXml());
         }
+
+        //var_dump($xml); die;
 
         return $xml;
     }
@@ -198,7 +201,8 @@ class Formulaire
                 foreach($baliseXML as $valeurs) {
                     foreach(explode(',', $valeurs) as $valeur) {
                         $noeudZone->setId($zone);
-                        $noeudZone->{"set" . ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . ucfirst(strtolower($zone))}());
+                        //var_dump("get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone));
+                        $noeudZone->{"set" . ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone)}());
                     }
                 }
                 if(!empty($noeudZone)) {
@@ -224,11 +228,10 @@ class Formulaire
         $serializer = SerializerBuilder::create()->build();
         $xml = $serializer->serialize($xml, 'xml');
 
-
         // on supprime les élements vide
         $doc = new \DOMDocument();
         $doc->preserveWhiteSpace = false;
-        $doc->loadxml($xml);
+        $doc->loadxml($xml, LIBXML_NOCDATA);
         $xpath = new \DOMXPath($doc);
 
         for($i=1;$i<=6;$i++) {
@@ -241,7 +244,7 @@ class Formulaire
             }
         }
 
-        return $doc->savexml();
+        return $doc->saveXML();
     }
 
 
