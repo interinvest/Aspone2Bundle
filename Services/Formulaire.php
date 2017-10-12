@@ -7,7 +7,6 @@ namespace InterInvest\Aspone2Bundle\Services;
 use InterInvest\Aspone2Bundle\Entity\AsponeDeclaration;
 use InterInvest\Aspone2Bundle\ClassXml\Tva;
 use JMS\Serializer\Handler\HandlerRegistryInterface;
-use JMS\Serializer\SerializationContext;
 use JMS\Serializer\Serializer;
 use Symfony\Component\DependencyInjection\Container;
 use InterInvest\Aspone2Bundle\Entity;
@@ -59,8 +58,6 @@ class Formulaire
         } else {
             $xml = $this->getSerializeXml($this->getRootXml());
         }
-
-        //var_dump($xml); die;
 
         return $xml;
     }
@@ -200,8 +197,8 @@ class Formulaire
                 $noeudZone = new $cheminZoneType();
                 foreach($baliseXML as $valeurs) {
                     foreach(explode(',', $valeurs) as $valeur) {
+                        $valeur = trim($valeur) == "AdresseType" ? "adresseT" : trim($valeur);
                         $noeudZone->setId($zone);
-                        //var_dump("get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone));
                         $noeudZone->{"set" . ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone)}());
                     }
                 }
@@ -228,6 +225,7 @@ class Formulaire
         $serializer = SerializerBuilder::create()->build();
         $xml = $serializer->serialize($xml, 'xml');
 
+
         // on supprime les élements vide
         $doc = new \DOMDocument();
         $doc->preserveWhiteSpace = false;
@@ -244,7 +242,7 @@ class Formulaire
             }
         }
 
-        return $doc->saveXML();
+        return $doc->savexml();
     }
 
 

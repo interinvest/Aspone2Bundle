@@ -45,10 +45,12 @@ class Dictionnaire
 
         foreach ( $file as $filename) {
             if (($handle = fopen($filename, "r")) !== FALSE) {
-                while (($line = fgetcsv($handle, 1000, ",")) !== FALSE) {
-                    $line = explode(';', $line[0]);
-                    if((in_array($line[0], $this->formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $this->annee) {
-                        self::$data[$line[0]][$line[2]][] = $line[7];
+                while (($line = fgetcsv($handle, 1000, ";")) !== FALSE) {
+                    $valeurs = explode(',', $line[7]);
+                    foreach($valeurs as $valeur) {
+                        if ((in_array($line[0], $this->formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $this->annee) {
+                            self::$data[$line[0]][$line[2]][] = $valeur;
+                        }
                     }
                 }
                 fclose($handle);
