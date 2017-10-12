@@ -245,6 +245,10 @@ class Formulaire
         return $doc->savexml();
     }
 
+    public function getXmlPathComplete()
+    {
+        return $this->kernel->getRootDir().$this->kernel->getContainer()->getParameter('aspone2.xmlPath') . $this->declarable->getType() .'/'.$this->declarable->getId() . '.xml';
+    }
 
     public function getXmlPath()
     {
