@@ -25,14 +25,8 @@ class SOAP
         $this->kernel = $kernel;
     }
 
-
-    public function initSoap()
+    public function soapBuiler($builder)
     {
-        $builder = new SoapClientBuilder($this->kernel->getContainer()->getParameter('aspone2.wsdl.teledeclarations'), array('debug'=>false));
-        $builder->withMtomAttachments();
-        $builder->withTrace(true);
-        $builder->withWsdl($this->kernel->getContainer()->getParameter('aspone2.wsdl.teledeclarations'));
-
         /* @var $soap SoapClient */
         $soap = $builder->build();
         $soap->setContextLogin($this->kernel->getContainer()->getParameter('aspone2.contextLogin'));
@@ -43,7 +37,33 @@ class SOAP
         $soap->setContext($this->kernel->getContainer()->getParameter('aspone2.context'));
         $soap->setService($this->kernel->getContainer()->getParameter('aspone2.serviceVersion.1'));
         $soap->setSoapHeaders();
+
+        return $soap;
+    }
+
+
+    public function initSoapDepot()
+    {
+        $builder = new SoapClientBuilder($this->kernel->getContainer()->getParameter('aspone2.wsdl.teledeclarations'), array('debug'=>false));
+        $builder->withMtomAttachments();
+        $builder->withTrace(true);
+        $builder->withWsdl($this->kernel->getContainer()->getParameter('aspone2.wsdl.teledeclarations'));
+
+        $soap = $this->soapBuiler($builder);
         $soap->__setLocation($this->kernel->getContainer()->getParameter('aspone2.location.teledeclarations'));
+
+        $this->soap = $soap;
+    }
+
+    public function initSoapSuivi()
+    {
+        $builder = new SoapClientBuilder($this->kernel->getContainer()->getParameter('aspone2.wsdl.monitoring'), array('debug'=>false));
+        $builder->withMtomAttachments();
+        $builder->withTrace(true);
+        $builder->withWsdl($this->kernel->getContainer()->getParameter('aspone2.wsdl.monitoring'));
+
+        $soap = $this->soapBuiler($builder);
+        $soap->__setLocation($this->kernel->getContainer()->getParameter('aspone2.location.monitoring'));
 
         $this->soap = $soap;
     }

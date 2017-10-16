@@ -21,6 +21,15 @@ class AsponeDepositHistorique extends AsponeHistorique
      */
     private $id;
 
+    /**
+     * @var AsponeDeposit
+     *
+     * @ORM\ManyToOne(targetEntity="AsponeDeposit", inversedBy="historiques")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="deposit_id", referencedColumnName="id")
+     * })
+     */
+    private $deposit;
 
     /**
      * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDepositHistoriqueDetail", mappedBy="depositHistorique")
@@ -47,6 +56,31 @@ class AsponeDepositHistorique extends AsponeHistorique
     public function getId()
     {
         return $this->id;
+    }
+
+
+    /**
+     * Set deposit
+     *
+     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeposit $deposit
+     *
+     *
+     */
+    public function setDeposit(\InterInvest\Aspone2Bundle\Entity\AsponeDeposit $deposit = null)
+    {
+        $this->deposit = $deposit;
+
+        return $this;
+    }
+
+    /**
+     * Get deposit
+     *
+     * @return \InterInvest\Aspone2Bundle\Entity\AsponeDeposit
+     */
+    public function getDeposit()
+    {
+        return $this->deposit;
     }
 
 

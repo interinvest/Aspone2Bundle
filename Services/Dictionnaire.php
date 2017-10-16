@@ -60,6 +60,7 @@ class Dictionnaire
     {
         $lines = $this->parseFichier();
 
+
         foreach($lines as $line) {
             $valeurs = explode(',', $line[7]);
             foreach ($valeurs as $valeur) {

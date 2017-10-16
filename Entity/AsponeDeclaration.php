@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * AsponeDeclaration
- *
+ * @ORM\MappedSuperclass()
  */
 abstract class AsponeDeclaration
 {
@@ -85,16 +85,6 @@ abstract class AsponeDeclaration
      * })
      */
     protected $deposit;
-
-    /**
-     * @var ArrayCollection
-     *
-     * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique", mappedBy="declaration")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id", referencedColumnName="declaration_id")
-     * })
-     */
-    protected $historiques;
 
 
     public function __get($name)
@@ -311,40 +301,6 @@ abstract class AsponeDeclaration
     public function getFormulaires()
     {
         return $this->formulaires;
-    }
-
-    /**
-     * Add historique
-     *
-     * @param AsponeDeclarationHistorique $historique
-     *
-     * @return AsponeDeclaration
-     */
-    public function addHistorique(AsponeDeclarationHistorique $historique)
-    {
-        $this->historiques[] = $historique;
-
-        return $this;
-    }
-
-    /**
-     * Remove historique
-     *
-     * @param AsponeDeclarationHistorique $historique
-     */
-    public function removeHistorique(AsponeDeclarationHistorique $historique)
-    {
-        $this->historiques->removeElement($historique);
-    }
-
-    /**
-     * Get historiques
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getHistoriques()
-    {
-        return $this->historiques;
     }
 
 

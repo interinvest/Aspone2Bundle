@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * DeclarationHistorique
  *
  * @ORM\Table(name="aspone_declaration_historique")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="InterInvest\Aspone2Bundle\Repository\AsponeDeclarationHistoriqueRepository")
  */
 class AsponeDeclarationHistorique extends AsponeHistorique
 {
@@ -21,6 +21,15 @@ class AsponeDeclarationHistorique extends AsponeHistorique
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
+
+
+    /**
+     *
+     * @var integer
+     * @ORM\Column(name="declaration_id", type="integer", nullable=false)
+     */
+    private $declaration_id;
+
 
     /**
      * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistoriqueDetail", mappedBy="declarationHistorique")
@@ -49,6 +58,33 @@ class AsponeDeclarationHistorique extends AsponeHistorique
     {
         return $this->id;
     }
+
+
+
+    /**
+     * Set declaration
+     *
+     *
+     *
+     *
+     */
+    public function setDeclarationId($declarationId)
+    {
+        $this->declaration_id = $declarationId;
+
+        return $this;
+    }
+
+    /**
+     * Get declaration
+     *
+     *
+     */
+    public function getDeclaration()
+    {
+        return $this->declaration_id;
+    }
+
 
 
     /**

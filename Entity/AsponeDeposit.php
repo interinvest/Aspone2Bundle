@@ -10,7 +10,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
  * AsponeDeposit
  *
  * @ORM\Table(name="aspone_deposit")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="InterInvest\Aspone2Bundle\Repository\AsponeDepositRepository")
  */
 class AsponeDeposit
 {

@@ -9,3 +9,5 @@ services:
     aspone.services.soap:
         class: InterInvest\Aspone2Bundle\Services\SOAP
         arguments: ["@kernel"]
+    aspone.services.monitoring:
+        class: InterInvest\Aspone2Bundle\Services\Monitoring
