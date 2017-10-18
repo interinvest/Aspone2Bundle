@@ -58,10 +58,10 @@ class ZoneType
     private $adresseNumero = null;
 
     /**
-     * @property string $adresseType
+     * @property string $adresseT
      * @Serializer\SerializedName("AdresseType")
      */
-    private $adresseType = null;
+    private $adresseT = null;
 
     /**
      * @property string $adresseVoie
@@ -321,24 +321,24 @@ class ZoneType
     }
 
     /**
-     * Gets as adresseType
+     * Gets as adresseT
      *
      * @return string
      */
-    public function getAdresseType()
+    public function getAdresseT()
     {
-        return $this->adresseType;
+        return $this->adresseT;
     }
 
     /**
-     * Sets a new adresseType
+     * Sets a new adresseT
      *
-     * @param string $adresseType
+     * @param string $adresseT
      * @return self
      */
-    public function setAdresseType($adresseType)
+    public function setAdresseT($adresseT)
     {
-        $this->adresseType = $adresseType;
+        $this->adresseT = $adresseT;
         return $this;
     }
 
