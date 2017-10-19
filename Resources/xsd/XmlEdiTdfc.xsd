@@ -216,7 +216,7 @@
 				<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseNumero" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseType" minOccurs="0" maxOccurs="1" />	
+				<xs:element ref="AdresseT" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="AdresseVoie" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseComplement" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseHameau" minOccurs="0" maxOccurs="1" />	
@@ -262,7 +262,7 @@
 				<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseNumero" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseType" minOccurs="0" maxOccurs="1" />	
+				<xs:element ref="AdresseT" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="AdresseVoie" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseComplement" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseHameau" minOccurs="0" maxOccurs="1" />	
