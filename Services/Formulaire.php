@@ -246,7 +246,7 @@ class Formulaire
         }
 
         try {
-            $doc->schemaValidate(__DIR__ . '/../Resources/xsd/XmlEdi' . $this->declarable->getGroupe() . '.xsd');
+            $doc->schemaValidate($this->kernel->locateResource('@Aspone2Bundle/Resources/xsd/XmlEdi' . ucfirst(strtolower($this->declarable->getGroupe())) . '.xsd'));
         } catch (\Exception $E) {
             throw new \Exception ('Erreur lors de la validation du XML : '. $E->getMessage(), 0);
         }
