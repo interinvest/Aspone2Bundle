@@ -116,18 +116,21 @@ class Formulaire
 
     public function getRootXml()
     {
-        // XmlEdi
-        $cheminXmlEdi = $this->getPathClassXml()."\\XmlEdi";
-        $xmlEdi = new $cheminXmlEdi();
-        $xmlEdi->setTest(1);
-        // - GroupeFonctionnel
-        $cheminGroupeFonctionnel = $this->getPathClassXml()."\\GroupeFonctionnelType";
-        $groupeFonctionnel = new $cheminGroupeFonctionnel();
-        $groupeFonctionnel->setType("INFENT");
-        $xmlEdi->setGroupeFonctionnel($groupeFonctionnel);
+        try {
+            // XmlEdi
+            $cheminXmlEdi = $this->getPathClassXml() . "\\XmlEdi";
+            $xmlEdi = new $cheminXmlEdi();
+            $xmlEdi->setTest(1);
+            // - GroupeFonctionnel
+            $cheminGroupeFonctionnel = $this->getPathClassXml() . "\\GroupeFonctionnelType";
+            $groupeFonctionnel = new $cheminGroupeFonctionnel();
+            $groupeFonctionnel->setType("INFENT");
+            $xmlEdi->setGroupeFonctionnel($groupeFonctionnel);
 
-        $groupeFonctionnel->setDeclaration([$this->getXmlElementDeclaration()]);
-
+            $groupeFonctionnel->setDeclaration([$this->getXmlElementDeclaration()]);
+        } catch (\Exception $E) {
+            throw new \Exception('Problème lors de la création du XML pour la déclaration '.$this->declarable->getId().' : '. $E->getMessage(), 0);
+        }
         return $xmlEdi;
     }
 
@@ -240,6 +243,12 @@ class Formulaire
             foreach ($xpath->query('//*[not(node())]') as $node) {
                 $node->parentNode->removeChild($node);
             }
+        }
+
+        try {
+            $doc->schemaValidate(__DIR__ . '/../Resources/xsd/XmlEdi' . $this->declarable->getGroupe() . '.xsd');
+        } catch (\Exception $E) {
+            throw new \Exception ('Erreur lors de la validation du XML : '. $E->getMessage(), 0);
         }
 
         return $doc->savexml();
