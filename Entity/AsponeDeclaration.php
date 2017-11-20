@@ -77,6 +77,13 @@ abstract class AsponeDeclaration
     protected $formulaires;
 
     /**
+     * @var boolean
+     *
+     * @ORM\Column(name="istest", type="boolean", nullable=true, options={"default": false})
+     */
+    private $istest = false;
+    
+    /**
      * @var AsponeDeposit
      *
      * @ORM\ManyToOne(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeposit")
@@ -303,6 +310,30 @@ abstract class AsponeDeclaration
         return $this->formulaires;
     }
 
+    /**
+     * Set istest
+     *
+     * @param boolean $istest
+     *
+     * @return AsponeDeclaration
+     */
+    public function setIstest($istest)
+    {
+        $this->istest = $istest;
+
+        return $this;
+    }
+
+    /**
+     * Get istest
+     *
+     * @return boolean
+     */
+    public function getIstest()
+    {
+        return $this->istest;
+    }
+    
 
     /**
      * Set deposit
