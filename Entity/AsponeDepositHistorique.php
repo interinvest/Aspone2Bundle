@@ -32,7 +32,7 @@ class AsponeDepositHistorique extends AsponeHistorique
     private $deposit;
 
     /**
-     * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDepositHistoriqueDetail", mappedBy="depositHistorique")
+     * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDepositHistoriqueDetail", mappedBy="depositHistorique", cascade={"remove"})
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id", referencedColumnName="deposit_historique_id")
      * })
