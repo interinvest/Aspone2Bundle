@@ -65,7 +65,24 @@ class Dictionnaire
                 $valeurs = explode(',', $line[7]);
                 foreach ($valeurs as $valeur) {
                     if ((in_array($line[0], $this->formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $this->annee) {
-                        self::$data[$line[0]][$line[2]][] = $valeur;
+                        self::$data[$line[0]][$line[1]][$line[2]][] = $valeur;
+                    }
+                }
+            }
+
+
+
+            if(count(array_diff($this->formulaire, array_keys(self::$data))) > 0) {
+                $annee = Date('y');
+                $formulaire = array_diff($this->formulaire, array_keys(self::$data));
+
+                $lines = $this->parseFichier();
+                foreach ($lines as $line) {
+                    $valeurs = explode(',', $line[7]);
+                    foreach ($valeurs as $valeur) {
+                        if ((in_array($line[0], $formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $annee) {
+                            self::$data[$line[0]][$line[1]][$line[2]][] = $valeur;
+                        }
                     }
                 }
             }
