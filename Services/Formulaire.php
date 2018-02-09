@@ -190,31 +190,38 @@ class Formulaire
         $cheminDestinataireType = $this->getPathClassXml()."\\ListeFormulairesType";
         $listeFormulaire = new $cheminDestinataireType();
 
-        foreach($this->sDictionnaire->getZones() as $formulaire => $zones){
-            $cheminFormulaireType = in_array($formulaire, ["T-IDENTIF","F-IDENTIF"]) ? $this->getPathClassXml()."\\FormulaireType" : $this->getPathClassXml()."\\FormulaireDeclaratifType";
-            $noeudForm = new $cheminFormulaireType();
-            $noeudForm->setMillesime(substr($this->declarable->getMillesime(),-2));
-
-            foreach($zones as $zone => $baliseXML){
-                $cheminZoneType = $this->getPathClassXml() . "\\ZoneType";
-                $noeudZone = new $cheminZoneType();
-                foreach($baliseXML as $valeurs) {
-                    foreach(explode(',', $valeurs) as $valeur) {
-                        $valeur = trim($valeur) == "AdresseType" ? "adresseT" : trim($valeur);
-                        $noeudZone->setId($zone);
-                        $noeudZone->{"set" . ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone)}());
+        foreach($this->sDictionnaire->getZones() as $formulaire => $values){
+            foreach($values as $annee => $zones) {
+                $formulaireDeclarable = $this->declarable->getGroupe() == 'TDFC' ? ["F-IDENTIF"] : ["T-IDENTIF"];
+                $formulaireDeclarable = array_merge(explode(',', $this->declarable->getFormulaires()), $formulaireDeclarable);
+                if (!in_array($formulaire, $formulaireDeclarable)) {
+                    continue;
+                }
+                //dump($formulaire.' - '.$this->declarable->getGroupe());
+                $cheminFormulaireType = in_array($formulaire, ["T-IDENTIF", "F-IDENTIF"]) ? $this->getPathClassXml() . "\\FormulaireType" : $this->getPathClassXml() . "\\FormulaireDeclaratifType";
+                $noeudForm = new $cheminFormulaireType();
+                $noeudForm->setMillesime($annee);
+                foreach ($zones as $zone => $baliseXML) {
+                    $cheminZoneType = $this->getPathClassXml() . "\\ZoneType";
+                    $noeudZone = new $cheminZoneType();
+                    foreach ($baliseXML as $valeurs) {
+                        foreach (explode(',', $valeurs) as $valeur) {
+                            $valeur = trim($valeur) == "AdresseType" ? "adresseT" : trim($valeur);
+                            $noeudZone->setId($zone);
+                            $noeudZone->{"set" . ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone)}());
+                        }
+                    }
+                    if (!empty($noeudZone)) {
+                        $noeudForm->addToZone($noeudZone);
                     }
                 }
-                if(!empty($noeudZone)) {
-                    $noeudForm->addToZone($noeudZone);
-                }
-            }
 
-            if(in_array($formulaire, ["T-IDENTIF","F-IDENTIF"])) {
-                $listeFormulaire->setIdentif($noeudForm);
-            } else {
-                $noeudForm->setNom($formulaire);
-                $listeFormulaire->addToFormulaire($noeudForm);
+                if (in_array($formulaire, ["T-IDENTIF", "F-IDENTIF"])) {
+                    $listeFormulaire->setIdentif($noeudForm);
+                } else {
+                    $noeudForm->setNom($formulaire);
+                    $listeFormulaire->addToFormulaire($noeudForm);
+                }
             }
         }
 
