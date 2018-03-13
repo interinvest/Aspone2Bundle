@@ -2,6 +2,9 @@
 
 namespace InterInvest\Aspone2Bundle\ClassXml\Tdfc;
 
+
+use JMS\Serializer\Annotation as Serializer;
+
 /**
  * Class representing OccurrenceType
  *
@@ -13,121 +16,146 @@ class OccurrenceType
 
     /**
      * @property string $numero
+     * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Numero")
      */
     private $numero = null;
 
     /**
      * @property string $valeur
+     * @Serializer\SerializedName("Valeur")
      */
     private $valeur = null;
 
     /**
      * @property string $identifiant
+     * @Serializer\SerializedName("Identifiant")
      */
     private $identifiant = null;
 
     /**
      * @property string $designation
+     * @Serializer\SerializedName("Designation")
      */
     private $designation = null;
 
     /**
      * @property string $designationSuite1
+     * @Serializer\SerializedName("DesignationSuite1")
      */
     private $designationSuite1 = null;
 
     /**
      * @property string $designationSuite2
+     * @Serializer\SerializedName("DesignationSuite2")
      */
     private $designationSuite2 = null;
 
     /**
      * @property string $adresseNumero
+     * @Serializer\SerializedName("AdresseNumero")
      */
     private $adresseNumero = null;
 
     /**
-     * @property string $adresseType
+     * @property string $adresseT
+     * @Serializer\SerializedName("AdresseType")
      */
-    private $adresseType = null;
+    private $adresseT = null;
 
     /**
      * @property string $adresseVoie
+     * @Serializer\SerializedName("AdresseVoie")
      */
     private $adresseVoie = null;
 
     /**
      * @property string $adresseComplement
+     * @Serializer\SerializedName("AdresseComplement")
      */
     private $adresseComplement = null;
 
     /**
      * @property string $adresseHameau
+     * @Serializer\SerializedName("AdresseHameau")
      */
     private $adresseHameau = null;
 
     /**
      * @property string $adresseCodePostal
+     * @Serializer\SerializedName("AdresseCodePostal")
      */
     private $adresseCodePostal = null;
 
     /**
      * @property string $adresseVille
+     * @Serializer\SerializedName("AdresseVille")
      */
     private $adresseVille = null;
 
     /**
      * @property string $adresseCodePays
+     * @Serializer\SerializedName("AdresseCodePays")
      */
     private $adresseCodePays = null;
 
     /**
      * @property string $telephone
+     * @Serializer\SerializedName("Telephone")
      */
     private $telephone = null;
 
     /**
      * @property string $email
+     * @Serializer\SerializedName("Email")
      */
     private $email = null;
 
     /**
      * @property string $texteLibre1
+     * @Serializer\SerializedName("TexteLibre1")
      */
     private $texteLibre1 = null;
 
     /**
      * @property string $texteLibre2
+     * @Serializer\SerializedName("TexteLibre2")
      */
     private $texteLibre2 = null;
 
     /**
      * @property string $texteLibre3
+     * @Serializer\SerializedName("TexteLibre3")
      */
     private $texteLibre3 = null;
 
     /**
      * @property string $texteLibre4
+     * @Serializer\SerializedName("TexteLibre4")
      */
     private $texteLibre4 = null;
 
     /**
      * @property string $texteLibre5
+     * @Serializer\SerializedName("TexteLibre5")
      */
     private $texteLibre5 = null;
 
     /**
      * @property string $monnaieCible
+     * @Serializer\SerializedName("MonnaieCible")
      */
     private $monnaieCible = null;
 
     /**
      * @property string $monnaieSource
+     * @Serializer\SerializedName("MonnaieSource")
      */
     private $monnaieSource = null;
 
     /**
      * @property string $tauxChange
+     * @Serializer\SerializedName("TauxChange")
      */
     private $tauxChange = null;
 
@@ -290,9 +318,9 @@ class OccurrenceType
      *
      * @return string
      */
-    public function getAdresseType()
+    public function getAdresseT()
     {
-        return $this->adresseType;
+        return $this->adresseT;
     }
 
     /**
@@ -301,9 +329,9 @@ class OccurrenceType
      * @param string $adresseType
      * @return self
      */
-    public function setAdresseType($adresseType)
+    public function setAdresseT($adresseType)
     {
-        $this->adresseType = $adresseType;
+        $this->adresseT = $adresseType;
         return $this;
     }
 
