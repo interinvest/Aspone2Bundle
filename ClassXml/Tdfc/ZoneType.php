@@ -161,6 +161,7 @@ class ZoneType
 
     /**
      * @property \InterInvest\Aspone2Bundle\ClassXml\Tdfc\OccurrenceType[] $occurrence
+     * @Serializer\XmlList(inline = true, entry = "Occurrence")
      */
     private $occurrence = array(
         
