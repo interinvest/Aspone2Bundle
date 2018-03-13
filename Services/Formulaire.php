@@ -4,6 +4,7 @@
 
 namespace InterInvest\Aspone2Bundle\Services;
 
+use InterInvest\Aspone2Bundle\ClassXml\Tdfc\OccurrenceType;
 use InterInvest\Aspone2Bundle\Entity\AsponeDeclaration;
 use InterInvest\Aspone2Bundle\ClassXml\Tva;
 use JMS\Serializer\Handler\HandlerRegistryInterface;
@@ -197,18 +198,35 @@ class Formulaire
                 if (!in_array($formulaire, $formulaireDeclarable)) {
                     continue;
                 }
-                //dump($formulaire.' - '.$this->declarable->getGroupe());
+
                 $cheminFormulaireType = in_array($formulaire, ["T-IDENTIF", "F-IDENTIF"]) ? $this->getPathClassXml() . "\\FormulaireType" : $this->getPathClassXml() . "\\FormulaireDeclaratifType";
                 $noeudForm = new $cheminFormulaireType();
                 $noeudForm->setMillesime($annee);
-                foreach ($zones as $zone => $baliseXML) {
+                foreach ($zones as $zone => $listeBalises) {
+
                     $cheminZoneType = $this->getPathClassXml() . "\\ZoneType";
                     $noeudZone = new $cheminZoneType();
-                    foreach ($baliseXML as $valeurs) {
-                        foreach (explode(',', $valeurs) as $valeur) {
-                            $valeur = trim($valeur) == "AdresseType" ? "adresseT" : trim($valeur);
-                            $noeudZone->setId($zone);
-                            $noeudZone->{"set" . ucfirst(strtolower($valeur))}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone)}());
+                    $noeudZone->setId($zone);
+
+                    $indexs = method_exists($this->declarable, "get" . str_replace('-', '', $formulaire) . "Indexes".$zone) ? $this->declarable->{"get" . str_replace('-', '', $formulaire) . "Indexes".$zone}() : [1];
+                    foreach($indexs as $index) {
+                        $cheminTypeOccurrence = $this->getPathClassXml() . "\\OccurrenceType";
+                        $noeudOccurrence = new $cheminTypeOccurrence;
+                        $noeudOccurrence->setNumero($index);
+
+                        foreach ($listeBalises as $baliseXML) {
+                            foreach ($baliseXML as $valeur => $repetable) {
+                                $valeur = trim($valeur) == "AdresseType" ? "adresseT" : trim($valeur);
+                                //$nomFonction = "set" . ucfirst($valeur)."(".$this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone)}($param).")";
+                                if($repetable == 'OUI'){
+                                    $noeudOccurrence->{"set" . ucfirst($valeur)}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone)}($index));
+                                } else {
+                                    $noeudZone->{"set" . ucfirst($valeur)}($this->declarable->{"get" . str_replace('-', '', $formulaire) . ucfirst(strtolower(trim($valeur))) . strtoupper($zone)}());
+                                }
+                            }
+                        }
+                        if (!empty($noeudOccurrence)) {
+                            $noeudZone->addToOccurrence($noeudOccurrence);
                         }
                     }
                     if (!empty($noeudZone)) {
@@ -235,7 +253,6 @@ class Formulaire
         $serializer = SerializerBuilder::create()->build();
         $xml = $serializer->serialize($xml, 'xml');
 
-
         // on supprime les élements vide
         $doc = new \DOMDocument();
         $doc->preserveWhiteSpace = false;
@@ -251,7 +268,8 @@ class Formulaire
                 $node->parentNode->removeChild($node);
             }
         }
-
+        dump($xpath);
+//        die;
         try {
             $doc->schemaValidate($this->kernel->locateResource('@Aspone2Bundle/Resources/xsd/XmlEdi' . ucfirst(strtolower($this->declarable->getGroupe())) . '.xsd'));
         } catch (\Exception $E) {
