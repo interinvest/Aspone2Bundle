@@ -212,7 +212,7 @@ class Formulaire
                     foreach($indexs as $index) {
                         $cheminTypeOccurrence = $this->getPathClassXml() . "\\OccurrenceType";
                         $noeudOccurrence = null;
-                        if(file_exists($cheminTypeOccurrence.'.php')) {
+                        if($this->declarable->getGroupe() == 'TDFC') {
                             $noeudOccurrence = new $cheminTypeOccurrence;
                             $noeudOccurrence->setNumero($index);
                         }
