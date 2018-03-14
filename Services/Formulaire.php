@@ -271,8 +271,7 @@ class Formulaire
                 $node->parentNode->removeChild($node);
             }
         }
-        dump($xpath);
-//        die;
+
         try {
             $doc->schemaValidate($this->kernel->locateResource('@Aspone2Bundle/Resources/xsd/XmlEdi' . ucfirst(strtolower($this->declarable->getGroupe())) . '.xsd'));
         } catch (\Exception $E) {
