@@ -65,7 +65,8 @@ class Dictionnaire
                 $valeurs = explode(',', $line[7]);
                 foreach ($valeurs as $valeur) {
                     if ((in_array($line[0], $this->formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $this->annee) {
-                        self::$data[$line[0]][$line[1]][$line[2]][] = $valeur;
+                        // formulaire - annee - zone - balise xml => repetable
+                        self::$data[$line[0]][$line[1]][$line[2]][] = [$valeur => $line[5]];
                     }
                 }
             }
@@ -81,7 +82,7 @@ class Dictionnaire
                     $valeurs = explode(',', $line[7]);
                     foreach ($valeurs as $valeur) {
                         if ((in_array($line[0], $formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $annee) {
-                            self::$data[$line[0]][$line[1]][$line[2]][] = $valeur;
+                            self::$data[$line[0]][$line[1]][$line[2]][] = [$valeur => $line[5]];
                         }
                     }
                 }
