@@ -211,8 +211,11 @@ class Formulaire
                     $indexs = method_exists($this->declarable, "get" . str_replace('-', '', $formulaire) . "Indexes".$zone) ? $this->declarable->{"get" . str_replace('-', '', $formulaire) . "Indexes".$zone}() : [1];
                     foreach($indexs as $index) {
                         $cheminTypeOccurrence = $this->getPathClassXml() . "\\OccurrenceType";
-                        $noeudOccurrence = new $cheminTypeOccurrence;
-                        $noeudOccurrence->setNumero($index);
+                        $noeudOccurrence = null;
+                        if(file_exists($cheminTypeOccurrence.'.php')) {
+                            $noeudOccurrence = new $cheminTypeOccurrence;
+                            $noeudOccurrence->setNumero($index);
+                        }
 
                         foreach ($listeBalises as $baliseXML) {
                             foreach ($baliseXML as $valeur => $repetable) {
