@@ -209,12 +209,12 @@ class Formulaire
                     $noeudZone->setId($zone);
 
                     $indexs = method_exists($this->declarable, "get" . str_replace('-', '', $formulaire) . "Indexes".$zone) ? $this->declarable->{"get" . str_replace('-', '', $formulaire) . "Indexes".$zone}() : [1];
-                    foreach($indexs as $index) {
+                    foreach($indexs as $key => $index) {
                         $cheminTypeOccurrence = $this->getPathClassXml() . "\\OccurrenceType";
                         $noeudOccurrence = null;
                         if($this->declarable->getGroupe() == 'TDFC') {
                             $noeudOccurrence = new $cheminTypeOccurrence;
-                            $noeudOccurrence->setNumero($index);
+                            $noeudOccurrence->setNumero($key + 1);
                         }
 
                         foreach ($listeBalises as $baliseXML) {
