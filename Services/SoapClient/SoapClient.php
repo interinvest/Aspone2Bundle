@@ -282,34 +282,33 @@ class SoapClient extends \SoapClient
     }
 
     /**
+     * @return string
+     */
+    private function generatePasswordDigest()
+    {
+        // Can use rand() to repeat the word if the server is under high load
+        $this->nonce = mt_rand();
+        $this->timestamp = gmdate('Y-m-d\TH:i:s\Z');
+        $packedNonce = pack('H*', $this->nonce);
+        $packedTimestamp = pack('a*', $this->timestamp);
+        $packedPassword = pack('a*', $this->password);
+        $hash = sha1($packedNonce . $packedTimestamp . $packedPassword);
+        $packedHash = pack('H*', $hash);
+        return base64_encode($packedHash);
+    }
+    
+    
+    /**
      * Set les headers
      *
      */
     public function setSoapHeaders()
     {
-        $nonce = time();
-        $created = date('Y-m-dTH:i:s');
+
 
         $strWSSENS = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd";
         $strContext = self::$strContext;
         $strService = $this->service;
-
-        $objSoapVarUser = new SoapVar($this->username, XSD_STRING, NULL, $strWSSENS, NULL, $strWSSENS);
-        $objSoapVarPass = new SoapVar($this->password, XSD_STRING, NULL, $strWSSENS, NULL, $strWSSENS);
-        $objSoapVarNonce = new SoapVar($nonce, XSD_STRING, NULL, $strWSSENS, NULL, $strWSSENS);
-        $objSoapVarCreated = new SoapVar($created, XSD_STRING, NULL, $strWSSENS, NULL, $strWSSENS);
-
-        $objWSSEAuth = new WsseAuth($objSoapVarUser, $objSoapVarPass, $objSoapVarNonce, $objSoapVarCreated);
-
-        $objSoapVarWSSEAuth = new SoapVar($objWSSEAuth, SOAP_ENC_OBJECT, NULL, $strWSSENS, 'UsernameToken', $strWSSENS);
-
-        $objWSSEToken = new WsseToken($objSoapVarWSSEAuth);
-
-        $objSoapVarWSSEToken = new SoapVar($objWSSEToken, SOAP_ENC_OBJECT, NULL, $strWSSENS, 'UsernameToken', $strWSSENS);
-
-        $objSoapVarHeaderVal = new SoapVar($objSoapVarWSSEToken, SOAP_ENC_OBJECT, NULL, $strWSSENS, 'Security', $strWSSENS);
-
-        $objSoapVarWSSEHeader[] = new SoapHeader($strWSSENS, 'Security', $objSoapVarHeaderVal,true);
 
         $soapVarServiceVersion = new SoapVar($this->serviceVersion, XSD_STRING, null, null, 'serviceVersion');
         $objSoapVarWSSEHeader[] = new SoapHeader($strService, 'serviceVersion', $soapVarServiceVersion);
@@ -317,11 +316,24 @@ class SoapClient extends \SoapClient
         $soapVarLogin = new SoapVar($this->contextLogin, XSD_STRING, null, $strContext, 'login', $strContext);
         $soapVarPassword = new SoapVar($this->contextPassword, XSD_STRING, null, $strContext, 'password', $strContext);
         $soapVarUser = new SoapVar(array($soapVarLogin, $soapVarPassword), SOAP_ENC_OBJECT, null, $strContext, 'user', $strContext);
-
         $soapVarContext = new SoapVar(array('user' => $soapVarUser), SOAP_ENC_OBJECT, null, $strContext, 'context', $strContext);
-
         $objSoapVarWSSEHeader[] = new SoapHeader($strContext, 'context', $soapVarContext);
 
+        $passwordDigest = $this->generatePasswordDigest();
+
+        $xml = '
+<wsse:Security SOAP-ENV:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken>
+        <wsse:Username>' . $this->username . '</wsse:Username>
+        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">' . $passwordDigest . '</wsse:Password>
+        <wsse:Nonce>' . base64_encode(pack('H*', $this->nonce)) . '</wsse:Nonce>
+        <wsu:Created xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">' . $this->timestamp . '</wsu:Created>
+    </wsse:UsernameToken>
+</wsse:Security>
+';
+        $objSoapVarWSSEHeader[] = new \SoapHeader($strWSSENS, 'Security', new \SoapVar($xml, XSD_ANYXML), true);
+
+        
         $this->__setSoapHeaders($objSoapVarWSSEHeader);
     }
 
