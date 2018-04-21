@@ -193,6 +193,10 @@ class Formulaire
 
         foreach($this->sDictionnaire->getZones() as $formulaire => $values){
             foreach($values as $annee => $zones) {
+                if($annee != $this->declarable->getPeriodeStart()->format('y')){
+                    continue;
+                }
+                
                 $formulaireDeclarable = $this->declarable->getGroupe() == 'TDFC' ? ["F-IDENTIF"] : ["T-IDENTIF"];
                 $formulaireDeclarable = array_merge(explode(',', $this->declarable->getFormulaires()), $formulaireDeclarable);
                 if (!in_array($formulaire, $formulaireDeclarable)) {
