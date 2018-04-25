@@ -1,0 +1,173 @@
+Formulaire;Millésime;Zone;Type;Donnée;Répétable;Table/Format;Balise XML;Intitulé;Commentaire
+2561;18;AA;FII;C078.3194.01;NON;;Compte;Numéro de compte, clé;
+2561;18;AA;FII;C088.3433.01;NON;;Etablissement;Code établissement;
+2561;18;AA;FII;C088.3434.01;NON;;Agence;Code guichet;
+2561;18;AB;CCI;C889.7111.01;NON;TNC;Valeur;Nature du compte ou du contrat;
+2561;18;AC;CCI;C889.7111.01;NON;TTC;Valeur;Type du compte;
+2561;18;AD;CCI;C889.7111.01;NON;TBE;Valeur;Code bénéficiaire;
+2561;18;AE;NAD;C080.3036.01;NON;;Designation;Nom du bénéficiaire (personne physique);
+2561;18;AE;NAD;C080.3036.02;NON;;DesignationSuite1;Prénoms (ordre état civil);
+2561;18;AE;NAD;C080.3036.03;NON;;DesignationSuite2;Nom d’usage;
+2561;18;AE;NAD;C819.3228.01;NON;;AdresseDivisionTerritoriale;Libellé commune de naissance;Cas particulier d'un bénéficiaire né hors de France : indiquer le libellé du pays de naissance
+2561;18;AE;NAD;C819.3229.01;NON;;AdresseCodeDivisionTerritoriale;Commune de naissance – code INSEE;Voir https://www.insee.fr/fr/information/2666684, Cas particulier d'un bénéficiaire né hors de France : indiquer le code officiel INSEE du pays
+2561;18;AF;NAD;C080.3036.01;NON;;Designation;Raison sociale (désignation de l INSEE);
+2561;18;AF;NAD;C080.3036.02;NON;;DesignationSuite1;Raison sociale suite (désignation de l INSEE);
+2561;18;AF;NAD;C082.3039.01;NON;;Identifiant;Numéro de Siret du bénéficiaire;
+2561;18;AG;NAD;0000.3164.01;NON;;AdresseVille;Adresse 4 (2ème partie) – bureau distributeur;Cas particulier d'une adresse étrangère : indiquer le nom du pays étranger ou le nom de la commune pour la COM
+2561;18;AG;NAD;0000.3251.01;NON;;AdresseCodePostal;Adresse 4 (1ère partie) – code postal;Cas particuliers : 99138 pour Monaco, 99130 pour Andorre, code officiel géographique (COG) du pays ou de la COM. A titre exceptionnel, il aura la valeur par défaut 99999 pour le pays étranger ou 98999 pour la COM uniquement lorsque le tiers déclarant est dans l'impossibilité absolue de déterminer la COG réel
+2561;18;AG;NAD;C059.3042.01;NON;;AdresseNumero, AdresseType, AdresseVoie;Adresse 2 – n° voie , B, T, Q, C , nom de la voie;
+2561;18;AG;NAD;C059.3042.02;NON;;AdresseComplement;Adresse 1 – complément d’adresse;
+2561;18;AG;NAD;C819.3228.01;NON;;AdresseDivisionTerritoriale;Adresse 3 (2ème partie) – libellé commune;Cas particulier d'une adresse étrangère : indiquer soit le nom de la commune étrangère ou dans la COM, soit le code postal à l'étranger suivi de la commune
+2561;18;AG;NAD;C819.3229.01;NON;;AdresseCodeDivisionTerritoriale;Adresse 3 (1ère partie) – code INSEE;Voir https://www.insee.fr/fr/information/2666684, cas particulier d'une adresse étrangère : indiquer le code officiel INSEE du pays
+2561;18;AH;DTM;C507.2380.01;NON;102;Valeur;Date de naissance du bénéficiaire;Format attendu : yyyyMMdd
+2561;18;AJ;CCI;C889.7111.01;NON;TSE;Valeur;Sexe;
+2561;18;AK;FTX;C108.4440.01;NON;;TexteLibre1;Profession;
+2561;18;AL;RFF;C506.1154.01;NON;;Valeur;Code catégorie juridique du bénéficiaire;
+2561;18;AM;RFF;C506.1154.01;NON;;Valeur;Numéro de contrat;
+2561;18;AN;DTM;C507.2380.01;NON;106;Valeur;Début de la période de référence;Format attendu : MMdd
+2561;18;AP;DTM;C507.2380.01;NON;106;Valeur;Fin de la période de référence;Format attendu : MMdd
+2561;18;BA;MOA;C516.5004.01;NON;;Valeur;Crédit d impôt non restituable;
+2561;18;BB;MOA;C516.5004.01;NON;;Valeur;Crédit d impôt restituable;
+2561;18;BC;MOA;C516.5004.01;NON;;Valeur;Crédit d impôt prélèvement;
+2561;18;BD;MOA;C516.5004.01;NON;;Valeur;Produits de contrats d assurance-vie et placements de même nature d une durée inférieure à huit ans;
+2561;18;BE;MOA;C516.5004.01;NON;;Valeur;Avances, prêts ou acomptes;
+2561;18;BF;MOA;C516.5004.01;NON;;Valeur;Distributions non éligibles à l’abattement de 40 %;
+2561;18;BG;MOA;C516.5004.01;NON;;Valeur;Dont Valeurs étrangères (pour mémoire);
+2561;18;BH;MOA;C516.5004.01;NON;;Valeur;Jetons de présence;
+2561;18;BJ;MOA;C516.5004.01;NON;;Valeur;Revenus distribués éligibles à l’abattement de 40%;
+2561;18;BK;MOA;C516.5004.01;NON;;Valeur;Revenus exonérés;
+2561;18;BL;MOA;C516.5004.01;NON;;Valeur;Produits des contrats d’assurance-vie bénéficiant de l’abattement et soumis au prélèvement libératoire;
+2561;18;BM;MOA;C516.5004.01;NON;;Valeur;Produits de contrats d assurance-vie et placements de même nature d une durée inférieure à huit ans;
+2561;18;BN;MOA;C516.5004.01;NON;;Valeur;Base du prélèvement ou de la retenue à la source;
+2561;18;BP;MOA;C516.5004.01;NON;;Valeur;Montant du prélèvement ou de la retenue à la source;
+2561;18;BR;MOA;C516.5004.01;NON;;Valeur;Établissement financier européen : base de la retenue à la source;
+2561;18;BS;MOA;C516.5004.01;NON;;Valeur;Montant total des cessions;
+2561;18;BT;MOA;C516.5004.01;NON;;Valeur;Produits de PEP, produits de bons ou contrats de capitalisation et des placements de même nature, produits soumis à cotisations RSI (sans CSG déductible);
+2561;18;BU;MOA;C516.5004.01;NON;;Valeur;Répartitions de FCPR et distributions de SCR (sans CSG déductible);
+2561;18;BV;MOA;C516.5004.01;NON;;Valeur;Revenus déjà soumis aux prélèvements sociaux, avec CSG déductible;
+2561;18;CA;MOA;C516.5004.01;NON;;Valeur;Produits de placement à revenu fixe : gains;
+2561;18;CB;MOA;C516.5004.01;NON;;Valeur;Produits de placement à revenu fixe : pertes;
+2561;18;CC;MOA;C516.5004.01;NON;;Valeur;Produits de prêts dans le cadre du financement participatif : gains;
+2561;18;CD;MOA;C516.5004.01;NON;;Valeur;Produits de prêts dans le cadre du financement participatif : pertes;
+2561;18;CF;MOA;C516.5004.01;NON;;Valeur;Société de capital risque : gains et distributions taxables;
+2561;18;CG;MOA;C516.5004.01;NON;;Valeur;Société de capital risque : gains et distributions exonérées;
+2561;18;CH;MOA;C516.5004.01;NON;;Valeur;Montant des frais;
+2561;18;CJ;MOA;C516.5004.01;NON;;Valeur;Gains et distributions imposables selon les règles des plus-values de cession de valeurs mobilières des particuliers;
+2561;18;CK;MOA;C516.5004.01;NON;;Valeur;Gains et distributions imposables selon les règles des traitements et salaires;
+2561;18;CL;MOA;C516.5004.01;NON;;Valeur;Bon de caisse ou de capitalisation : capital remboursé;
+2561;18;CM;MOA;C516.5004.01;NON;;Valeur;Bon de caisse ou de capitalisation : capital souscrit;
+2561;18;CN;MOA;C516.5004.01;NON;;Valeur;Revenus exonérés des FCPR ou FPCI;
+2561;18;CP;MOA;C516.5004.01;NON;;Valeur;Valeur moyenne d acquisition de la part;
+2561;18;CR;MOA;C516.5004.01;NON;;Valeur;Montant de la distribution;
+2561;18;CS;MOA;C516.5004.01;NON;;Valeur;Apports en nature des titres;
+2561;18;DA;FTX;C108.4440.01;NON;;TexteLibre1;Dénomination du fond;
+2561;18;DB;QTY;C186.6060.01;NON;;Valeur;Nombre de parts cédées;
+2561;18;DC;QTY;C186.6060.01;NON;;Valeur;Nombre de parts au moment de l opération;
+2561;18;DD;QTY;C186.6060.01;NON;;Valeur;Nombre de parts détenues;
+2561;18;DE;DTM;C507.2380.01;NON;102;Valeur;Date de dissolution du fond;Format attendu : yyyyMMdd
+2561;18;DF;DTM;C507.2380.01;NON;102;Valeur;Date de distribution avec annulation;Format attendu : yyyyMMdd
+2561;18;DG;DTM;C507.2380.01;NON;102;Valeur;Date de distribution sans annulation;Format attendu : yyyyMMdd
+2561;18;DH;DTM;C507.2380.01;NON;106;Valeur;Début de la période de dépassement;Format attendu : MMdd
+2561;18;DJ;DTM;C507.2380.01;NON;106;Valeur;Fin de la période de dépassement;Format attendu : MMdd
+2561;18;DK;RFF;C506.1154.01;NON;;Valeur;Plan d épargne populaire : Référence du PEP;
+2561;18;DL;DTM;C507.2380.01;NON;102;Valeur;Plan d épargne populaire : Date d ouverture du PEP;Format attendu : yyyyMMdd
+2561;18;DM;MOA;C516.5004.01;NON;;Valeur;Profits réalisés sur les instruments financiers à terme : Profits;
+2561;18;DN;MOA;C516.5004.01;NON;;Valeur;Profits réalisés sur les instruments financiers à terme : Pertes;
+2561;18;DP;MOA;C516.5004.01;NON;;Valeur;Profits réalisés sur les instruments financiers à terme : Profits imposables au taux dérogatoire de 50 %;
+2561;18;EA;RFF;C506.1154.01;NON;;Valeur;Plan d épargne en actions : Référence du plan;
+2561;18;EB;DTM;C507.2380.01;NON;102;Valeur;Plan d épargne en actions : Date d ouverture du plan;Format attendu : yyyyMMdd
+2561;18;EC;DTM;C507.2380.01;NON;102;Valeur;Plan d épargne en actions : Date du premier retrait ou du premier rachat de contrat de capitalisation;Format attendu : yyyyMMdd
+2561;18;ED;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions : valeur liquidative du plan ou de rachat du contrat de capitalisation à la date de clôture du plan;
+2561;18;EE;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions : montant cumulé des versements;
+2561;18;EF;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions : montant des produits éligibles à l’abattement de 40 % des titres non cotés;
+2561;18;EG;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions : montant des produits non éligibles à l’abattement de 40 % des titres non cotés;
+2561;18;EH;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions : montant du crédit d’impôt sur titres non cotés étrangers;
+2561;18;EJ;MOA;C516.5004.01;NON;;Valeur;Epargne retraite : montant des cotisations ou primes PERP et produits d’épargne retraite assimilés;
+2561;18;EK;MOA;C516.5004.01;NON;;Valeur;Epargne retraite : montant des cotisations ou primes Contrats " Madelin " et " Madelin agricole ";
+2561;18;EL;CCI;C889.7111.01;NON;TEX;Valeur;Exercice ne coïncidant pas avec l’année civile;
+2561;18;EM;MOA;C516.5004.01;NON;;Valeur;FPI : Amortissement comptable théorique;
+2561;18;EN;MOA;C516.5004.01;NON;;Valeur;FPI : Abattement pratiqué par le fond;
+2561;18;EP;MOA;C516.5004.01;NON;;Valeur;FPI : Bénéfices industriels et commerciaux;
+2561;18;ER;MOA;C516.5004.01;NON;;Valeur;FPI : Plus-values professionnelles;
+2561;18;ES;MOA;C516.5004.01;NON;;Valeur;FPI : Plus-values immobilières (pour mémoire);
+2561;18;ET;MOA;C516.5004.01;NON;;Valeur;FPI : Plus-values mobilières;
+2561;18;EU;MOA;C516.5004.01;NON;;Valeur;FPI : Recettes imposables;
+2561;18;EV;MOA;C516.5004.01;NON;;Valeur;FPI : Charges déductibles;
+2561;18;EW;MOA;C516.5004.01;NON;;Valeur;FPI : Intérêts d’emprunts;
+2561;18;EX;MOA;C516.5004.01;NON;;Valeur;FPI : Bénéfice foncier;
+2561;18;EY;FTX;C108.4440.01;NON;;TexteLibre1;FPI : Dénomination du FPI;
+2561;18;FA;RFF;C506.1154.01;NON;;Valeur;Plan d épargne en actions - PME : Référence du plan;
+2561;18;FB;DTM;C507.2380.01;NON;102;Valeur;Plan d épargne en actions - PME : Date d ouverture du plan;Format attendu : yyyyMMdd
+2561;18;FC;DTM;C507.2380.01;NON;102;Valeur;Plan d épargne en actions - PME : Date du premier retrait ou du premier rachat de contrat de capitalisation;Format attendu : yyyyMMdd
+2561;18;FD;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions - PME : valeur liquidative du plan ou de rachat du contrat de capitalisation à la date de clôture du plan;
+2561;18;FE;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions - PME : montant cumulé des versements;
+2561;18;FF;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions - PME : montant des produits éligibles à l’abattement de 40 % des titres non cotés;
+2561;18;FG;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions - PME : montant des produits non éligibles à l’abattement de 40 % des titres non cotés;
+2561;18;FH;MOA;C516.5004.01;NON;;Valeur;Plan d épargne en actions - PME : montant du crédit d’impôt sur titres non cotés étrangers;
+A-IDENTIF;18;AA;NAD;0000.3164.01;NON;;AdresseVille;Adresse 4 (2ème partie) - bureau distributeur;Cas particulier d'une adresse étrangère : indiquer le nom du pays étranger ou le nom de la commune pour la COM
+A-IDENTIF;18;AA;NAD;0000.3251.01;NON;;AdresseCodePostal;Adresse 4 (1ère partie) - code postal;Cas particuliers : 99138 pour Monaco, 99130 pour Andorre, code officiel géographique (COG) du pays ou de la COM. A titre exceptionnel, il aura la valeur par défaut 99999 pour le pays étranger ou 98999 pour la COM uniquement lorsque le tiers déclarant est dans l'impossibilité absolue de déterminer la COG réel
+A-IDENTIF;18;AA;NAD;C056.3412.01;NON;;ContactDesignation;Nom et Prénom du responsable;
+A-IDENTIF;18;AA;NAD;C059.3042.01;NON;;AdresseNumero, AdresseType, AdresseVoie;Adresse 2 - n° voie , B, T, Q, C , nom de la voie;
+A-IDENTIF;18;AA;NAD;C059.3042.02;NON;;AdresseComplement;Adresse 1 - complément d adresse;
+A-IDENTIF;18;AA;NAD;C076.3148.01;NON;TE;Telephone;Coordonnées - Numéro de téléphone;
+A-IDENTIF;18;AA;NAD;C076.3148.01;NON;EM;Email;Coordonnées - Mail;
+A-IDENTIF;18;AA;NAD;C080.3036.01;NON;;Designation;Raison sociale (désignation de l INSEE);
+A-IDENTIF;18;AA;NAD;C080.3036.02;NON;;DesignationSuite1;Raison sociale suite (désignation de l INSEE);
+A-IDENTIF;18;AA;NAD;C082.3039.01;NON;;Identifiant;Numéro de Siret du déclarant;
+A-IDENTIF;18;AA;NAD;C819.3228.01;NON;;AdresseDivisionTerritoriale;Adresse 3 (2ème partie) - libellé commune;Cas particulier d'une adresse étrangère : indiquer soit le nom de la commune étrangère ou dans la COM, soit le code postal à l'étranger suivi de la commune
+A-IDENTIF;18;AA;NAD;C819.3229.01;NON;;AdresseCodeDivisionTerritoriale;Adresse 3 (1ère partie) - code INSEE;Voir https://www.insee.fr/fr/information/2666684, cas particulier d'une adresse étrangère : indiquer le code officiel INSEE du pays
+A-IDENTIF;18;AB;NAD;0000.3164.01;NON;;AdresseVille;Adresse 4 (2ème partie) - bureau distributeur;Cas particulier d'une adresse étrangère : indiquer le nom du pays étranger ou le nom de la commune pour la COM
+A-IDENTIF;18;AB;NAD;0000.3251.01;NON;;AdresseCodePostal;Adresse 4 (1ère partie) - code postal;Cas particuliers : 99138 pour Monaco, 99130 pour Andorre, code officiel géographique (COG) du pays ou de la COM. A titre exceptionnel, il aura la valeur par défaut 99999 pour le pays étranger ou 98999 pour la COM uniquement lorsque le tiers déclarant est dans l'impossibilité absolue de déterminer la COG réel
+A-IDENTIF;18;AB;NAD;C059.3042.01;NON;;AdresseNumero, AdresseType, AdresseVoie;Adresse 2 - n° voie , B, T, Q, C , nom de la voie;
+A-IDENTIF;18;AB;NAD;C059.3042.02;NON;;AdresseComplement;Adresse 1 - complément d adresse;
+A-IDENTIF;18;AB;NAD;C082.3039.01;NON;;Identifiant;Numéro de Siret de l établissement;
+A-IDENTIF;18;AB;NAD;C819.3228.01;NON;;AdresseDivisionTerritoriale;Adresse 3 (2ème partie) - libellé commune;Cas particulier d'une adresse étrangère : indiquer soit le nom de la commune étrangère ou dans la COM, soit le code postal à l'étranger suivi de la commune
+A-IDENTIF;18;AB;NAD;C819.3229.01;NON;;AdresseCodeDivisionTerritoriale;Adresse 3 (1ère partie) - code INSEE;Voir https://www.insee.fr/fr/information/2666684, cas particulier d'une adresse étrangère : indiquer le code officiel INSEE du pays
+A-IDENTIF;18;BA;DTM;C507.2380.01;NON;602;Valeur;Année de la déclaration;Format attendu : yyyy
+A-IDENTIF;18;BB;DTM;C507.2380.01;NON;102;Valeur;Début de la période déclarative;Format attendu : yyyyMMdd
+A-IDENTIF;18;BC;DTM;C507.2380.01;NON;102;Valeur;Fin de la période déclarative;Format attendu : yyyyMMdd
+A-IDENTIF;18;BD;DTM;C507.2380.01;NON;102;Valeur;Date d émission de la déclaration;Format attendu : yyyyMMdd
+A-IDENTIF;18;CA;RFF;C506.1154.01;NON;;Valeur;Code APE;
+A-IDENTIF;18;CB;RFF;C506.1154.01;NON;;Valeur;Numéro de Siret du déclarent au 31/12/N-1;
+A-IDENTIF;18;CC;RFF;C506.1154.01;NON;;Valeur;Code catégorie juridique du déclarant;https://www.insee.fr/fr/information/2028129
+A-IDENTIF;18;DA;CCI;C889.7111.01;NON;TDE;Valeur;Type de déclaration;
+DAS2T;18;AA;NAD;0000.3164.01;NON;;AdresseVille;Adresse bureau distributeur – bureau distributeur;Cas particulier d'une adresse étrangère : indiquer le nom du pays étranger ou le nom de la commune pour la COM
+DAS2T;18;AA;NAD;0000.3251.01;NON;;AdresseCodePostal;Adresse bureau distributeur – code postal;Cas particuliers : 99138 pour Monaco, 99130 pour Andorre, code officiel géographique (COG) du pays ou de la COM. A titre exceptionnel, il aura la valeur par défaut 99999 pour le pays étranger ou 98999 pour la COM uniquement lorsque le tiers déclarant est dans l'impossibilité absolue de déterminer la COG réel
+DAS2T;18;AA;NAD;C059.3042.01;NON;;AdresseNumero, AdresseType, AdresseVoie;Adresse voie – n° voie , B, T, Q, C , nom de la voie;
+DAS2T;18;AA;NAD;C059.3042.02;NON;;AdresseComplement;Complément d’adresse;
+DAS2T;18;AA;NAD;C080.3036.01;NON;;Designation;Identification de l’ etablissement;
+DAS2T;18;AA;NAD;C080.3036.02;NON;;DesignationSuite1;Identification de l’ etablissement suite;
+DAS2T;18;AA;NAD;C082.3039.01;NON;;Identifiant;Numéro de Siret de l’établissement;
+DAS2T;18;AA;NAD;C819.3228.01;NON;;AdresseDivisionTerritoriale;Adresse Commune – libellé commune;Cas particulier d'une adresse étrangère : indiquer soit le nom de la commune étrangère ou dans la COM, soit le code postal à l'étranger suivi de la commune
+DAS2T;18;AA;NAD;C819.3229.01;NON;;AdresseCodeDivisionTerritoriale;Adresse Commune – code INSEE;Voir https://www.insee.fr/fr/information/2666684, cas particulier d'une adresse étrangère : indiquer le code officiel INSEE du pays
+DAS2T;18;AB;RFF;C506.1154.01;NON;;Valeur;Code APE;
+DAS2T;18;AC;FTX;C108.4440.01;NON;;TexteLibre1;Profession ou activité;
+DAS2T;18;AD;DTM;C507.2380.01;NON;106;Valeur;Date de clôture de l’exercice (société soumise à l’IS);Format attendu : MMdd
+DAS2T;18;AE;RFF;C506.1154.01;NON;;Valeur;Numéro de Siret de l’établissement au 01/01/N;
+DAS2T;18;TA;MOA;C516.5004.01;OUI;;Valeur;Totaux Honoraires pour les rémunérations versées (Cases 4 et 5);
+DAS2T;18;TB;MOA;C516.5004.01;NON;;Valeur;Total des indemnités et remboursements (Case 7);
+DAS2T;18;TC;MOA;C516.5004.01;NON;;Valeur;Total des avantages en nature (Case 6);
+DAS2T;18;TD;MOA;C516.5004.01;NON;;Valeur;Total des retenues à la source (Case 9);
+DAS2T;18;UA;CCI;C889.7111.01;OUI;TNR;Valeur;Nature des Rémunérations versées selon la lettre (Cases 4 et 5);
+DAS2TV;18;AD;RFF;C506.1154.01;NON;;Valeur;Numéro de Siret de l’établissement;
+DAS2TV;18;AE;NAD;C080.3036.01;NON;;Designation;Nom du bénéficiaire (personne physique);
+DAS2TV;18;AE;NAD;C080.3036.02;NON;;DesignationSuite1;Prénoms;
+DAS2TV;18;AF;NAD;C080.3036.01;NON;;Designation;Raison sociale (désignation de l INSEE);
+DAS2TV;18;AF;NAD;C080.3036.02;NON;;DesignationSuite1;Raison sociale suite (désignation de l INSEE);
+DAS2TV;18;AF;NAD;C082.3039.01;NON;;Identifiant;Numéro de Siret du bénéficiaire;
+DAS2TV;18;AG;NAD;0000.3164.01;NON;;AdresseVille;Adresse 4 (2ème partie) – bureau distributeur;Cas particulier d'une adresse étrangère : indiquer le nom du pays étranger ou le nom de la commune pour la COM
+DAS2TV;18;AG;NAD;0000.3251.01;NON;;AdresseCodePostal;Adresse 4 (1ère partie) – code postal;Cas particuliers : 99138 pour Monaco, 99130 pour Andorre, code officiel géographique (COG) du pays ou de la COM. A titre exceptionnel, il aura la valeur par défaut 99999 pour le pays étranger ou 98999 pour la COM uniquement lorsque le tiers déclarant est dans l'impossibilité absolue de déterminer la COG réel
+DAS2TV;18;AG;NAD;C059.3042.01;NON;;AdresseNumero, AdresseType, AdresseVoie;Adresse 2 – n° voie , B, T, Q, C , nom de la voie;
+DAS2TV;18;AG;NAD;C059.3042.02;NON;;AdresseComplement;Adresse 1 – complément d’adresse;
+DAS2TV;18;AG;NAD;C819.3228.01;NON;;AdresseDivisionTerritoriale;Adresse 3 (2ème partie) – libellé commune;Cas particulier d'une adresse étrangère : indiquer soit le nom de la commune étrangère ou dans la COM, soit le code postal à l'étranger suivi de la commune
+DAS2TV;18;AG;NAD;C819.3229.01;NON;;AdresseCodeDivisionTerritoriale;Adresse 3 (1ère partie) – code INSEE;Voir https://www.insee.fr/fr/information/2666684, cas particulier d'une adresse étrangère : indiquer le code officiel INSEE du pays
+DAS2TV;18;AH;FTX;C108.4440.01;NON;;TexteLibre1;Profession;
+DAS2TV;18;BA;MOA;C516.5004.01;OUI;;Valeur;Rémunérations versées (Cases 4 et 5);
+DAS2TV;18;BB;MOA;C516.5004.01;NON;;Valeur;Indemnités et remboursements (Case 7);
+DAS2TV;18;BC;MOA;C516.5004.01;NON;;Valeur;Avantages en nature (Case 6);
+DAS2TV;18;BD;MOA;C516.5004.01;NON;;Valeur;Retenues à la source (Case 9);
+DAS2TV;18;BE;MOA;C516.5004.01;NON;;Valeur;TVA nette sur droits d auteur (Case 8);
+DAS2TV;18;CA;CCI;C889.7111.01;OUI;TNR;Valeur;Nature des Rémunérations versées selon la lettre (Cases 4 et 5);
+DAS2TV;18;CB;CCI;C889.7111.01;NON;TIR;Valeur;Modalités de prise en charge des indemnités et Remboursements (Case 7);
+DAS2TV;18;CC;CCI;C889.7111.01;NON;TAN;Valeur;Nature des avantages en nature (Case 6);
+DAS2TV;18;CD;CCI;C889.7111.01;NON;TRS;Valeur;Nature du Taux de retenue à la source (Case 9);
