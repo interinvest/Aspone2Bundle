@@ -71,8 +71,9 @@ class Monitoring
 
         $resp = new \DOMDocument('1.0', 'utf-8');
         $resp->loadXML($reponseSoap);
+
         $XMLresults = $resp->getElementsByTagName("wsResponse");
-        if (strpos($XMLresults->item(0)->nodeValue, 'ERROR') === 0) {
+        if ($resp->getElementsByTagName("responseType")->item(0)->textContent == 'ERROR') {
             return false;
         }
         $xmlHistos = $resp->getElementsByTagName("stateHistory");
@@ -92,7 +93,10 @@ class Monitoring
             $final['historiques'][$i] = $histo;
         }
         //set des ids declarations
-        $final['declarations'] = iterator_to_array($resp->getElementsByTagName("declarationId"));
+        $final['declarations'] = [];
+        foreach($resp->getElementsByTagName("declarationId") as $idDeclaration){
+            $final['declarations'][] = $idDeclaration->textContent;
+        }
         $final['numADS'] = $resp->getElementsByTagName("numADS")->item(0) ? $resp->getElementsByTagName("numADS")->item(0)->nodeValue : 0;
         $final['interchangeId'] = $resp->getElementsByTagName("interchangeId")->item(0) ? $resp->getElementsByTagName("interchangeId")->item(0)->nodeValue : 0;
         return $final;
