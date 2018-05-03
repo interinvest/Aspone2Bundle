@@ -371,10 +371,9 @@ class SoapClient extends \SoapClient
         if (is_null($response)) {
             $response = $this->__getLastResponse();
         }
-        $start = strpos($response, '<soap:');
-        $tmp = substr($response, $start);
-        $end = explode('------=', $tmp);
-        return $end[0];
+        preg_match('/(<wsResponse.*<\/wsResponse>)/', $response, $matches);
+
+        return $matches[0];
     }
 
     /**
