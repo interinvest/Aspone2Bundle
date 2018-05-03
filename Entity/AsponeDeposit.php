@@ -85,6 +85,12 @@ class AsponeDeposit
      */
     private $istest = false;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="xml_retour", type="text", nullable=true, options={"default": null})
+     */
+    private $xmlRetour = false;
 
     /**
      * @var ArrayCollection
@@ -309,6 +315,29 @@ class AsponeDeposit
         return $this->istest;
     }
 
+     /**
+     * Set xmlRetour
+     *
+     * @param string $xml
+     *
+     * @return AsponeDeposit
+     */
+    public function setXmlRetour($xml)
+    {
+        $this->xmlRetour = $xml;
+
+        return $this;
+    }
+
+    /**
+     * Get xmlRetour
+     *
+     * @return string
+     */
+    public function getXmlRetour()
+    {
+        return $this->xmlRetour;
+    }
 
     /**
      * Add declaration
