@@ -93,6 +93,15 @@ abstract class AsponeDeclaration
      */
     protected $deposit;
 
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique", mappedBy="declaration")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id", referencedColumnName="declaration_id")
+     * })
+     */
+    protected $historiques;
 
     public function __get($name)
     {
@@ -357,5 +366,40 @@ abstract class AsponeDeclaration
     public function getDeposit()
     {
         return $this->deposit;
+    }
+    
+    
+    /**
+     * Add historique
+     *
+     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $historique
+     *
+     * @return \AsponeDeclaration
+     */
+    public function addHistorique(\InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $historique)
+    {
+        $this->historiques[] = $historique;
+
+        return $this;
+    }
+
+    /**
+     * Remove historique
+     *
+     * @param \InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $historique
+     */
+    public function removeHistorique(\InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistorique $historique)
+    {
+        $this->historiques->removeElement($historique);
+    }
+
+    /**
+     * Get historiques
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getHistoriques()
+    {
+        return $this->historiques;
     }
 }
