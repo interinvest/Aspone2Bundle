@@ -24,12 +24,14 @@ class AsponeDeclarationHistorique extends AsponeHistorique
 
 
     /**
+     * @var AsponeDeclaration
      *
-     * @var integer
-     * @ORM\Column(name="declaration_id", type="integer", nullable=false)
+     * @ORM\ManyToOne(targetEntity="II\Bundle\DeclarableAsponeBundle\Entity\AsponeDeclaration", inversedBy="historiques")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="declaration_id", referencedColumnName="id")
+     * })
      */
-    private $declaration_id;
-
+    private $declaration;
 
     /**
      * @ORM\OneToMany(targetEntity="InterInvest\Aspone2Bundle\Entity\AsponeDeclarationHistoriqueDetail", mappedBy="declarationHistorique", cascade={"remove"})
@@ -68,9 +70,9 @@ class AsponeDeclarationHistorique extends AsponeHistorique
      *
      *
      */
-    public function setDeclarationId($declarationId)
+    public function setDeclaration(AsponeDeclaration $declaration)
     {
-        $this->declaration_id = $declarationId;
+        $this->declaration = $declaration;
 
         return $this;
     }
@@ -82,7 +84,7 @@ class AsponeDeclarationHistorique extends AsponeHistorique
      */
     public function getDeclaration()
     {
-        return $this->declaration_id;
+        return $this->declaration;
     }
 
 
