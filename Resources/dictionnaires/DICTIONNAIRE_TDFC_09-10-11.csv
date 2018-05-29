@@ -1,0 +1,1418 @@
+Formulaire;Millésime;Zone;Type;Donnée;Répétable;Table/Format;Balise XML;Intitulé;Commentaire
+2033A;09;AA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, brut;
+2033A;09;AB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, brut;
+2033A;09;AC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, brut;
+2033A;09;AD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, brut;
+2033A;09;AE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, brut;
+2033A;09;AF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, brut;
+2033A;09;AG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, brut;
+2033A;09;AH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, brut;
+2033A;09;AJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, brut;
+2033A;09;AK;MOA;C516.5004.01;NON;;Valeur;Autres créances, brut;
+2033A;09;AL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, brut;
+2033A;09;AM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, brut;
+2033A;09;AP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, brut;
+2033A;09;AQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, brut;
+2033A;09;AR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, brut;
+2033A;09;BA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, amortissements et provisions;
+2033A;09;BB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, amortissements et provisions;
+2033A;09;BC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, amortissements et provisions;
+2033A;09;BD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, amortissements et provisions;
+2033A;09;BE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, amortissements et provisions;
+2033A;09;BF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, amortissements et provisions;
+2033A;09;BG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, amortissements et provisions;
+2033A;09;BH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, amortissements et provisions;
+2033A;09;BJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, amortissements et provisions;
+2033A;09;BK;MOA;C516.5004.01;NON;;Valeur;Autres créances, amortissements et provisions;
+2033A;09;BL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, amortissements et provisions;
+2033A;09;BM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, amortissements et provisions;
+2033A;09;BP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, amortissements et provisions;
+2033A;09;BQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, amortissements et provisions;
+2033A;09;BR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, amortissements et provisions;
+2033A;09;CA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, net N;
+2033A;09;CB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, net N;
+2033A;09;CC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, net N;
+2033A;09;CD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, net N;
+2033A;09;CE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, net N;
+2033A;09;CF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, net N;
+2033A;09;CG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, net N;
+2033A;09;CH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, net N;
+2033A;09;CJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, net N;
+2033A;09;CK;MOA;C516.5004.01;NON;;Valeur;Autres créances, net N;
+2033A;09;CL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, net N;
+2033A;09;CM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, net N;
+2033A;09;CP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, net N;
+2033A;09;CQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, net N;
+2033A;09;CR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, net N;
+2033A;09;DA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, net N-1;
+2033A;09;DB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, net N-1;
+2033A;09;DC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, net N-1;
+2033A;09;DD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, net N-1;
+2033A;09;DE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, net N-1;
+2033A;09;DF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, net N-1;
+2033A;09;DG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, net N-1;
+2033A;09;DH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, net N-1;
+2033A;09;DJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, net N-1;
+2033A;09;DK;MOA;C516.5004.01;NON;;Valeur;Autres créances, net N-1;
+2033A;09;DL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, net N-1;
+2033A;09;DM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, net N-1;
+2033A;09;DP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, net N-1;
+2033A;09;DQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, net N-1;
+2033A;09;DR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, net N-1;
+2033A;09;EB;MOA;C516.5004.01;NON;;Valeur;Réserve relative à l'achat d'œuvres d'art d'artistes vivants;
+2033A;09;EE;MOA;C516.5004.01;NON;;Valeur;Comptes courants d'associés de l'exercice N;
+2033A;09;FA;MOA;C516.5004.01;NON;;Valeur;Capital social ou individuel;
+2033A;09;FB;MOA;C516.5004.01;NON;;Valeur;Écarts de réévaluation;
+2033A;09;FC;MOA;C516.5004.01;NON;;Valeur;Réserve légale;
+2033A;09;FD;MOA;C516.5004.01;NON;;Valeur;Réserves réglementées exercice N;
+2033A;09;FE;MOA;C516.5004.01;NON;;Valeur;Autres réserves;
+2033A;09;FF;MOA;C516.5004.01;NON;;Valeur;Report à nouveau;
+2033A;09;FG;MOA;C516.5004.01;NON;;Valeur;Résultat de l'exercice;
+2033A;09;FH;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées;
+2033A;09;FJ;MOA;C516.5004.01;NON;;Valeur;Total I des capitaux propres;
+2033A;09;FK;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges;
+2033A;09;FL;MOA;C516.5004.01;NON;;Valeur;Emprunts et dettes assimilées;
+2033A;09;FM;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes reçus sur commandes en cours;
+2033A;09;FN;MOA;C516.5004.01;NON;;Valeur;Fournisseurs et comptes rattachés;
+2033A;09;FP;MOA;C516.5004.01;NON;;Valeur;Autres dettes;
+2033A;09;FQ;MOA;C516.5004.01;NON;;Valeur;Produits constatés d'avance;
+2033A;09;FR;MOA;C516.5004.01;NON;;Valeur;Total III des dettes;
+2033A;09;FS;MOA;C516.5004.01;NON;;Valeur;Total général du passif;
+2033A;09;GA;MOA;C516.5004.01;NON;;Valeur;Capital social ou individuel exercice N-1;
+2033A;09;GB;MOA;C516.5004.01;NON;;Valeur;Écarts de réévaluation exercice N-1;
+2033A;09;GC;MOA;C516.5004.01;NON;;Valeur;Réserve légale exercice N-1;
+2033A;09;GD;MOA;C516.5004.01;NON;;Valeur;Réserves réglementées exercice N-1;
+2033A;09;GE;MOA;C516.5004.01;NON;;Valeur;Autres réserves exercice N-1;
+2033A;09;GF;MOA;C516.5004.01;NON;;Valeur;Report à nouveau exercice N-1;
+2033A;09;GG;MOA;C516.5004.01;NON;;Valeur;Résultat de l'exercice exercice N-1;
+2033A;09;GH;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées exercice N-1;
+2033A;09;GJ;MOA;C516.5004.01;NON;;Valeur;Total I des capitaux propres exercice N-1;
+2033A;09;GK;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges exercice N-1;
+2033A;09;GL;MOA;C516.5004.01;NON;;Valeur;Emprunts et dettes assimilées exercice N-1;
+2033A;09;GM;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes reçus sur commandes en cours exercice N-1;
+2033A;09;GN;MOA;C516.5004.01;NON;;Valeur;Fournisseurs et comptes rattachés exercice N-1;
+2033A;09;GP;MOA;C516.5004.01;NON;;Valeur;Autres dettes exercice N-1;
+2033A;09;GQ;MOA;C516.5004.01;NON;;Valeur;Produits constatés d'avance exercice N-1;
+2033A;09;GR;MOA;C516.5004.01;NON;;Valeur;Total III des dettes exercice N-1;
+2033A;09;GS;MOA;C516.5004.01;NON;;Valeur;Total général du passif exercice N-1;
+2033A;09;HA;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières à moins d'un an;
+2033A;09;HB;MOA;C516.5004.01;NON;;Valeur;Créances à plus d'un an;
+2033A;09;HC;MOA;C516.5004.01;NON;;Valeur;Comptes courants d'associés débiteurs;
+2033A;09;JA;MOA;C516.5004.01;NON;;Valeur;Dettes à plus d'un an;
+2033A;09;JB;MOA;C516.5004.01;NON;;Valeur;Coût de revient des immobilisations acquises ou créées lors de l'exercice;
+2033A;09;JC;MOA;C516.5004.01;NON;;Valeur;Prix de vente hors TVA des immobilisations cédées au cours de l'exercice;
+2033A;09;JD;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033B;09;AA;MOA;C516.5004.01;NON;;Valeur;Ventes de  marchandises, export et livraisons intra communautaires;
+2033B;09;AB;MOA;C516.5004.01;NON;;Valeur;Production vendue de  biens, export et livraisons intra communautaires;
+2033B;09;AC;MOA;C516.5004.01;NON;;Valeur;Production vendue de services, export et livraisons intra communautaires;
+2033B;09;AN;MOA;C516.5004.01;NON;;Valeur;Crédit bail immobilier;
+2033B;09;AP;MOA;C516.5004.01;NON;;Valeur;Taxe professionnelle;
+2033B;09;AU;MOA;C516.5004.01;NON;;Valeur;Provisions fiscales pour implantations commerciales à l'étranger;
+2033B;09;AV;MOA;C516.5004.01;NON;;Valeur;Autres charges, cotisations versées aux organisations syndicales et professionnelles;
+2033B;09;BA;MOA;C516.5004.01;NON;;Valeur;Ventes de marchandises;
+2033B;09;BB;MOA;C516.5004.01;NON;;Valeur;Production vendue de biens;
+2033B;09;BC;MOA;C516.5004.01;NON;;Valeur;Production vendue de services;
+2033B;09;BD;MOA;C516.5004.01;NON;;Valeur;Production stockée;
+2033B;09;BE;MOA;C516.5004.01;NON;;Valeur;Production immobilisée;
+2033B;09;BF;MOA;C516.5004.01;NON;;Valeur;Subventions d'exploitation reçues;
+2033B;09;BG;MOA;C516.5004.01;NON;;Valeur;Autres produits;
+2033B;09;BH;MOA;C516.5004.01;NON;;Valeur;Total des produits d'exploitation hors TVA;
+2033B;09;BJ;MOA;C516.5004.01;NON;;Valeur;Achats de marchandises, y compris droits de douane;
+2033B;09;BK;MOA;C516.5004.01;NON;;Valeur;Variation de stock de marchandises;
+2033B;09;BL;MOA;C516.5004.01;NON;;Valeur;Achats de matières premières et autres approvisionnements y compris droits de douane;
+2033B;09;BM;MOA;C516.5004.01;NON;;Valeur;Variation de stock de matières premières et d'approvisionnements;
+2033B;09;BN;MOA;C516.5004.01;NON;;Valeur;Autres charges externes;
+2033B;09;BP;MOA;C516.5004.01;NON;;Valeur;Impôts, taxes et versements assimilés;
+2033B;09;BQ;MOA;C516.5004.01;NON;;Valeur;Rémunérations du personnel;
+2033B;09;BR;MOA;C516.5004.01;NON;;Valeur;Charges sociales;
+2033B;09;BS;MOA;C516.5004.01;NON;;Valeur;Dotations aux amortissements;
+2033B;09;BT;MOA;C516.5004.01;NON;;Valeur;Dotations aux provisions;
+2033B;09;BU;MOA;C516.5004.01;NON;;Valeur;Autres charges;
+2033B;09;BV;MOA;C516.5004.01;NON;;Valeur;Total des charges d'exploitation;
+2033B;09;BW;MOA;C516.5004.01;NON;;Valeur;Résultat d'exploitation;
+2033B;09;BX;MOA;C516.5004.01;NON;;Valeur;Produits financiers;
+2033B;09;BY;MOA;C516.5004.01;NON;;Valeur;Produits exceptionnels;
+2033B;09;BZ;MOA;C516.5004.01;NON;;Valeur;Charges financières;
+2033B;09;CA;MOA;C516.5004.01;NON;;Valeur;Charges exceptionnelles;
+2033B;09;CB;MOA;C516.5004.01;NON;;Valeur;Impôt sur les bénéfices;
+2033B;09;CC;MOA;C516.5004.01;NON;;Valeur;Bénéfice ou perte N;
+2033B;09;CD;MOA;C516.5004.01;NON;;Valeur;Report du bénéfice;
+2033B;09;CE;MOA;C516.5004.01;NON;;Valeur;Rémunérations et avantages personnels non déductibles;
+2033B;09;CF;MOA;C516.5004.01;NON;;Valeur;Amortissements excédentaires et autres amortissements non déductibles;
+2033B;09;CG;MOA;C516.5004.01;NON;;Valeur;Provisions non déductibles;
+2033B;09;CH;MOA;C516.5004.01;NON;;Valeur;Impôts et taxes non déductibles;
+2033B;09;CJ;MOA;C516.5004.01;NON;;Valeur;Réintégrations diverses;
+2033B;09;CM;MOA;C516.5004.01;NON;;Valeur;Bénéfice fiscal avant imputation des déficits antérieurs;
+2033B;09;CN;MOA;C516.5004.01;NON;;Valeur;Déficit de l'exercice reporté en arrière pour entreprises IS;
+2033B;09;CR;MOA;C516.5004.01;NON;;Valeur;Bénéfice fiscal après imputation des déficits;
+2033B;09;CS;RFF;C506.1154.01;NON;;Valeur;Numéro d'agrément du CGA;
+2033B;09;CT;QTY;C186.6060.01;NON;;Valeur;Effectif moyen du personnel, apprentis;
+2033B;09;CU;QTY;C186.6060.01;NON;;Valeur;Effectif moyen du personnel, handicapés;
+2033B;09;CV;MOA;C516.5004.01;NON;;Valeur;Cotisations personnelles obligatoires de l'exploitant;
+2033B;09;DA;MOA;C516.5004.01;NON;;Valeur;Ventes de marchandises, exercice N-1;
+2033B;09;DB;MOA;C516.5004.01;NON;;Valeur;Production vendue de biens, exercice N-1;
+2033B;09;DC;MOA;C516.5004.01;NON;;Valeur;Production vendue de services, exercice N-1;
+2033B;09;DD;MOA;C516.5004.01;NON;;Valeur;Production stockée, exercice N-1;
+2033B;09;DE;MOA;C516.5004.01;NON;;Valeur;Production immobilisée, exercice N-1;
+2033B;09;DF;MOA;C516.5004.01;NON;;Valeur;Subventions d'exploitation reçues, exercice N-1;
+2033B;09;DG;MOA;C516.5004.01;NON;;Valeur;Autres produits, exercice N-1;
+2033B;09;DH;MOA;C516.5004.01;NON;;Valeur;Total des produits d'exploitation hors TVA, exercice N-1;
+2033B;09;DJ;MOA;C516.5004.01;NON;;Valeur;Achats de marchandises, y compris droits de douane, exercice N-1;
+2033B;09;DK;MOA;C516.5004.01;NON;;Valeur;Variation de stock de marchandises, exercice N-1;
+2033B;09;DL;MOA;C516.5004.01;NON;;Valeur;Achats de matières premières et autres approvisionnements y compris droits de douane, exercice N-1;
+2033B;09;DM;MOA;C516.5004.01;NON;;Valeur;Variation de stock de matières premières et d'approvisionnements, exercice N-1;
+2033B;09;DN;MOA;C516.5004.01;NON;;Valeur;Autres charges externes, exercice N-1;
+2033B;09;DP;MOA;C516.5004.01;NON;;Valeur;Impôts, taxes et versements assimilés, exercice N-1;
+2033B;09;DQ;MOA;C516.5004.01;NON;;Valeur;Rémunérations du personnel, exercice N-1;
+2033B;09;DR;MOA;C516.5004.01;NON;;Valeur;Charges sociales, exercice N-1;
+2033B;09;DS;MOA;C516.5004.01;NON;;Valeur;Dotations aux amortissements, exercice N-1;
+2033B;09;DT;MOA;C516.5004.01;NON;;Valeur;Dotations aux provisions, exercice N-1;
+2033B;09;DU;MOA;C516.5004.01;NON;;Valeur;Autres charges, exercice N-1;
+2033B;09;DV;MOA;C516.5004.01;NON;;Valeur;Total des charges d'exploitation, exercice N-1;
+2033B;09;DW;MOA;C516.5004.01;NON;;Valeur;Résultat d'exploitation, exercice N-1;
+2033B;09;DX;MOA;C516.5004.01;NON;;Valeur;Produits financiers, exercice N-1;
+2033B;09;DY;MOA;C516.5004.01;NON;;Valeur;Produits exceptionnels, exercice N-1;
+2033B;09;DZ;MOA;C516.5004.01;NON;;Valeur;Charges financières, exercice N-1;
+2033B;09;EA;MOA;C516.5004.01;NON;;Valeur;Charges exceptionnelles, exercice N-1;
+2033B;09;EB;MOA;C516.5004.01;NON;;Valeur;Impôt sur les bénéfices, exercice N-1;
+2033B;09;EC;MOA;C516.5004.01;NON;;Valeur;Bénéfice ou perte N-1;
+2033B;09;ED;MOA;C516.5004.01;NON;;Valeur;Report du déficit;
+2033B;09;EK;MOA;C516.5004.01;NON;;Valeur;Exonérations ou abattements sur le bénéfice et exonération entreprises nouvelles ou zone franche Corse;
+2033B;09;EL;MOA;C516.5004.01;NON;;Valeur;Déductions diverses;
+2033B;09;EM;MOA;C516.5004.01;NON;;Valeur;Déficit fiscal avant imputation des déficits antérieurs;
+2033B;09;EP;MOA;C516.5004.01;NON;;Valeur;Déficits antérieurs reportables;
+2033B;09;ER;MOA;C516.5004.01;NON;;Valeur;Déficit fiscal après imputation des déficits;
+2033B;09;EV;MOA;C516.5004.01;NON;;Valeur;Prélèvements personnels de marchandises;
+2033B;09;FA;MOA;C516.5004.01;NON;;Valeur;Zone restruct.  Défense (44 terdecies);
+2033B;09;FB;MOA;C516.5004.01;NON;;Valeur;Zone revitalisation rurales (44 quindecies);
+2033B;09;FJ;MOA;C516.5004.01;NON;;Valeur;Écarts de valeurs liquidatives sur OPVCM;
+2033B;09;FK;MOA;C516.5004.01;NON;;Valeur;Intérêts excédentaires sur comptes courants d'associés;
+2033B;09;FL;MOA;C516.5004.01;NON;;Valeur;Créance due au report en arrière du déficit;
+2033B;09;FM;MOA;C516.5004.01;NON;;Valeur;Primes et cotisations complémentaires facultatives;
+2033B;09;FU;QTY;C186.6060.01;NON;;Valeur;Effectif moyen du personnel;
+2033B;09;GN;MOA;C516.5004.01;NON;;Valeur;Crédit bail mobilier;
+2033B;09;HL;MOA;C516.5004.01;NON;;Valeur;Divers dont investissements outre-mer;
+2033B;09;HU;MOA;C516.5004.01;NON;;Valeur;Montant de la TVA collectée;
+2033B;09;HV;MOA;C516.5004.01;NON;;Valeur;Montant de la TVA déductible sur biens et services;
+2033B;09;HW;MOA;C516.5004.01;NON;;Valeur;Exonération ou abattement sur le bénéfice pour reprise d 'enterprises en difficulté;
+2033B;09;JA;MOA;C516.5004.01;NON;;Valeur;Déficits antérieurs reportables pour les entreprises à l'IS;
+2033B;09;JB;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033B;09;LA;FTX;C108.4440.01;OUI;;TexteLibre1;Détail des divers à réintégrer au résultat fiscal, libellé;
+2033B;09;LB;MOA;C516.5004.01;OUI;;Valeur;Détail des divers à réintégrer au résultat fiscal, montant;
+2033B;09;MA;FTX;C108.4440.01;OUI;;TexteLibre1;Détail des divers à déduire du résultat fiscal, libellé;
+2033B;09;MB;MOA;C516.5004.01;OUI;;Valeur;Détail des divers à déduire du résultat fiscal, montant;
+2033B;09;MC;MOA;C516.5004.01;NON;;Valeur;Déduction pour entreprise nouvelle, art 44 seixes;
+2033B;09;MD;MOA;C516.5004.01;NON;;Valeur;Déduction pour zone franche urbaine , art 44 octies et 44 octies A;
+2033B;09;MF;MOA;C516.5004.01;NON;;Valeur;Déduction pour jeune entreprise innovante, art 44 sexies A;
+2033B;09;MG;MOA;C516.5004.01;NON;;Valeur;Déduction pour pole de compétitivité, art 44 undecies;
+2033B;09;MH;MOA;C516.5004.01;NON;;Valeur;Déduction pour zone franche d'activité, art 44 quaterdecies;
+2033B;09;MJ;QTY;C186.6060.01;NON;;Valeur;Effectif affecté à l'acticité artisanale;
+2033C;09;AA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, valeur brute au début de l'exercice;
+2033C;09;AB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, valeur brute au début de l'exercice;
+2033C;09;AC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, valeur brute au début de l'exercice;
+2033C;09;AD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, valeur brute au début de l'exercice;
+2033C;09;AE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, valeur brute au début de l'exercice;
+2033C;09;AF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, valeur brute au début de l'exercice;
+2033C;09;AG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, valeur brute au début de l'exercice;
+2033C;09;AH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles valeur brute au début de l'exercice;
+2033C;09;AJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, valeur brute au début de l'exercice;
+2033C;09;AK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, valeur brute au début de l'exercice;
+2033C;09;BA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, augmentations;
+2033C;09;BB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, augmentations;
+2033C;09;BC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, augmentations;
+2033C;09;BD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, augmentations;
+2033C;09;BE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, augmentations;
+2033C;09;BF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, augmentations;
+2033C;09;BG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, augmentations;
+2033C;09;BH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles augmentations;
+2033C;09;BJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, augmentations;
+2033C;09;BK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, augmentations;
+2033C;09;CA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, diminutions;
+2033C;09;CB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, diminutions;
+2033C;09;CC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, diminutions;
+2033C;09;CD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, diminutions;
+2033C;09;CE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, diminutions;
+2033C;09;CF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, diminutions;
+2033C;09;CG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, diminutions;
+2033C;09;CH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles, diminutions;
+2033C;09;CJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, diminutions;
+2033C;09;CK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, diminutions;
+2033C;09;DA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, valeur brute à la fin de l'exercice;
+2033C;09;DB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, valeur brute à la fin de l'exercice;
+2033C;09;DC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, valeur brute à la fin de l'exercice;
+2033C;09;DD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, valeur brute en fin d'exercice;
+2033C;09;DE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, valeur brute à la fin de l'exercice;
+2033C;09;DF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, valeur brute à la fin de l'exercice;
+2033C;09;DG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, valeur brute à la fin de l'exercice;
+2033C;09;DH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles, valeur brute à la fin de l'exercice;
+2033C;09;DJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, valeur brute à la fin de l'exercice;
+2033C;09;DK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, valeur brute à la fin de l'exercice;
+2033C;09;EA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;EB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;EC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;ED;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;EE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;EF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;EG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;EH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;EJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;EK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, réévaluation légale, valeur d'origine en fin exercice;
+2033C;09;FA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, valeur brute au début de l'exercice;
+2033C;09;FB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, valeur brute au début de l'exercice;
+2033C;09;FC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, valeur brute au début de l'exercice;
+2033C;09;FD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, valeur brute au début de l'exercice;
+2033C;09;FE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, valeur brute au début de l'exercice;
+2033C;09;FF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, valeur brute au début de l'exercice;
+2033C;09;FG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, valeur brute au début de l'exercice;
+2033C;09;FH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, valeur brute au début de l'exercice;
+2033C;09;GA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, augmentations : dotations de l'exercice;
+2033C;09;GB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, augmentations : dotations de l'exercice;
+2033C;09;GC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, augmentations : dotations de l'exercice;
+2033C;09;GD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, augmentations : dotations de l'exercice;
+2033C;09;GE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, augmentations : dotations de l'exercice;
+2033C;09;GF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, augmentations : dotations de l'exercice;
+2033C;09;GG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, augmentations : dotations de l'exercice;
+2033C;09;GH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, augmentations : dotations de l'exercice;
+2033C;09;HA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, diminutions pour éléments sortis de l'actif et reprises;
+2033C;09;HB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, diminutions pour éléments sortis de l'actif et reprises;
+2033C;09;HC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, diminutions pour éléments sortis de l'actif et reprises;
+2033C;09;HD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, diminutions pour éléments sortis de l'actif et reprises;
+2033C;09;HE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, diminutions pour éléments sortis de l'actif et reprises;
+2033C;09;HF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, diminutions pour éléments sortis de l'actif et reprises;
+2033C;09;HG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, diminutions pour éléments sortis de l'actif et reprises;
+2033C;09;HH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, diminutions pour éléments sortis de l'actif et reprises;
+2033C;09;JA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, montant à la fin de l'exercice;
+2033C;09;JB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, montant à la fin de l'exercice;
+2033C;09;JC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, montant à la fin de l'exercice;
+2033C;09;JD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, montant à la fin de l'exercice;
+2033C;09;JE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, montant à la fin de l'exercice;
+2033C;09;JF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, montant à la fin de l'exercice;
+2033C;09;JG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, montant à la fin de l'exercice;
+2033C;09;JH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, montant à la fin de l'exercice;
+2033C;09;KA;FTX;C108.4440.01;OUI;;TexteLibre1;Nature de l'immobilisation;
+2033C;09;LA;MOA;C516.5004.01;OUI;;Valeur;Valeur d'actif;
+2033C;09;LL;MOA;C516.5004.01;NON;;Valeur;Total des valeurs d'actif;
+2033C;09;MA;MOA;C516.5004.01;OUI;;Valeur;Amortissements;
+2033C;09;ML;MOA;C516.5004.01;NON;;Valeur;Total des amortissements;
+2033C;09;NA;MOA;C516.5004.01;OUI;;Valeur;Valeur résiduelle;
+2033C;09;NL;MOA;C516.5004.01;NON;;Valeur;Total des valeurs résiduelles;
+2033C;09;PA;MOA;C516.5004.01;OUI;;Valeur;Prix de cession;
+2033C;09;PL;MOA;C516.5004.01;NON;;Valeur;Total des prix de cession;
+2033C;09;QA;MOA;C516.5004.01;OUI;;Valeur;Plus ou moins value à court terme;
+2033C;09;QL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values à court terme;
+2033C;09;QM;MOA;C516.5004.01;NON;;Valeur;Régularisations sur les plus ou moins values à court terme;
+2033C;09;QN;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values nettes à court terme;
+2033C;09;QP;MOA;C516.5004.01;NON;;Valeur;Plus values taxables a 16,5%;
+2033C;09;RQ;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033C;09;SA;MOA;C516.5004.01;OUI;;Valeur;Détail plus ou moins value à LT à 15 ou 16%;
+2033C;09;SL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values à LT à 15 ou 16%;
+2033C;09;SM;MOA;C516.5004.01;NON;;Valeur;Régularisation sur plus ou moins value à LT à 15 ou 16%;
+2033C;09;SN;MOA;C516.5004.01;NON;;Valeur;Total des PMVLT à 15 ou 16 %;
+2033C;09;SP;MOA;C516.5004.01;NON;;Valeur;Résultat net de la concession et de la sous-concession de droits de la propriété intellectuelle régime de la PVLT (Art 39 terdecies);
+2033C;09;TA;MOA;C516.5004.01;OUI;;Valeur;Détail plus ou moins value à LT à 0%;
+2033C;09;TL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values à LT à 0%;
+2033C;09;TM;MOA;C516.5004.01;NON;;Valeur;Régularisation sur plus ou moins value à LT à 0 %;
+2033C;09;TN;MOA;C516.5004.01;NON;;Valeur;Total des PMVLT à 0 %;
+2033C;09;UA;MOA;C516.5004.01;OUI;;Valeur;Plus ou moins value a long terme a 16,5%;
+2033C;09;UL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values a long terme a 16,5%;
+2033C;09;UM;MOA;C516.5004.01;NON;;Valeur;Regularisations sur les plus ou moins values a long terme a 16,5%;
+2033C;09;UN;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values nettes a long terme a 16,5%;
+2033D;09;AA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, montant au début de l'exercice;
+2033D;09;AB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, montant au début de l'exercice;
+2033D;09;AC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, montant au début de l'exercice;
+2033D;09;AD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, montant au début de l'exercice;
+2033D;09;AE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, montant au début de l'exercice;
+2033D;09;AF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, montant au début de l'exercice;
+2033D;09;AG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, montant au début de l'exercice;
+2033D;09;AH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, montant au début de l'exercice;
+2033D;09;AN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, montant au début de l'exercice;
+2033D;09;BA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, augmentations, dotations de l'exercice;
+2033D;09;BB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, augmentations, dotations de l'exercice;
+2033D;09;BC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, augmentations, dotations de l'exercice;
+2033D;09;BD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, augmentations, dotations de l'exercice;
+2033D;09;BE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, augmentations, dotations de l'exercice;
+2033D;09;BF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, augmentations, dotations de l'exercice;
+2033D;09;BG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, augmentations, dotations de l'exercice;
+2033D;09;BH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, augmentations, dotations de l'exercice;
+2033D;09;BN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, augmentations;
+2033D;09;CA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, diminutions, reprises de l'exercice;
+2033D;09;CB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, diminutions, reprises de l'exercice;
+2033D;09;CC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, diminutions, reprises de l'exercice;
+2033D;09;CD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, diminutions, reprises de l'exercice;
+2033D;09;CE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, diminutions, reprises de l'exercice;
+2033D;09;CF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, diminutions, reprises de l'exercice;
+2033D;09;CG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, diminutions, reprises de l'exercice;
+2033D;09;CH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, diminutions, reprises de l'exercice;
+2033D;09;CN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, diminutions;
+2033D;09;DA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, montant à la fin de l'exercice;
+2033D;09;DB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, diminutions, montant à la fin de l'exercice;
+2033D;09;DC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, montant à la fin de l'exercice;
+2033D;09;DD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, montant à la fin de l'exercice;
+2033D;09;DE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, montant à la fin de l'exercice;
+2033D;09;DF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, montant à la fin de l'exercice;
+2033D;09;DG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, montant à la fin de l'exercice;
+2033D;09;DH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, montant à la fin de l'exercice;
+2033D;09;DN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, montant à la fin de l'exercice;
+2033D;09;EA;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur immobilisations incorporelles,;
+2033D;09;EB;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur terrains,;
+2033D;09;EC;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur constructions,;
+2033D;09;ED;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations techniques matériel et outillage,;
+2033D;09;EE;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations générales, agencements et aménagements divers,;
+2033D;09;EF;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur matériel de transport,;
+2033D;09;EG;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur autres immobilisations,;
+2033D;09;EH;MOA;C516.5004.01;NON;;Valeur;Total des provisions pour amortissements dérogatoires,;
+2033D;09;FA;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur immobilisations incorporelles,;
+2033D;09;FB;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur terrains,;
+2033D;09;FC;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur constructions,;
+2033D;09;FD;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations techniques matériel et outillage,;
+2033D;09;FE;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations générales, agencements et aménagements divers,;
+2033D;09;FF;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur matériel de transport,;
+2033D;09;FG;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur autres immobilisations,;
+2033D;09;FH;MOA;C516.5004.01;NON;;Valeur;Total des provisions pour amortissements dérogatoires,;
+2033D;09;GJ;FTX;C108.4440.01;OUI;;TexteLibre1;Détail de la ventilation des dotations aux provisions, libellé;
+2033D;09;HA;MOA;C516.5004.01;NON;;Valeur;Dotations aux  provisions pour indemnités pour congés à payer, charges sociales et fiscales correspondantes;
+2033D;09;HH;MOA;C516.5004.01;NON;;Valeur;total des ventilations des dotations aux provisions et charges à payer non déductibles pour l'assiette de l'impôt;
+2033D;09;HJ;MOA;C516.5004.01;OUI;;Valeur;Détail de la ventilation des dotations aux provisions, montant;
+2033D;09;MG;MOA;C516.5004.01;NON;;Valeur;Déficits de l'exercice;
+2033D;09;MH;MOA;C516.5004.01;NON;;Valeur;Total des déficits restant à reporter;
+2033D;09;PF;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033D;09;PG;MOA;C516.5004.01;NON;;Valeur;Déficit restant à reporter au titre de l'exercice précédent;
+2033D;09;PH;MOA;C516.5004.01;NON;;Valeur;Déficits imputés;
+2033D;09;PJ;MOA;C516.5004.01;NON;;Valeur;Déficits reportables;
+2033D;09;PK;MOA;C516.5004.01;NON;;Valeur;Résultat déficitaire résultant de l'article 209C du CGI;
+2033D;09;PL;MOA;C516.5004.01;NON;;Valeur;Déficits étrangers des PME antérieurement déduits (art. 209 C du CGI);
+2033D;09;QA;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt en faveur de la recherche;
+2033D;09;QB;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt en faveur de la formation des dirigeants;
+2033D;09;QC;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt famille;
+2033D;09;QD;MOA;C516.5004.01;NON;;Valeur;Réduction d'impôt en faveur du mécénat;
+2033D;09;QE;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt pour investissement en Corse;
+2033D;09;QF;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt en faveur de l'apprentissage;
+2033D;09;QG;MOA;C516.5004.01;NON;;Valeur;Autres imputations;
+2033D;09;QH;FTX;C108.4440.01;OUI;;TexteLibre1;Détail des autres imputations : libellé;
+2033D;09;QJ;MOA;C516.5004.01;OUI;;Valeur;Détail des autres imputations : montant;
+2033D;09;QK;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt afférent aux valeurs mobilières (BIC);
+2033D;09;QL;CCI;C889.7111.01;NON;TBX;Valeur;Entreprise de transport inscrite au registre des transports art L3113-3 du Code des Transports;
+2033D;09;QM;MOA;C516.5004.01;NON;;Valeur;Montant total des sommes distribuées qui rentrent dans le cadre du dispositif de l'article 235 TER ZCA;
+2033D;09;QN;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt en faveur de la compétitivité et de l'emploi;
+2033E;09;DB;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033E;09;EA;MOA;C516.5004.01;NON;;Valeur;Ventes de marchandises colonne B;
+2033E;09;ED;MOA;C516.5004.01;NON;;Valeur;Production stockée colonne B;
+2033E;09;EE;MOA;C516.5004.01;NON;;Valeur;Production immobilisée à hauteur des seules charges déductibles ayant concouru à sa formation colonne B;
+2033E;09;EF;MOA;C516.5004.01;NON;;Valeur;Subventions d'exploitation reçues et abandons de créance à caractère financier (en partie) colonne B;
+2033E;09;EH;MOA;C516.5004.01;NON;;Valeur;Production vendue, biens colonne B;
+2033E;09;EJ;MOA;C516.5004.01;NON;;Valeur;Production vendue, services colonne B;
+2033E;09;EL;MOA;C516.5004.01;NON;;Valeur;Autres produits de gestion courante hors quote-parts de résultat sur opérations faites en commun colonne B;
+2033E;09;EM;MOA;C516.5004.01;NON;;Valeur;Transferts de charges refacturées et transferts de charges déductibles de la valeur ajoutée colonne B;
+2033E;09;EN;MOA;C516.5004.01;NON;;Valeur;Redevances pour concessions, brevets, licences et assimilés colonne B;
+2033E;09;EP;MOA;C516.5004.01;NON;;Valeur;Plus-values de cession d'éléments d'immobilisations corporelles et incorporelles, si rattachées à une activité normale et courante colonne B;
+2033E;09;EZ;MOA;C516.5004.01;NON;;Valeur;Total de la production de l'entreprise colonne B;
+2033E;09;FA;MOA;C516.5004.01;NON;;Valeur;Achats de marchandises y compris droits de douane colonne B;
+2033E;09;FB;MOA;C516.5004.01;NON;;Valeur;Variation de stocks de marchandises colonne B;
+2033E;09;FC;MOA;C516.5004.01;NON;;Valeur;Achats de matières premières et autres approvisionnements, droits de douane compris colonne B;
+2033E;09;FD;MOA;C516.5004.01;NON;;Valeur;Variation de stocks de matières premières et autres approvisionnements colonne B;
+2033E;09;FE;MOA;C516.5004.01;NON;;Valeur;Autres achats et charges externes à l'exception des loyers et redevances colonne B;
+2033E;09;FH;MOA;C516.5004.01;NON;;Valeur;Taxes sur le chiffre d'affaires autres que la TVA, contributions directes et TIPP colonne B;
+2033E;09;FJ;MOA;C516.5004.01;NON;;Valeur;Loyers et redevances, à l'exception de ceux afférents à des immobilisations corporelles mises à disposition dans le cadre  d'une convention de location-gérance ou de crédit-bail ou encore d'une convention de location de plus de 6 mois colonne B;
+2033E;09;FK;MOA;C516.5004.01;NON;;Valeur;Autres charges de gestion courante hors quote-parts de résultat sur opérations faites en commun colonne B;
+2033E;09;FL;MOA;C516.5004.01;NON;;Valeur;Abandons de créances à caractère financier (en partie) colonne B;
+2033E;09;FM;MOA;C516.5004.01;NON;;Valeur;Moins-values de cession d'éléments d'immobilisation corporelles et incorporelles, si attachées  à une activité normale et courante colonne B;
+2033E;09;FN;MOA;C516.5004.01;NON;;Valeur;Fraction des dotations aux amortissements afférentes à des immobilisations corporelles mises à disposition dans le cadre  d'une convention de location-gérance ou de crédit-bail ou encore d'une convention de location de plus de 6 mois  colonne B;
+2033E;09;FZ;MOA;C516.5004.01;NON;;Valeur;Total des consommations de biens et services en provenance de tiers colonne B;
+2033E;09;GA;MOA;C516.5004.01;NON;;Valeur;Valeur ajoutée produite colonne B;
+2033E;09;GB;MOA;C516.5004.01;NON;;Valeur;Valeur ajoutée assujettie à la CVAE (à reporter sur le 1329 et la 1330 CVAE);
+2033E;09;GC;MOA;C516.5004.01;NON;;Valeur;Charges déductibles de la valeur ajoutée afférente à la production immobilisée déclarée colonne B;
+2033E;09;GD;MOA;C516.5004.01;NON;;Valeur;Rentrées sur créances amorties lorsqu'elles se rapportent au résultat d'exploitation;
+2033F;09;BA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de l'associé personne physique, ville;NOM/DENOMINATION ADRESSE
+2033F;09;BA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de l'associé personne physique, pays;NOM/DENOMINATION ADRESSE
+2033F;09;BA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de l'associé personne physique, code postal;NOM/DENOMINATION ADRESSE
+2033F;09;BA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de l'associé personne physique, numéro, type et nom voie;NOM/DENOMINATION ADRESSE
+2033F;09;BA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de l'associé personne physique, complément de distribution;NOM/DENOMINATION ADRESSE
+2033F;09;BA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de l'associé personne physique, lieu-dit, hameau;NOM/DENOMINATION ADRESSE
+2033F;09;BA;NAD;C080.3036.01;OUI;;Designation;Nom patronymique, prénoms de l'associé personne physique;NOM/DENOMINATION ADRESSE
+2033F;09;BA;NAD;C080.3036.02;OUI;;DesignationSuite1;Nom marital de l'associé personne physique;NOM/DENOMINATION ADRESSE
+2033F;09;BA;NAD;C080.3036.03;OUI;;DesignationSuite2;Titre de l'associé personne physique;NOM/DENOMINATION ADRESSE
+2033F;09;BD;QTY;C186.6060.01;OUI;;Valeur;Nombre de parts de l'associé personne physique;
+2033F;09;BE;DTM;C507.2380.01;OUI;102;Valeur;Date de naissance de l'associé personne physique;Format attendu : yyyyMMdd
+2033F;09;BF;FTX;C108.4440.01;OUI;;TexteLibre1;Département de naissance de l'associé personne physique;
+2033F;09;BF;FTX;C108.4440.02;OUI;;TexteLibre2;Commune de naissance de l'associé personne physique;
+2033F;09;BF;FTX;C108.4440.03;OUI;;TexteLibre3;Pays de naissance de l'associé personne physique;
+2033F;09;BR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention de l'associé personne physique;
+2033F;09;GA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de l'associé personne morale, ville;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de l'associé personne morale, pays;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de l'associé personne morale, code postal;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de l'associé personne morale, numéro, type et nom voie;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de l'associé personne morale, complément de distribution;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de l'associé personne morale, lieu-dit, hameau;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GA;NAD;C080.3036.01;OUI;;Designation;Dénomination de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GA;NAD;C080.3036.02;OUI;;DesignationSuite1;Complément de désignation de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GA;NAD;C080.3036.03;OUI;;DesignationSuite2;Forme juridique de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GA;NAD;C082.3039.01;OUI;;Identifiant;Numéro SIREN de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;09;GD;QTY;C186.6060.01;OUI;;Valeur;Nombre de parts de l'associé personne morale;
+2033F;09;GR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention de l'associé personne morale;
+2033F;09;GS;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033F;09;GT;QTY;C186.6060.01;NON;;Valeur;Nombre total de personnes morales associés ou actionnaires de l'entreprise;
+2033F;09;GU;QTY;C186.6060.01;NON;;Valeur;Nombre total de parts ou d'actions détenus par des associés ou actionnaires personnes morales de l'entreprise;
+2033F;09;GV;QTY;C186.6060.01;NON;;Valeur;Nombre total de personnes physiques associés ou actionnaires de l'entreprise;
+2033F;09;GW;QTY;C186.6060.01;NON;;Valeur;Nombre total de parts ou d'actions détenus par des associés ou actionnaires personnes physiques de l'entreprise;
+2033G;09;GA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de la filiale ou participation, ville;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de la filiale ou participation, pays;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de la filiale ou participation, code postal;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de la filiale ou participation, Numéro type et nom voie;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de la filiale ou participation, complément de distribution;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de la filiale ou participation, lieu-dit hameau;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GA;NAD;C080.3036.01;OUI;;Designation;Désignation de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GA;NAD;C080.3036.02;OUI;;DesignationSuite1;Complément de désignation de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GA;NAD;C080.3036.03;OUI;;DesignationSuite2;Forme juridique de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GA;NAD;C082.3039.01;OUI;;Identifiant;Numéro SIREN de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;09;GR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention;
+2033G;09;GS;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033G;09;GT;QTY;C186.6060.01;NON;;Valeur;Nombre total de filiales détenues par l'entreprise;
+F-IDENTIF;09;AA;NAD;0000.3164.01;NON;;AdresseVille;Adresse du déclarant  ville;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;0000.3207.01;NON;;AdresseCodePays;Identification du déclarant  pays;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;0000.3251.01;NON;;AdresseCodePostal;Adresse du déclarant  code postal;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;C059.3042.01;NON;;AdresseNumero, AdresseType, AdresseVoie;Adresse du déclarant  numéro   type et nom voie;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;C059.3042.02;NON;;AdresseComplement;Adresse du déclarant  complément d'adresse;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;C059.3042.03;NON;;AdresseHameau;Adresse du déclarant  lieu-dit  hameau;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;C076.3148.01;NON;TE;Telephone;Adresse du déclarant  téléphone;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;C076.3148.01;NON;EM;Email;Adresse du déclarant  mail;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;C080.3036.01;NON;;Designation;Identification du déclarant    désignation ou nom prénom;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;C080.3036.02;NON;;DesignationSuite1;Identification du déclarant   qualité ou complément de désignation;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;C080.3036.03;NON;;DesignationSuite2;Identification du déclarant  forme juridique;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AA;NAD;C082.3039.01;NON;;Identifiant;Numéro SIRET ou SIREN;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;09;AB;RFF;C506.1154.01;NON;;Valeur;Code activité NAF;
+F-IDENTIF;09;BA;CCI;C889.7111.01;NON;TCF;Valeur;Catégorie fiscale;
+F-IDENTIF;09;BB;CCI;C889.7111.01;NON;TRF;Valeur;Régime fiscal;
+F-IDENTIF;09;BC;CCI;C889.7111.01;NON;TBS;Valeur;Imposition IS-IR;
+F-IDENTIF;09;BD;CCI;C889.7111.01;NON;TCD;Valeur;Cession ou cessation déclarée;
+F-IDENTIF;09;BF;CCI;C889.7111.01;NON;TDP;Valeur;Indentification de dépôt provisoire;
+F-IDENTIF;09;CA;DTM;C507.2380.01;NON;102;Valeur;Date de début de période;Format attendu : yyyyMMdd
+F-IDENTIF;09;CB;DTM;C507.2380.01;NON;102;Valeur;Date de fin de période;Format attendu : yyyyMMdd
+F-IDENTIF;09;CC;DTM;C507.2380.01;NON;802;Valeur;Durée de l'exercice N;
+F-IDENTIF;09;CD;DTM;C507.2380.01;NON;102;Valeur;Date de clôture de l'exercice N-1;Format attendu : yyyyMMdd
+F-IDENTIF;09;CE;DTM;C507.2380.01;NON;802;Valeur;Durée de l'exercie N-1;
+F-IDENTIF;09;CF;DTM;C507.2380.01;NON;102;Valeur;Date d'arrêté provisoire des comptes;Format attendu : yyyyMMdd
+F-IDENTIF;09;DA;CUX;C504.6345.01;NON;;MonnaieCible;Monnaie de dépôt;
+F-IDENTIF;09;KD;RFF;C506.1154.01;NON;;Valeur;Référence de l'obligation fiscale;
+2033A;10;AA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, brut;
+2033A;10;AB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, brut;
+2033A;10;AC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, brut;
+2033A;10;AD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, brut;
+2033A;10;AE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, brut;
+2033A;10;AF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, brut;
+2033A;10;AG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, brut;
+2033A;10;AH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, brut;
+2033A;10;AJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, brut;
+2033A;10;AK;MOA;C516.5004.01;NON;;Valeur;Autres créances, brut;
+2033A;10;AL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, brut;
+2033A;10;AM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, brut;
+2033A;10;AP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, brut;
+2033A;10;AQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, brut;
+2033A;10;AR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, brut;
+2033A;10;BA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, amortissements et provisions;
+2033A;10;BB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, amortissements et provisions;
+2033A;10;BC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, amortissements et provisions;
+2033A;10;BD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, amortissements et provisions;
+2033A;10;BE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, amortissements et provisions;
+2033A;10;BF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, amortissements et provisions;
+2033A;10;BG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, amortissements et provisions;
+2033A;10;BH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, amortissements et provisions;
+2033A;10;BJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, amortissements et provisions;
+2033A;10;BK;MOA;C516.5004.01;NON;;Valeur;Autres créances, amortissements et provisions;
+2033A;10;BL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, amortissements et provisions;
+2033A;10;BM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, amortissements et provisions;
+2033A;10;BP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, amortissements et provisions;
+2033A;10;BQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, amortissements et provisions;
+2033A;10;BR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, amortissements et provisions;
+2033A;10;CA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, net N;
+2033A;10;CB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, net N;
+2033A;10;CC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, net N;
+2033A;10;CD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, net N;
+2033A;10;CE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, net N;
+2033A;10;CF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, net N;
+2033A;10;CG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, net N;
+2033A;10;CH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, net N;
+2033A;10;CJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, net N;
+2033A;10;CK;MOA;C516.5004.01;NON;;Valeur;Autres créances, net N;
+2033A;10;CL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, net N;
+2033A;10;CM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, net N;
+2033A;10;CP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, net N;
+2033A;10;CQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, net N;
+2033A;10;CR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, net N;
+2033A;10;EB;MOA;C516.5004.01;NON;;Valeur;Réserve relative à l'achat d'œuvres d'art d'artistes vivants;
+2033A;10;EE;MOA;C516.5004.01;NON;;Valeur;Comptes courants d'associés de l'exercice N;
+2033A;10;FA;MOA;C516.5004.01;NON;;Valeur;Capital social ou individuel;
+2033A;10;FB;MOA;C516.5004.01;NON;;Valeur;Écarts de réévaluation;
+2033A;10;FC;MOA;C516.5004.01;NON;;Valeur;Réserve légale;
+2033A;10;FD;MOA;C516.5004.01;NON;;Valeur;Réserves réglementées exercice N;
+2033A;10;FE;MOA;C516.5004.01;NON;;Valeur;Autres réserves;
+2033A;10;FF;MOA;C516.5004.01;NON;;Valeur;Report à nouveau;
+2033A;10;FG;MOA;C516.5004.01;NON;;Valeur;Résultat de l'exercice;
+2033A;10;FH;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées;
+2033A;10;FJ;MOA;C516.5004.01;NON;;Valeur;Total I des capitaux propres;
+2033A;10;FK;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges;
+2033A;10;FL;MOA;C516.5004.01;NON;;Valeur;Emprunts et dettes assimilées;
+2033A;10;FM;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes reçus sur commandes en cours;
+2033A;10;FN;MOA;C516.5004.01;NON;;Valeur;Fournisseurs et comptes rattachés;
+2033A;10;FP;MOA;C516.5004.01;NON;;Valeur;Autres dettes;
+2033A;10;FQ;MOA;C516.5004.01;NON;;Valeur;Produits constatés d'avance;
+2033A;10;FR;MOA;C516.5004.01;NON;;Valeur;Total III des dettes;
+2033A;10;FS;MOA;C516.5004.01;NON;;Valeur;Total général du passif;
+2033A;10;HA;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières à moins d'un an;
+2033A;10;HB;MOA;C516.5004.01;NON;;Valeur;Créances à plus d'un an;
+2033A;10;HC;MOA;C516.5004.01;NON;;Valeur;Comptes courants d'associés débiteurs;
+2033A;10;JA;MOA;C516.5004.01;NON;;Valeur;Dettes à plus d'un an;
+2033A;10;JB;MOA;C516.5004.01;NON;;Valeur;Coût de revient des immobilisations acquises ou créées lors de l'exercice;
+2033A;10;JC;MOA;C516.5004.01;NON;;Valeur;Prix de vente hors TVA des immobilisations cédées au cours de l'exercice;
+2033A;10;JD;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033B;10;AA;MOA;C516.5004.01;NON;;Valeur;Ventes de  marchandises, export et livraisons intra communautaires;
+2033B;10;AB;MOA;C516.5004.01;NON;;Valeur;Production vendue de  biens, export et livraisons intra communautaires;
+2033B;10;AC;MOA;C516.5004.01;NON;;Valeur;Production vendue de services, export et livraisons intra communautaires;
+2033B;10;AN;MOA;C516.5004.01;NON;;Valeur;Crédit bail immobilier;
+2033B;10;AP;MOA;C516.5004.01;NON;;Valeur;Taxe professionnelle;
+2033B;10;AU;MOA;C516.5004.01;NON;;Valeur;Provisions fiscales pour implantations commerciales à l'étranger;
+2033B;10;AV;MOA;C516.5004.01;NON;;Valeur;Autres charges, cotisations versées aux organisations syndicales et professionnelles;
+2033B;10;BA;MOA;C516.5004.01;NON;;Valeur;Ventes de marchandises;
+2033B;10;BB;MOA;C516.5004.01;NON;;Valeur;Production vendue de biens;
+2033B;10;BC;MOA;C516.5004.01;NON;;Valeur;Production vendue de services;
+2033B;10;BD;MOA;C516.5004.01;NON;;Valeur;Production stockée;
+2033B;10;BE;MOA;C516.5004.01;NON;;Valeur;Production immobilisée;
+2033B;10;BF;MOA;C516.5004.01;NON;;Valeur;Subventions d'exploitation reçues;
+2033B;10;BG;MOA;C516.5004.01;NON;;Valeur;Autres produits;
+2033B;10;BH;MOA;C516.5004.01;NON;;Valeur;Total des produits d'exploitation hors TVA;
+2033B;10;BJ;MOA;C516.5004.01;NON;;Valeur;Achats de marchandises, y compris droits de douane;
+2033B;10;BK;MOA;C516.5004.01;NON;;Valeur;Variation de stock de marchandises;
+2033B;10;BL;MOA;C516.5004.01;NON;;Valeur;Achats de matières premières et autres approvisionnements y compris droits de douane;
+2033B;10;BM;MOA;C516.5004.01;NON;;Valeur;Variation de stock de matières premières et d'approvisionnements;
+2033B;10;BN;MOA;C516.5004.01;NON;;Valeur;Autres charges externes;
+2033B;10;BP;MOA;C516.5004.01;NON;;Valeur;Impôts, taxes et versements assimilés;
+2033B;10;BQ;MOA;C516.5004.01;NON;;Valeur;Rémunérations du personnel;
+2033B;10;BR;MOA;C516.5004.01;NON;;Valeur;Charges sociales;
+2033B;10;BS;MOA;C516.5004.01;NON;;Valeur;Dotations aux amortissements;
+2033B;10;BT;MOA;C516.5004.01;NON;;Valeur;Dotations aux provisions;
+2033B;10;BU;MOA;C516.5004.01;NON;;Valeur;Autres charges;
+2033B;10;BV;MOA;C516.5004.01;NON;;Valeur;Total des charges d'exploitation;
+2033B;10;BW;MOA;C516.5004.01;NON;;Valeur;Résultat d'exploitation;
+2033B;10;BX;MOA;C516.5004.01;NON;;Valeur;Produits financiers;
+2033B;10;BY;MOA;C516.5004.01;NON;;Valeur;Produits exceptionnels;
+2033B;10;BZ;MOA;C516.5004.01;NON;;Valeur;Charges financières;
+2033B;10;CA;MOA;C516.5004.01;NON;;Valeur;Charges exceptionnelles;
+2033B;10;CB;MOA;C516.5004.01;NON;;Valeur;Impôt sur les bénéfices;
+2033B;10;CC;MOA;C516.5004.01;NON;;Valeur;Bénéfice ou perte N;
+2033B;10;CD;MOA;C516.5004.01;NON;;Valeur;Report du bénéfice;
+2033B;10;CE;MOA;C516.5004.01;NON;;Valeur;Rémunérations et avantages personnels non déductibles;
+2033B;10;CF;MOA;C516.5004.01;NON;;Valeur;Amortissements excédentaires et autres amortissements non déductibles;
+2033B;10;CG;MOA;C516.5004.01;NON;;Valeur;Provisions non déductibles;
+2033B;10;CH;MOA;C516.5004.01;NON;;Valeur;Impôts et taxes non déductibles;
+2033B;10;CJ;MOA;C516.5004.01;NON;;Valeur;Réintégrations diverses;
+2033B;10;CM;MOA;C516.5004.01;NON;;Valeur;Bénéfice fiscal avant imputation des déficits antérieurs;
+2033B;10;CN;MOA;C516.5004.01;NON;;Valeur;Déficit de l'exercice reporté en arrière pour entreprises IS;
+2033B;10;CR;MOA;C516.5004.01;NON;;Valeur;Bénéfice fiscal après imputation des déficits;
+2033B;10;CS;RFF;C506.1154.01;NON;;Valeur;Numéro d'agrément du CGA;
+2033B;10;CT;QTY;C186.6060.01;NON;;Valeur;Effectif moyen du personnel, apprentis;
+2033B;10;CU;QTY;C186.6060.01;NON;;Valeur;Effectif moyen du personnel, handicapés;
+2033B;10;CV;MOA;C516.5004.01;NON;;Valeur;Cotisations personnelles obligatoires de l'exploitant;
+2033B;10;ED;MOA;C516.5004.01;NON;;Valeur;Report du déficit;
+2033B;10;EK;MOA;C516.5004.01;NON;;Valeur;Exonérations ou abattements sur le bénéfice et exonération entreprises nouvelles ou zone franche Corse;
+2033B;10;EL;MOA;C516.5004.01;NON;;Valeur;Déductions diverses;
+2033B;10;EM;MOA;C516.5004.01;NON;;Valeur;Déficit fiscal avant imputation des déficits antérieurs;
+2033B;10;EP;MOA;C516.5004.01;NON;;Valeur;Déficits antérieurs reportables;
+2033B;10;ER;MOA;C516.5004.01;NON;;Valeur;Déficit fiscal après imputation des déficits;
+2033B;10;EV;MOA;C516.5004.01;NON;;Valeur;Prélèvements personnels de marchandises;
+2033B;10;FA;MOA;C516.5004.01;NON;;Valeur;Zone restruct.  Défense (44 terdecies);
+2033B;10;FB;MOA;C516.5004.01;NON;;Valeur;Zone revitalisation rurales (44 quindecies);
+2033B;10;FJ;MOA;C516.5004.01;NON;;Valeur;Écarts de valeurs liquidatives sur OPVCM;
+2033B;10;FK;MOA;C516.5004.01;NON;;Valeur;Intérêts excédentaires sur comptes courants d'associés;
+2033B;10;FL;MOA;C516.5004.01;NON;;Valeur;Créance due au report en arrière du déficit;
+2033B;10;FM;MOA;C516.5004.01;NON;;Valeur;Primes et cotisations complémentaires facultatives;
+2033B;10;FU;QTY;C186.6060.01;NON;;Valeur;Effectif moyen du personnel;
+2033B;10;GN;MOA;C516.5004.01;NON;;Valeur;Crédit bail mobilier;
+2033B;10;HL;MOA;C516.5004.01;NON;;Valeur;Divers dont investissements outre-mer;
+2033B;10;HU;MOA;C516.5004.01;NON;;Valeur;Montant de la TVA collectée;
+2033B;10;HV;MOA;C516.5004.01;NON;;Valeur;Montant de la TVA déductible sur biens et services;
+2033B;10;HW;MOA;C516.5004.01;NON;;Valeur;Exonération ou abattement sur le bénéfice pour reprise d 'enterprises en difficulté;
+2033B;10;JA;MOA;C516.5004.01;NON;;Valeur;Déficits antérieurs reportables pour les entreprises à l'IS;
+2033B;10;JB;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033B;10;LA;FTX;C108.4440.01;OUI;;TexteLibre1;Détail des divers à réintégrer au résultat fiscal, libellé;
+2033B;10;LB;MOA;C516.5004.01;OUI;;Valeur;Détail des divers à réintégrer au résultat fiscal, montant;
+2033B;10;MA;FTX;C108.4440.01;OUI;;TexteLibre1;Détail des divers à déduire du résultat fiscal, libellé;
+2033B;10;MB;MOA;C516.5004.01;OUI;;Valeur;Détail des divers à déduire du résultat fiscal, montant;
+2033B;10;MC;MOA;C516.5004.01;NON;;Valeur;Déduction pour entreprise nouvelle, art 44 seixes;
+2033B;10;MD;MOA;C516.5004.01;NON;;Valeur;Déduction pour zone franche urbaine , art 44 octies et 44 octies A;
+2033B;10;MF;MOA;C516.5004.01;NON;;Valeur;Déduction pour jeune entreprise innovante, art 44 sexies A;
+2033B;10;MH;MOA;C516.5004.01;NON;;Valeur;Déduction pour zone franche d'activité, art 44 quaterdecies;
+2033B;10;MJ;QTY;C186.6060.01;NON;;Valeur;Effectif affecté à l'acticité artisanale;
+2033C;10;AA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, valeur brute au début de l'exercice;
+2033C;10;AB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, valeur brute au début de l'exercice;
+2033C;10;AC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, valeur brute au début de l'exercice;
+2033C;10;AD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, valeur brute au début de l'exercice;
+2033C;10;AE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, valeur brute au début de l'exercice;
+2033C;10;AF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, valeur brute au début de l'exercice;
+2033C;10;AG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, valeur brute au début de l'exercice;
+2033C;10;AH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles valeur brute au début de l'exercice;
+2033C;10;AJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, valeur brute au début de l'exercice;
+2033C;10;AK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, valeur brute au début de l'exercice;
+2033C;10;BA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, augmentations;
+2033C;10;BB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, augmentations;
+2033C;10;BC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, augmentations;
+2033C;10;BD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, augmentations;
+2033C;10;BE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, augmentations;
+2033C;10;BF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, augmentations;
+2033C;10;BG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, augmentations;
+2033C;10;BH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles augmentations;
+2033C;10;BJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, augmentations;
+2033C;10;BK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, augmentations;
+2033C;10;CA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, diminutions;
+2033C;10;CB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, diminutions;
+2033C;10;CC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, diminutions;
+2033C;10;CD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, diminutions;
+2033C;10;CE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, diminutions;
+2033C;10;CF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, diminutions;
+2033C;10;CG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, diminutions;
+2033C;10;CH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles, diminutions;
+2033C;10;CJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, diminutions;
+2033C;10;CK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, diminutions;
+2033C;10;DA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, valeur brute à la fin de l'exercice;
+2033C;10;DB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, valeur brute à la fin de l'exercice;
+2033C;10;DC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, valeur brute à la fin de l'exercice;
+2033C;10;DD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, valeur brute en fin d'exercice;
+2033C;10;DE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, valeur brute à la fin de l'exercice;
+2033C;10;DF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, valeur brute à la fin de l'exercice;
+2033C;10;DG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, valeur brute à la fin de l'exercice;
+2033C;10;DH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles, valeur brute à la fin de l'exercice;
+2033C;10;DJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, valeur brute à la fin de l'exercice;
+2033C;10;DK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, valeur brute à la fin de l'exercice;
+2033C;10;EA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;EB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;EC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;ED;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;EE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;EF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;EG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;EH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;EJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;EK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, réévaluation légale, valeur d'origine en fin exercice;
+2033C;10;FA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, valeur brute au début de l'exercice;
+2033C;10;FB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, valeur brute au début de l'exercice;
+2033C;10;FC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, valeur brute au début de l'exercice;
+2033C;10;FD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, valeur brute au début de l'exercice;
+2033C;10;FE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, valeur brute au début de l'exercice;
+2033C;10;FF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, valeur brute au début de l'exercice;
+2033C;10;FG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, valeur brute au début de l'exercice;
+2033C;10;FH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, valeur brute au début de l'exercice;
+2033C;10;GA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, augmentations : dotations de l'exercice;
+2033C;10;GB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, augmentations : dotations de l'exercice;
+2033C;10;GC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, augmentations : dotations de l'exercice;
+2033C;10;GD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, augmentations : dotations de l'exercice;
+2033C;10;GE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, augmentations : dotations de l'exercice;
+2033C;10;GF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, augmentations : dotations de l'exercice;
+2033C;10;GG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, augmentations : dotations de l'exercice;
+2033C;10;GH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, augmentations : dotations de l'exercice;
+2033C;10;HA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, diminutions pour éléments sortis de l'actif et reprises;
+2033C;10;HB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, diminutions pour éléments sortis de l'actif et reprises;
+2033C;10;HC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, diminutions pour éléments sortis de l'actif et reprises;
+2033C;10;HD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, diminutions pour éléments sortis de l'actif et reprises;
+2033C;10;HE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, diminutions pour éléments sortis de l'actif et reprises;
+2033C;10;HF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, diminutions pour éléments sortis de l'actif et reprises;
+2033C;10;HG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, diminutions pour éléments sortis de l'actif et reprises;
+2033C;10;HH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, diminutions pour éléments sortis de l'actif et reprises;
+2033C;10;JA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, montant à la fin de l'exercice;
+2033C;10;JB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, montant à la fin de l'exercice;
+2033C;10;JC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, montant à la fin de l'exercice;
+2033C;10;JD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, montant à la fin de l'exercice;
+2033C;10;JE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, montant à la fin de l'exercice;
+2033C;10;JF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, montant à la fin de l'exercice;
+2033C;10;JG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, montant à la fin de l'exercice;
+2033C;10;JH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, montant à la fin de l'exercice;
+2033C;10;KA;FTX;C108.4440.01;OUI;;TexteLibre1;Nature de l'immobilisation;
+2033C;10;LA;MOA;C516.5004.01;OUI;;Valeur;Valeur d'actif;
+2033C;10;LL;MOA;C516.5004.01;NON;;Valeur;Total des valeurs d'actif;
+2033C;10;MA;MOA;C516.5004.01;OUI;;Valeur;Amortissements;
+2033C;10;ML;MOA;C516.5004.01;NON;;Valeur;Total des amortissements;
+2033C;10;NA;MOA;C516.5004.01;OUI;;Valeur;Valeur résiduelle;
+2033C;10;NL;MOA;C516.5004.01;NON;;Valeur;Total des valeurs résiduelles;
+2033C;10;PA;MOA;C516.5004.01;OUI;;Valeur;Prix de cession;
+2033C;10;PL;MOA;C516.5004.01;NON;;Valeur;Total des prix de cession;
+2033C;10;QA;MOA;C516.5004.01;OUI;;Valeur;Plus ou moins value à court terme;
+2033C;10;QL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values à court terme;
+2033C;10;QM;MOA;C516.5004.01;NON;;Valeur;Régularisations sur les plus ou moins values à court terme;
+2033C;10;QN;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values nettes à court terme;
+2033C;10;QP;MOA;C516.5004.01;NON;;Valeur;Plus values taxables a 16,5%;
+2033C;10;RQ;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033C;10;SA;MOA;C516.5004.01;OUI;;Valeur;Détail plus ou moins value à LT à 15 ou 16%;
+2033C;10;SL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values à LT à 15 ou 16%;
+2033C;10;SM;MOA;C516.5004.01;NON;;Valeur;Régularisation sur plus ou moins value à LT à 15 ou 16%;
+2033C;10;SN;MOA;C516.5004.01;NON;;Valeur;Total des PMVLT à 15 ou 16 %;
+2033C;10;SP;MOA;C516.5004.01;NON;;Valeur;Résultat net de la concession et de la sous-concession de droits de la propriété intellectuelle régime de la PVLT (Art 39 terdecies);
+2033C;10;TA;MOA;C516.5004.01;OUI;;Valeur;Détail plus ou moins value à LT à 0%;
+2033C;10;TL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values à LT à 0%;
+2033C;10;TM;MOA;C516.5004.01;NON;;Valeur;Régularisation sur plus ou moins value à LT à 0 %;
+2033C;10;TN;MOA;C516.5004.01;NON;;Valeur;Total des PMVLT à 0 %;
+2033C;10;UA;MOA;C516.5004.01;OUI;;Valeur;Plus ou moins value a long terme a 16,5%;
+2033C;10;UL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values a long terme a 16,5%;
+2033C;10;UM;MOA;C516.5004.01;NON;;Valeur;Regularisations sur les plus ou moins values a long terme a 16,5%;
+2033C;10;UN;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values nettes a long terme a 16,5%;
+2033D;10;AA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, montant au début de l'exercice;
+2033D;10;AB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, montant au début de l'exercice;
+2033D;10;AC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, montant au début de l'exercice;
+2033D;10;AD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, montant au début de l'exercice;
+2033D;10;AE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, montant au début de l'exercice;
+2033D;10;AF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, montant au début de l'exercice;
+2033D;10;AG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, montant au début de l'exercice;
+2033D;10;AH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, montant au début de l'exercice;
+2033D;10;AN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, montant au début de l'exercice;
+2033D;10;BA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, augmentations, dotations de l'exercice;
+2033D;10;BB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, augmentations, dotations de l'exercice;
+2033D;10;BC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, augmentations, dotations de l'exercice;
+2033D;10;BD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, augmentations, dotations de l'exercice;
+2033D;10;BE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, augmentations, dotations de l'exercice;
+2033D;10;BF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, augmentations, dotations de l'exercice;
+2033D;10;BG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, augmentations, dotations de l'exercice;
+2033D;10;BH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, augmentations, dotations de l'exercice;
+2033D;10;BN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, augmentations;
+2033D;10;CA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, diminutions, reprises de l'exercice;
+2033D;10;CB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, diminutions, reprises de l'exercice;
+2033D;10;CC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, diminutions, reprises de l'exercice;
+2033D;10;CD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, diminutions, reprises de l'exercice;
+2033D;10;CE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, diminutions, reprises de l'exercice;
+2033D;10;CF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, diminutions, reprises de l'exercice;
+2033D;10;CG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, diminutions, reprises de l'exercice;
+2033D;10;CH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, diminutions, reprises de l'exercice;
+2033D;10;CN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, diminutions;
+2033D;10;DA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, montant à la fin de l'exercice;
+2033D;10;DB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, diminutions, montant à la fin de l'exercice;
+2033D;10;DC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, montant à la fin de l'exercice;
+2033D;10;DD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, montant à la fin de l'exercice;
+2033D;10;DE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, montant à la fin de l'exercice;
+2033D;10;DF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, montant à la fin de l'exercice;
+2033D;10;DG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, montant à la fin de l'exercice;
+2033D;10;DH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, montant à la fin de l'exercice;
+2033D;10;DN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, montant à la fin de l'exercice;
+2033D;10;EA;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur immobilisations incorporelles,;
+2033D;10;EB;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur terrains,;
+2033D;10;EC;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur constructions,;
+2033D;10;ED;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations techniques matériel et outillage,;
+2033D;10;EE;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations générales, agencements et aménagements divers,;
+2033D;10;EF;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur matériel de transport,;
+2033D;10;EG;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur autres immobilisations,;
+2033D;10;EH;MOA;C516.5004.01;NON;;Valeur;Total des provisions pour amortissements dérogatoires,;
+2033D;10;FA;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur immobilisations incorporelles,;
+2033D;10;FB;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur terrains,;
+2033D;10;FC;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur constructions,;
+2033D;10;FD;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations techniques matériel et outillage,;
+2033D;10;FE;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations générales, agencements et aménagements divers,;
+2033D;10;FF;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur matériel de transport,;
+2033D;10;FG;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur autres immobilisations,;
+2033D;10;FH;MOA;C516.5004.01;NON;;Valeur;Total des provisions pour amortissements dérogatoires,;
+2033D;10;GJ;FTX;C108.4440.01;OUI;;TexteLibre1;Détail de la ventilation des dotations aux provisions, libellé;
+2033D;10;HA;MOA;C516.5004.01;NON;;Valeur;Dotations aux  provisions pour indemnités pour congés à payer, charges sociales et fiscales correspondantes;
+2033D;10;HH;MOA;C516.5004.01;NON;;Valeur;total des ventilations des dotations aux provisions et charges à payer non déductibles pour l'assiette de l'impôt;
+2033D;10;HJ;MOA;C516.5004.01;OUI;;Valeur;Détail de la ventilation des dotations aux provisions, montant;
+2033D;10;MG;MOA;C516.5004.01;NON;;Valeur;Déficits de l'exercice;
+2033D;10;MH;MOA;C516.5004.01;NON;;Valeur;Total des déficits restant à reporter;
+2033D;10;PF;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033D;10;PG;MOA;C516.5004.01;NON;;Valeur;Déficit restant à reporter au titre de l'exercice précédent;
+2033D;10;PH;MOA;C516.5004.01;NON;;Valeur;Déficits imputés;
+2033D;10;PJ;MOA;C516.5004.01;NON;;Valeur;Déficits reportables;
+2033D;10;PK;MOA;C516.5004.01;NON;;Valeur;Résultat déficitaire résultant de l'article 209C du CGI;
+2033D;10;PL;MOA;C516.5004.01;NON;;Valeur;Déficits étrangers des PME antérieurement déduits (art. 209 C du CGI);
+2033D;10;QL;CCI;C889.7111.01;NON;TBX;Valeur;Entreprise de transport inscrite au registre des transports art L3113-3 et  L3211-1 du Code des Transports;
+2033D;10;QM;MOA;C516.5004.01;NON;;Valeur;Montant total des sommes distribuées qui rentrent dans le cadre du dispositif de l'article 235 TER ZCA;
+2033E;10;DB;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033E;10;EA;MOA;C516.5004.01;NON;;Valeur;Ventes de marchandises colonne B;
+2033E;10;ED;MOA;C516.5004.01;NON;;Valeur;Production stockée colonne B;
+2033E;10;EE;MOA;C516.5004.01;NON;;Valeur;Production immobilisée à hauteur des seules charges déductibles ayant concouru à sa formation colonne B;
+2033E;10;EF;MOA;C516.5004.01;NON;;Valeur;Subventions d'exploitation reçues et abandons de créances à caractère commercial;
+2033E;10;EH;MOA;C516.5004.01;NON;;Valeur;Production vendue, biens colonne B;
+2033E;10;EJ;MOA;C516.5004.01;NON;;Valeur;Production vendue, services colonne B;
+2033E;10;EL;MOA;C516.5004.01;NON;;Valeur;Autres produits de gestion courante hors quote-parts de résultat sur opérations faites en commun colonne B;
+2033E;10;EM;MOA;C516.5004.01;NON;;Valeur;Transferts de charges refacturées et transferts de charges déductibles de la valeur ajoutée colonne B;
+2033E;10;EN;MOA;C516.5004.01;NON;;Valeur;Redevances pour concessions, brevets, licences et assimilés colonne B;
+2033E;10;EP;MOA;C516.5004.01;NON;;Valeur;Plus-values de cession d'éléments d'immobilisations corporelles et incorporelles, si rattachées à une activité normale et courante colonne B;
+2033E;10;EZ;MOA;C516.5004.01;NON;;Valeur;Total de la production de l'entreprise colonne B;
+2033E;10;FA;MOA;C516.5004.01;NON;;Valeur;Achats de marchandises y compris droits de douane colonne B;
+2033E;10;FB;MOA;C516.5004.01;NON;;Valeur;Variation de stocks de marchandises colonne B;
+2033E;10;FC;MOA;C516.5004.01;NON;;Valeur;Achats de matières premières et autres approvisionnements, droits de douane compris colonne B;
+2033E;10;FD;MOA;C516.5004.01;NON;;Valeur;Variation de stocks de matières premières et autres approvisionnements colonne B;
+2033E;10;FE;MOA;C516.5004.01;NON;;Valeur;Autres achats et charges externes à l'exception des loyers et redevances colonne B;
+2033E;10;FH;MOA;C516.5004.01;NON;;Valeur;Taxes sur le chiffre d'affaires autres que la TVA, contributions directes et TIPP colonne B;
+2033E;10;FJ;MOA;C516.5004.01;NON;;Valeur;Loyers et redevances, à l'exception de ceux afférents à des immobilisations corporelles mises à disposition dans le cadre  d'une convention de location-gérance ou de crédit-bail ou encore d'une convention de location de plus de 6 mois colonne B;
+2033E;10;FK;MOA;C516.5004.01;NON;;Valeur;Autres charges de gestion courante hors quote-parts de résultat sur opérations faites en commun colonne B;
+2033E;10;FL;MOA;C516.5004.01;NON;;Valeur;Abandons de créances à caractère commercial;
+2033E;10;FM;MOA;C516.5004.01;NON;;Valeur;Moins-values de cession d'éléments d'immobilisation corporelles et incorporelles, si attachées  à une activité normale et courante colonne B;
+2033E;10;FN;MOA;C516.5004.01;NON;;Valeur;Fraction des dotations aux amortissements afférentes à des immobilisations corporelles mises à disposition dans le cadre  d'une convention de location-gérance ou de crédit-bail ou encore d'une convention de location de plus de 6 mois  colonne B;
+2033E;10;FZ;MOA;C516.5004.01;NON;;Valeur;Total des consommations de biens et services en provenance de tiers colonne B;
+2033E;10;GA;MOA;C516.5004.01;NON;;Valeur;Valeur ajoutée produite colonne B;
+2033E;10;GB;MOA;C516.5004.01;NON;;Valeur;Valeur ajoutée assujettie à la CVAE (à reporter sur le 1329 et la 1330 CVAE);
+2033E;10;GC;MOA;C516.5004.01;NON;;Valeur;Charges déductibles de la valeur ajoutée afférente à la production immobilisée déclarée colonne B;
+2033E;10;GD;MOA;C516.5004.01;NON;;Valeur;Rentrées sur créances amorties lorsqu'elles se rapportent au résultat d'exploitation;
+2033E;10;KA;CCI;C889.7111.01;NON;TBX;Valeur;Mono-etablissement au sens de la CVAE;
+2033E;10;KB;DTM;C507.2380.01;NON;102;Valeur;Période de référence - du;Format attendu : yyyyMMdd
+2033E;10;KC;DTM;C507.2380.01;NON;102;Valeur;Période de référence - au;Format attendu : yyyyMMdd
+2033E;10;KD;MOA;C516.5004.01;NON;;Valeur;Chiffre d'affaires de référence CVAE;
+2033E;10;KG;DTM;C507.2380.01;NON;102;Valeur;Date de cessation;Format attendu : yyyyMMdd
+2033F;10;BA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de l'associé personne physique, ville;NOM/DENOMINATION ADRESSE
+2033F;10;BA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de l'associé personne physique, pays;NOM/DENOMINATION ADRESSE
+2033F;10;BA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de l'associé personne physique, code postal;NOM/DENOMINATION ADRESSE
+2033F;10;BA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de l'associé personne physique, numéro, type et nom voie;NOM/DENOMINATION ADRESSE
+2033F;10;BA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de l'associé personne physique, complément de distribution;NOM/DENOMINATION ADRESSE
+2033F;10;BA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de l'associé personne physique, lieu-dit, hameau;NOM/DENOMINATION ADRESSE
+2033F;10;BA;NAD;C080.3036.01;OUI;;Designation;Nom patronymique, prénoms de l'associé personne physique;NOM/DENOMINATION ADRESSE
+2033F;10;BA;NAD;C080.3036.02;OUI;;DesignationSuite1;Nom marital de l'associé personne physique;NOM/DENOMINATION ADRESSE
+2033F;10;BA;NAD;C080.3036.03;OUI;;DesignationSuite2;Titre de l'associé personne physique;NOM/DENOMINATION ADRESSE
+2033F;10;BD;QTY;C186.6060.01;OUI;;Valeur;Nombre de parts de l'associé personne physique;
+2033F;10;BE;DTM;C507.2380.01;OUI;102;Valeur;Date de naissance de l'associé personne physique;Format attendu : yyyyMMdd
+2033F;10;BG;NAD;0000.3164.01;OUI;;AdresseVille;Commune de naissance de l'associé personne physique;COMMUNE
+2033F;10;BG;NAD;0000.3207.01;OUI;;AdresseCodePays;Pays de naissance de l'associé personne physique;PAYS
+2033F;10;BG;NAD;0000.3251.01;OUI;;AdresseCodePostal;Département - Code postal de naissance de l'associé personne physique;
+2033F;10;BR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention de l'associé personne physique;
+2033F;10;GA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de l'associé personne morale, ville;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de l'associé personne morale, pays;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de l'associé personne morale, code postal;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de l'associé personne morale, numéro, type et nom voie;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de l'associé personne morale, complément de distribution;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de l'associé personne morale, lieu-dit, hameau;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GA;NAD;C080.3036.01;OUI;;Designation;Dénomination de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GA;NAD;C080.3036.02;OUI;;DesignationSuite1;Complément de désignation de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GA;NAD;C080.3036.03;OUI;;DesignationSuite2;Forme juridique de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GA;NAD;C082.3039.01;OUI;;Identifiant;Numéro SIREN de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;10;GD;QTY;C186.6060.01;OUI;;Valeur;Nombre de parts de l'associé personne morale;
+2033F;10;GR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention de l'associé personne morale;
+2033F;10;GS;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033F;10;GT;QTY;C186.6060.01;NON;;Valeur;Nombre total de personnes morales associés ou actionnaires de l'entreprise;
+2033F;10;GU;QTY;C186.6060.01;NON;;Valeur;Nombre total de parts ou d'actions détenus par des associés ou actionnaires personnes morales de l'entreprise;
+2033F;10;GV;QTY;C186.6060.01;NON;;Valeur;Nombre total de personnes physiques associés ou actionnaires de l'entreprise;
+2033F;10;GW;QTY;C186.6060.01;NON;;Valeur;Nombre total de parts ou d'actions détenus par des associés ou actionnaires personnes physiques de l'entreprise;
+2033G;10;GA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de la filiale ou participation, ville;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de la filiale ou participation, pays;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de la filiale ou participation, code postal;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de la filiale ou participation, Numéro type et nom voie;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de la filiale ou participation, complément de distribution;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de la filiale ou participation, lieu-dit hameau;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GA;NAD;C080.3036.01;OUI;;Designation;Désignation de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GA;NAD;C080.3036.02;OUI;;DesignationSuite1;Complément de désignation de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GA;NAD;C080.3036.03;OUI;;DesignationSuite2;Forme juridique de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GA;NAD;C082.3039.01;OUI;;Identifiant;Numéro SIREN de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;10;GR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention;
+2033G;10;GS;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033G;10;GT;QTY;C186.6060.01;NON;;Valeur;Nombre total de filiales détenues par l'entreprise;
+F-IDENTIF;10;AA;NAD;0000.3164.01;NON;;AdresseVille;Adresse du déclarant  ville;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;0000.3207.01;NON;;AdresseCodePays;Identification du déclarant  pays;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;0000.3251.01;NON;;AdresseCodePostal;Adresse du déclarant  code postal;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;C059.3042.01;NON;;AdresseNumero, AdresseType, AdresseVoie;Adresse du déclarant  numéro   type et nom voie;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;C059.3042.02;NON;;AdresseComplement;Adresse du déclarant  complément d'adresse;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;C059.3042.03;NON;;AdresseHameau;Adresse du déclarant  lieu-dit  hameau;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;C076.3148.01;NON;TE;Telephone;Adresse du déclarant  téléphone;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;C076.3148.01;NON;EM;Email;Adresse du déclarant  mail;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;C080.3036.01;NON;;Designation;Identification du déclarant    désignation ou nom prénom;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;C080.3036.02;NON;;DesignationSuite1;Identification du déclarant   qualité ou complément de désignation;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;C080.3036.03;NON;;DesignationSuite2;Identification du déclarant  forme juridique;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AA;NAD;C082.3039.01;NON;;Identifiant;Numéro SIRET ou SIREN;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;10;AB;RFF;C506.1154.01;NON;;Valeur;Code activité NAF;
+F-IDENTIF;10;BA;CCI;C889.7111.01;NON;TCF;Valeur;Catégorie fiscale;
+F-IDENTIF;10;BB;CCI;C889.7111.01;NON;TRF;Valeur;Régime fiscal;
+F-IDENTIF;10;BC;CCI;C889.7111.01;NON;TBS;Valeur;Imposition IS-IR;
+F-IDENTIF;10;BD;CCI;C889.7111.01;NON;TCD;Valeur;Cession ou cessation déclarée;
+F-IDENTIF;10;BF;CCI;C889.7111.01;NON;TDP;Valeur;Indentification de dépôt provisoire;
+F-IDENTIF;10;CA;DTM;C507.2380.01;NON;102;Valeur;Date de début de période;Format attendu : yyyyMMdd
+F-IDENTIF;10;CB;DTM;C507.2380.01;NON;102;Valeur;Date de fin de période;Format attendu : yyyyMMdd
+F-IDENTIF;10;CC;DTM;C507.2380.01;NON;802;Valeur;Durée de l'exercice N;
+F-IDENTIF;10;CD;DTM;C507.2380.01;NON;102;Valeur;Date de clôture de l'exercice N-1;Format attendu : yyyyMMdd
+F-IDENTIF;10;CE;DTM;C507.2380.01;NON;802;Valeur;Durée de l'exercie N-1;
+F-IDENTIF;10;CF;DTM;C507.2380.01;NON;102;Valeur;Date d'arrêté provisoire des comptes;Format attendu : yyyyMMdd
+F-IDENTIF;10;DA;CUX;C504.6345.01;NON;;MonnaieCible;Monnaie de dépôt;
+F-IDENTIF;10;DB;CCI;C889.7111.01;NON;TBX;Valeur;J'accepte l'utilisation de cette adresse mail pour la transmission d'information par la DGFIP;
+F-IDENTIF;10;KD;RFF;C506.1154.01;NON;;Valeur;Référence de l'obligation fiscale;
+2033A;11;AA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, brut;
+2033A;11;AB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, brut;
+2033A;11;AC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, brut;
+2033A;11;AD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, brut;
+2033A;11;AE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, brut;
+2033A;11;AF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, brut;
+2033A;11;AG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, brut;
+2033A;11;AH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, brut;
+2033A;11;AJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, brut;
+2033A;11;AK;MOA;C516.5004.01;NON;;Valeur;Autres créances, brut;
+2033A;11;AL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, brut;
+2033A;11;AM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, brut;
+2033A;11;AP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, brut;
+2033A;11;AQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, brut;
+2033A;11;AR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, brut;
+2033A;11;BA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, amortissements et provisions;
+2033A;11;BB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, amortissements et provisions;
+2033A;11;BC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, amortissements et provisions;
+2033A;11;BD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, amortissements et provisions;
+2033A;11;BE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, amortissements et provisions;
+2033A;11;BF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, amortissements et provisions;
+2033A;11;BG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, amortissements et provisions;
+2033A;11;BH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, amortissements et provisions;
+2033A;11;BJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, amortissements et provisions;
+2033A;11;BK;MOA;C516.5004.01;NON;;Valeur;Autres créances, amortissements et provisions;
+2033A;11;BL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, amortissements et provisions;
+2033A;11;BM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, amortissements et provisions;
+2033A;11;BP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, amortissements et provisions;
+2033A;11;BQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, amortissements et provisions;
+2033A;11;BR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, amortissements et provisions;
+2033A;11;CA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, net N;
+2033A;11;CB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, net N;
+2033A;11;CC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, net N;
+2033A;11;CD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, net N;
+2033A;11;CE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, net N;
+2033A;11;CF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, net N;
+2033A;11;CG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, net N;
+2033A;11;CH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, net N;
+2033A;11;CJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, net N;
+2033A;11;CK;MOA;C516.5004.01;NON;;Valeur;Autres créances, net N;
+2033A;11;CL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, net N;
+2033A;11;CM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, net N;
+2033A;11;CP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, net N;
+2033A;11;CQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, net N;
+2033A;11;CR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, net N;
+2033A;11;DA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, net N-1;
+2033A;11;DB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, net N-1;
+2033A;11;DC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, net N-1;
+2033A;11;DD;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, net N-1;
+2033A;11;DE;MOA;C516.5004.01;NON;;Valeur;Total I de l'actif immobilisé, net N-1;
+2033A;11;DF;MOA;C516.5004.01;NON;;Valeur;Stocks de matières premières, d'approvisionnements et en cours de production, net N-1;
+2033A;11;DG;MOA;C516.5004.01;NON;;Valeur;Stocks de marchandises, net N-1;
+2033A;11;DH;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes versés sur commandes, net N-1;
+2033A;11;DJ;MOA;C516.5004.01;NON;;Valeur;Créances clients et comptes rattachés, net N-1;
+2033A;11;DK;MOA;C516.5004.01;NON;;Valeur;Autres créances, net N-1;
+2033A;11;DL;MOA;C516.5004.01;NON;;Valeur;Valeurs mobilières de placement, net N-1;
+2033A;11;DM;MOA;C516.5004.01;NON;;Valeur;Disponibilités, net N-1;
+2033A;11;DP;MOA;C516.5004.01;NON;;Valeur;Charges constatées d'avance, net N-1;
+2033A;11;DQ;MOA;C516.5004.01;NON;;Valeur;Total II de l'actif circulant, net N-1;
+2033A;11;DR;MOA;C516.5004.01;NON;;Valeur;Total général de l'actif, net N-1;
+2033A;11;EB;MOA;C516.5004.01;NON;;Valeur;Réserve relative à l'achat d'œuvres d'art d'artistes vivants;
+2033A;11;EE;MOA;C516.5004.01;NON;;Valeur;Comptes courants d'associés de l'exercice N;
+2033A;11;FA;MOA;C516.5004.01;NON;;Valeur;Capital social ou individuel;
+2033A;11;FB;MOA;C516.5004.01;NON;;Valeur;Écarts de réévaluation;
+2033A;11;FC;MOA;C516.5004.01;NON;;Valeur;Réserve légale;
+2033A;11;FD;MOA;C516.5004.01;NON;;Valeur;Réserves réglementées exercice N;
+2033A;11;FE;MOA;C516.5004.01;NON;;Valeur;Autres réserves;
+2033A;11;FF;MOA;C516.5004.01;NON;;Valeur;Report à nouveau;
+2033A;11;FG;MOA;C516.5004.01;NON;;Valeur;Résultat de l'exercice;
+2033A;11;FH;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées;
+2033A;11;FJ;MOA;C516.5004.01;NON;;Valeur;Total I des capitaux propres;
+2033A;11;FK;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges;
+2033A;11;FL;MOA;C516.5004.01;NON;;Valeur;Emprunts et dettes assimilées;
+2033A;11;FM;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes reçus sur commandes en cours;
+2033A;11;FN;MOA;C516.5004.01;NON;;Valeur;Fournisseurs et comptes rattachés;
+2033A;11;FP;MOA;C516.5004.01;NON;;Valeur;Autres dettes;
+2033A;11;FQ;MOA;C516.5004.01;NON;;Valeur;Produits constatés d'avance;
+2033A;11;FR;MOA;C516.5004.01;NON;;Valeur;Total III des dettes;
+2033A;11;FS;MOA;C516.5004.01;NON;;Valeur;Total général du passif;
+2033A;11;GA;MOA;C516.5004.01;NON;;Valeur;Capital social ou individuel exercice N-1;
+2033A;11;GB;MOA;C516.5004.01;NON;;Valeur;Écarts de réévaluation exercice N-1;
+2033A;11;GC;MOA;C516.5004.01;NON;;Valeur;Réserve légale exercice N-1;
+2033A;11;GD;MOA;C516.5004.01;NON;;Valeur;Réserves réglementées exercice N-1;
+2033A;11;GE;MOA;C516.5004.01;NON;;Valeur;Autres réserves exercice N-1;
+2033A;11;GF;MOA;C516.5004.01;NON;;Valeur;Report à nouveau exercice N-1;
+2033A;11;GG;MOA;C516.5004.01;NON;;Valeur;Résultat de l'exercice exercice N-1;
+2033A;11;GH;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées exercice N-1;
+2033A;11;GJ;MOA;C516.5004.01;NON;;Valeur;Total I des capitaux propres exercice N-1;
+2033A;11;GK;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges exercice N-1;
+2033A;11;GL;MOA;C516.5004.01;NON;;Valeur;Emprunts et dettes assimilées exercice N-1;
+2033A;11;GM;MOA;C516.5004.01;NON;;Valeur;Avances et acomptes reçus sur commandes en cours exercice N-1;
+2033A;11;GN;MOA;C516.5004.01;NON;;Valeur;Fournisseurs et comptes rattachés exercice N-1;
+2033A;11;GP;MOA;C516.5004.01;NON;;Valeur;Autres dettes exercice N-1;
+2033A;11;GQ;MOA;C516.5004.01;NON;;Valeur;Produits constatés d'avance exercice N-1;
+2033A;11;GR;MOA;C516.5004.01;NON;;Valeur;Total III des dettes exercice N-1;
+2033A;11;GS;MOA;C516.5004.01;NON;;Valeur;Total général du passif exercice N-1;
+2033A;11;HA;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières à moins d'un an;
+2033A;11;HB;MOA;C516.5004.01;NON;;Valeur;Créances à plus d'un an;
+2033A;11;HC;MOA;C516.5004.01;NON;;Valeur;Comptes courants d'associés débiteurs;
+2033A;11;JA;MOA;C516.5004.01;NON;;Valeur;Dettes à plus d'un an;
+2033A;11;JB;MOA;C516.5004.01;NON;;Valeur;Coût de revient des immobilisations acquises ou créées lors de l'exercice;
+2033A;11;JC;MOA;C516.5004.01;NON;;Valeur;Prix de vente hors TVA des immobilisations cédées au cours de l'exercice;
+2033A;11;JD;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033B;11;AA;MOA;C516.5004.01;NON;;Valeur;Ventes de  marchandises, export et livraisons intra communautaires;
+2033B;11;AB;MOA;C516.5004.01;NON;;Valeur;Production vendue de  biens, export et livraisons intra communautaires;
+2033B;11;AC;MOA;C516.5004.01;NON;;Valeur;Production vendue de services, export et livraisons intra communautaires;
+2033B;11;AN;MOA;C516.5004.01;NON;;Valeur;Crédit bail immobilier;
+2033B;11;AP;MOA;C516.5004.01;NON;;Valeur;Taxe professionnelle;
+2033B;11;AU;MOA;C516.5004.01;NON;;Valeur;Provisions fiscales pour implantations commerciales à l'étranger;
+2033B;11;AV;MOA;C516.5004.01;NON;;Valeur;Autres charges, cotisations versées aux organisations syndicales et professionnelles;
+2033B;11;BA;MOA;C516.5004.01;NON;;Valeur;Ventes de marchandises;
+2033B;11;BB;MOA;C516.5004.01;NON;;Valeur;Production vendue de biens;
+2033B;11;BC;MOA;C516.5004.01;NON;;Valeur;Production vendue de services;
+2033B;11;BD;MOA;C516.5004.01;NON;;Valeur;Production stockée;
+2033B;11;BE;MOA;C516.5004.01;NON;;Valeur;Production immobilisée;
+2033B;11;BF;MOA;C516.5004.01;NON;;Valeur;Subventions d'exploitation reçues;
+2033B;11;BG;MOA;C516.5004.01;NON;;Valeur;Autres produits;
+2033B;11;BH;MOA;C516.5004.01;NON;;Valeur;Total des produits d'exploitation hors TVA;
+2033B;11;BJ;MOA;C516.5004.01;NON;;Valeur;Achats de marchandises, y compris droits de douane;
+2033B;11;BK;MOA;C516.5004.01;NON;;Valeur;Variation de stock de marchandises;
+2033B;11;BL;MOA;C516.5004.01;NON;;Valeur;Achats de matières premières et autres approvisionnements y compris droits de douane;
+2033B;11;BM;MOA;C516.5004.01;NON;;Valeur;Variation de stock de matières premières et d'approvisionnements;
+2033B;11;BN;MOA;C516.5004.01;NON;;Valeur;Autres charges externes;
+2033B;11;BP;MOA;C516.5004.01;NON;;Valeur;Impôts, taxes et versements assimilés;
+2033B;11;BQ;MOA;C516.5004.01;NON;;Valeur;Rémunérations du personnel;
+2033B;11;BR;MOA;C516.5004.01;NON;;Valeur;Charges sociales;
+2033B;11;BS;MOA;C516.5004.01;NON;;Valeur;Dotations aux amortissements;
+2033B;11;BT;MOA;C516.5004.01;NON;;Valeur;Dotations aux provisions;
+2033B;11;BU;MOA;C516.5004.01;NON;;Valeur;Autres charges;
+2033B;11;BV;MOA;C516.5004.01;NON;;Valeur;Total des charges d'exploitation;
+2033B;11;BW;MOA;C516.5004.01;NON;;Valeur;Résultat d'exploitation;
+2033B;11;BX;MOA;C516.5004.01;NON;;Valeur;Produits financiers;
+2033B;11;BY;MOA;C516.5004.01;NON;;Valeur;Produits exceptionnels;
+2033B;11;BZ;MOA;C516.5004.01;NON;;Valeur;Charges financières;
+2033B;11;CA;MOA;C516.5004.01;NON;;Valeur;Charges exceptionnelles;
+2033B;11;CB;MOA;C516.5004.01;NON;;Valeur;Impôt sur les bénéfices;
+2033B;11;CC;MOA;C516.5004.01;NON;;Valeur;Bénéfice ou perte N;
+2033B;11;CD;MOA;C516.5004.01;NON;;Valeur;Report du bénéfice;
+2033B;11;CE;MOA;C516.5004.01;NON;;Valeur;Rémunérations et avantages personnels non déductibles;
+2033B;11;CF;MOA;C516.5004.01;NON;;Valeur;Amortissements excédentaires et autres amortissements non déductibles;
+2033B;11;CG;MOA;C516.5004.01;NON;;Valeur;Provisions non déductibles;
+2033B;11;CH;MOA;C516.5004.01;NON;;Valeur;Impôts et taxes non déductibles;
+2033B;11;CJ;MOA;C516.5004.01;NON;;Valeur;Réintégrations diverses;
+2033B;11;CM;MOA;C516.5004.01;NON;;Valeur;Bénéfice fiscal avant imputation des déficits antérieurs;
+2033B;11;CN;MOA;C516.5004.01;NON;;Valeur;Déficit de l'exercice reporté en arrière pour entreprises IS;
+2033B;11;CR;MOA;C516.5004.01;NON;;Valeur;Bénéfice fiscal après imputation des déficits;
+2033B;11;CS;RFF;C506.1154.01;NON;;Valeur;Numéro d'agrément du CGA;
+2033B;11;CT;QTY;C186.6060.01;NON;;Valeur;Effectif moyen du personnel, apprentis;
+2033B;11;CU;QTY;C186.6060.01;NON;;Valeur;Effectif moyen du personnel, handicapés;
+2033B;11;CV;MOA;C516.5004.01;NON;;Valeur;Cotisations personnelles obligatoires de l'exploitant;
+2033B;11;DA;MOA;C516.5004.01;NON;;Valeur;Ventes de marchandises, exercice N-1;
+2033B;11;DB;MOA;C516.5004.01;NON;;Valeur;Production vendue de biens, exercice N-1;
+2033B;11;DC;MOA;C516.5004.01;NON;;Valeur;Production vendue de services, exercice N-1;
+2033B;11;DD;MOA;C516.5004.01;NON;;Valeur;Production stockée, exercice N-1;
+2033B;11;DE;MOA;C516.5004.01;NON;;Valeur;Production immobilisée, exercice N-1;
+2033B;11;DF;MOA;C516.5004.01;NON;;Valeur;Subventions d'exploitation reçues, exercice N-1;
+2033B;11;DG;MOA;C516.5004.01;NON;;Valeur;Autres produits, exercice N-1;
+2033B;11;DH;MOA;C516.5004.01;NON;;Valeur;Total des produits d'exploitation hors TVA, exercice N-1;
+2033B;11;DJ;MOA;C516.5004.01;NON;;Valeur;Achats de marchandises, y compris droits de douane, exercice N-1;
+2033B;11;DK;MOA;C516.5004.01;NON;;Valeur;Variation de stock de marchandises, exercice N-1;
+2033B;11;DL;MOA;C516.5004.01;NON;;Valeur;Achats de matières premières et autres approvisionnements y compris droits de douane, exercice N-1;
+2033B;11;DM;MOA;C516.5004.01;NON;;Valeur;Variation de stock de matières premières et d'approvisionnements, exercice N-1;
+2033B;11;DN;MOA;C516.5004.01;NON;;Valeur;Autres charges externes, exercice N-1;
+2033B;11;DP;MOA;C516.5004.01;NON;;Valeur;Impôts, taxes et versements assimilés, exercice N-1;
+2033B;11;DQ;MOA;C516.5004.01;NON;;Valeur;Rémunérations du personnel, exercice N-1;
+2033B;11;DR;MOA;C516.5004.01;NON;;Valeur;Charges sociales, exercice N-1;
+2033B;11;DS;MOA;C516.5004.01;NON;;Valeur;Dotations aux amortissements, exercice N-1;
+2033B;11;DT;MOA;C516.5004.01;NON;;Valeur;Dotations aux provisions, exercice N-1;
+2033B;11;DU;MOA;C516.5004.01;NON;;Valeur;Autres charges, exercice N-1;
+2033B;11;DV;MOA;C516.5004.01;NON;;Valeur;Total des charges d'exploitation, exercice N-1;
+2033B;11;DW;MOA;C516.5004.01;NON;;Valeur;Résultat d'exploitation, exercice N-1;
+2033B;11;DX;MOA;C516.5004.01;NON;;Valeur;Produits financiers, exercice N-1;
+2033B;11;DY;MOA;C516.5004.01;NON;;Valeur;Produits exceptionnels, exercice N-1;
+2033B;11;DZ;MOA;C516.5004.01;NON;;Valeur;Charges financières, exercice N-1;
+2033B;11;EA;MOA;C516.5004.01;NON;;Valeur;Charges exceptionnelles, exercice N-1;
+2033B;11;EB;MOA;C516.5004.01;NON;;Valeur;Impôt sur les bénéfices, exercice N-1;
+2033B;11;EC;MOA;C516.5004.01;NON;;Valeur;Bénéfice ou perte N-1;
+2033B;11;ED;MOA;C516.5004.01;NON;;Valeur;Report du déficit;
+2033B;11;EK;MOA;C516.5004.01;NON;;Valeur;Exonérations ou abattements sur le bénéfice et exonération entreprises nouvelles ou zone franche Corse;
+2033B;11;EL;MOA;C516.5004.01;NON;;Valeur;Déductions diverses;
+2033B;11;EM;MOA;C516.5004.01;NON;;Valeur;Déficit fiscal avant imputation des déficits antérieurs;
+2033B;11;EP;MOA;C516.5004.01;NON;;Valeur;Déficits antérieurs reportables;
+2033B;11;ER;MOA;C516.5004.01;NON;;Valeur;Déficit fiscal après imputation des déficits;
+2033B;11;EV;MOA;C516.5004.01;NON;;Valeur;Prélèvements personnels de marchandises;
+2033B;11;FA;MOA;C516.5004.01;NON;;Valeur;Zone restruct.  Défense (44 terdecies);
+2033B;11;FB;MOA;C516.5004.01;NON;;Valeur;Zone revitalisation rurales (44 quindecies);
+2033B;11;FJ;MOA;C516.5004.01;NON;;Valeur;Écarts de valeurs liquidatives sur OPVCM;
+2033B;11;FK;MOA;C516.5004.01;NON;;Valeur;Intérêts excédentaires sur comptes courants d'associés;
+2033B;11;FL;MOA;C516.5004.01;NON;;Valeur;Créance due au report en arrière du déficit;
+2033B;11;FM;MOA;C516.5004.01;NON;;Valeur;Primes et cotisations complémentaires facultatives;
+2033B;11;FU;QTY;C186.6060.01;NON;;Valeur;Effectif moyen du personnel;
+2033B;11;GN;MOA;C516.5004.01;NON;;Valeur;Crédit bail mobilier;
+2033B;11;HL;MOA;C516.5004.01;NON;;Valeur;Divers dont investissements outre-mer;
+2033B;11;HU;MOA;C516.5004.01;NON;;Valeur;Montant de la TVA collectée;
+2033B;11;HV;MOA;C516.5004.01;NON;;Valeur;Montant de la TVA déductible sur biens et services;
+2033B;11;HW;MOA;C516.5004.01;NON;;Valeur;Exonération ou abattement sur le bénéfice pour reprise d 'enterprises en difficulté;
+2033B;11;JA;MOA;C516.5004.01;NON;;Valeur;Déficits antérieurs reportables pour les entreprises à l'IS;
+2033B;11;JB;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033B;11;LA;FTX;C108.4440.01;OUI;;TexteLibre1;Détail des divers à réintégrer au résultat fiscal, libellé;
+2033B;11;LB;MOA;C516.5004.01;OUI;;Valeur;Détail des divers à réintégrer au résultat fiscal, montant;
+2033B;11;MA;FTX;C108.4440.01;OUI;;TexteLibre1;Détail des divers à déduire du résultat fiscal, libellé;
+2033B;11;MB;MOA;C516.5004.01;OUI;;Valeur;Détail des divers à déduire du résultat fiscal, montant;
+2033B;11;MC;MOA;C516.5004.01;NON;;Valeur;Déduction pour entreprise nouvelle, art 44 seixes;
+2033B;11;MD;MOA;C516.5004.01;NON;;Valeur;Déduction pour zone franche urbaine , art 44 octies et 44 octies A;
+2033B;11;MF;MOA;C516.5004.01;NON;;Valeur;Déduction pour jeune entreprise innovante, art 44 sexies A;
+2033B;11;MG;MOA;C516.5004.01;NON;;Valeur;Déduction pour pole de compétitivité, art 44 undecies;
+2033B;11;MH;MOA;C516.5004.01;NON;;Valeur;Déduction pour zone franche d'activité, art 44 quaterdecies;
+2033B;11;MJ;QTY;C186.6060.01;NON;;Valeur;Effectif affecté à l'acticité artisanale;
+2033C;11;AA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, valeur brute au début de l'exercice;
+2033C;11;AB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, valeur brute au début de l'exercice;
+2033C;11;AC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, valeur brute au début de l'exercice;
+2033C;11;AD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, valeur brute au début de l'exercice;
+2033C;11;AE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, valeur brute au début de l'exercice;
+2033C;11;AF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, valeur brute au début de l'exercice;
+2033C;11;AG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, valeur brute au début de l'exercice;
+2033C;11;AH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles valeur brute au début de l'exercice;
+2033C;11;AJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, valeur brute au début de l'exercice;
+2033C;11;AK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, valeur brute au début de l'exercice;
+2033C;11;BA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, augmentations;
+2033C;11;BB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, augmentations;
+2033C;11;BC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, augmentations;
+2033C;11;BD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, augmentations;
+2033C;11;BE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, augmentations;
+2033C;11;BF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, augmentations;
+2033C;11;BG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, augmentations;
+2033C;11;BH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles augmentations;
+2033C;11;BJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, augmentations;
+2033C;11;BK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, augmentations;
+2033C;11;CA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, diminutions;
+2033C;11;CB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, diminutions;
+2033C;11;CC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, diminutions;
+2033C;11;CD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, diminutions;
+2033C;11;CE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, diminutions;
+2033C;11;CF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, diminutions;
+2033C;11;CG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, diminutions;
+2033C;11;CH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles, diminutions;
+2033C;11;CJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, diminutions;
+2033C;11;CK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, diminutions;
+2033C;11;DA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, valeur brute à la fin de l'exercice;
+2033C;11;DB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, valeur brute à la fin de l'exercice;
+2033C;11;DC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, valeur brute à la fin de l'exercice;
+2033C;11;DD;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, valeur brute en fin d'exercice;
+2033C;11;DE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, valeur brute à la fin de l'exercice;
+2033C;11;DF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, valeur brute à la fin de l'exercice;
+2033C;11;DG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, valeur brute à la fin de l'exercice;
+2033C;11;DH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles, valeur brute à la fin de l'exercice;
+2033C;11;DJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, valeur brute à la fin de l'exercice;
+2033C;11;DK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, valeur brute à la fin de l'exercice;
+2033C;11;EA;MOA;C516.5004.01;NON;;Valeur;Immobilisations incorporelles, fonds commercial, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;EB;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations incorporelles, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;EC;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, terrains, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;ED;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, constructions, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;EE;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations techniques matériel et outillages industriels, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;EF;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, installations générales et aménagements divers, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;EG;MOA;C516.5004.01;NON;;Valeur;Immobilisations corporelles, matériel de transport, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;EH;MOA;C516.5004.01;NON;;Valeur;Autres immobilisations corporelles, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;EJ;MOA;C516.5004.01;NON;;Valeur;Immobilisations financières, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;EK;MOA;C516.5004.01;NON;;Valeur;Total des immobilisations, réévaluation légale, valeur d'origine en fin exercice;
+2033C;11;FA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, valeur brute au début de l'exercice;
+2033C;11;FB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, valeur brute au début de l'exercice;
+2033C;11;FC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, valeur brute au début de l'exercice;
+2033C;11;FD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, valeur brute au début de l'exercice;
+2033C;11;FE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, valeur brute au début de l'exercice;
+2033C;11;FF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, valeur brute au début de l'exercice;
+2033C;11;FG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, valeur brute au début de l'exercice;
+2033C;11;FH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, valeur brute au début de l'exercice;
+2033C;11;GA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, augmentations : dotations de l'exercice;
+2033C;11;GB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, augmentations : dotations de l'exercice;
+2033C;11;GC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, augmentations : dotations de l'exercice;
+2033C;11;GD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, augmentations : dotations de l'exercice;
+2033C;11;GE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, augmentations : dotations de l'exercice;
+2033C;11;GF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, augmentations : dotations de l'exercice;
+2033C;11;GG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, augmentations : dotations de l'exercice;
+2033C;11;GH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, augmentations : dotations de l'exercice;
+2033C;11;HA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, diminutions pour éléments sortis de l'actif et reprises;
+2033C;11;HB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, diminutions pour éléments sortis de l'actif et reprises;
+2033C;11;HC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, diminutions pour éléments sortis de l'actif et reprises;
+2033C;11;HD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, diminutions pour éléments sortis de l'actif et reprises;
+2033C;11;HE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, diminutions pour éléments sortis de l'actif et reprises;
+2033C;11;HF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, diminutions pour éléments sortis de l'actif et reprises;
+2033C;11;HG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, diminutions pour éléments sortis de l'actif et reprises;
+2033C;11;HH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, diminutions pour éléments sortis de l'actif et reprises;
+2033C;11;JA;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations incorporelles, montant à la fin de l'exercice;
+2033C;11;JB;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, terrains, montant à la fin de l'exercice;
+2033C;11;JC;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, constructions, montant à la fin de l'exercice;
+2033C;11;JD;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations techniques, matériel et outillage industriels, montant à la fin de l'exercice;
+2033C;11;JE;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, installations générales, agencements et aménagements divers, montant à la fin de l'exercice;
+2033C;11;JF;MOA;C516.5004.01;NON;;Valeur;Amortissements sur immobilisations corporelles, matériel de transport, montant à la fin de l'exercice;
+2033C;11;JG;MOA;C516.5004.01;NON;;Valeur;Amortissements sur autres immobilisations corporelles, montant à la fin de l'exercice;
+2033C;11;JH;MOA;C516.5004.01;NON;;Valeur;Total des amortissements sur  immobilisations, montant à la fin de l'exercice;
+2033C;11;KA;FTX;C108.4440.01;OUI;;TexteLibre1;Nature de l'immobilisation;
+2033C;11;LA;MOA;C516.5004.01;OUI;;Valeur;Valeur d'actif;
+2033C;11;LL;MOA;C516.5004.01;NON;;Valeur;Total des valeurs d'actif;
+2033C;11;MA;MOA;C516.5004.01;OUI;;Valeur;Amortissements;
+2033C;11;ML;MOA;C516.5004.01;NON;;Valeur;Total des amortissements;
+2033C;11;NA;MOA;C516.5004.01;OUI;;Valeur;Valeur résiduelle;
+2033C;11;NL;MOA;C516.5004.01;NON;;Valeur;Total des valeurs résiduelles;
+2033C;11;PA;MOA;C516.5004.01;OUI;;Valeur;Prix de cession;
+2033C;11;PL;MOA;C516.5004.01;NON;;Valeur;Total des prix de cession;
+2033C;11;QA;MOA;C516.5004.01;OUI;;Valeur;Plus ou moins value à court terme;
+2033C;11;QL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values à court terme;
+2033C;11;QM;MOA;C516.5004.01;NON;;Valeur;Régularisations sur les plus ou moins values à court terme;
+2033C;11;QN;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values nettes à court terme;
+2033C;11;QP;MOA;C516.5004.01;NON;;Valeur;Plus values taxables a 16,5%;
+2033C;11;RQ;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033C;11;SA;MOA;C516.5004.01;OUI;;Valeur;Détail plus ou moins value à LT à 15 ou 16%;
+2033C;11;SL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values à LT à 15 ou 16%;
+2033C;11;SM;MOA;C516.5004.01;NON;;Valeur;Régularisation sur plus ou moins value à LT à 15 ou 16%;
+2033C;11;SN;MOA;C516.5004.01;NON;;Valeur;Total des PMVLT à 15 ou 16 %;
+2033C;11;SP;MOA;C516.5004.01;NON;;Valeur;Résultat net de la concession et de la sous-concession de droits de la propriété intellectuelle régime de la PVLT (Art 39 terdecies);
+2033C;11;TA;MOA;C516.5004.01;OUI;;Valeur;Détail plus ou moins value à LT à 0%;
+2033C;11;TL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values à LT à 0%;
+2033C;11;TM;MOA;C516.5004.01;NON;;Valeur;Régularisation sur plus ou moins value à LT à 0 %;
+2033C;11;TN;MOA;C516.5004.01;NON;;Valeur;Total des PMVLT à 0 %;
+2033C;11;UA;MOA;C516.5004.01;OUI;;Valeur;Plus ou moins value a long terme a 16,5%;
+2033C;11;UL;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values a long terme a 16,5%;
+2033C;11;UM;MOA;C516.5004.01;NON;;Valeur;Regularisations sur les plus ou moins values a long terme a 16,5%;
+2033C;11;UN;MOA;C516.5004.01;NON;;Valeur;Total des plus ou moins values nettes a long terme a 16,5%;
+2033D;11;AA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, montant au début de l'exercice;
+2033D;11;AB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, montant au début de l'exercice;
+2033D;11;AC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, montant au début de l'exercice;
+2033D;11;AD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, montant au début de l'exercice;
+2033D;11;AE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, montant au début de l'exercice;
+2033D;11;AF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, montant au début de l'exercice;
+2033D;11;AG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, montant au début de l'exercice;
+2033D;11;AH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, montant au début de l'exercice;
+2033D;11;AN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, montant au début de l'exercice;
+2033D;11;BA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, augmentations, dotations de l'exercice;
+2033D;11;BB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, augmentations, dotations de l'exercice;
+2033D;11;BC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, augmentations, dotations de l'exercice;
+2033D;11;BD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, augmentations, dotations de l'exercice;
+2033D;11;BE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, augmentations, dotations de l'exercice;
+2033D;11;BF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, augmentations, dotations de l'exercice;
+2033D;11;BG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, augmentations, dotations de l'exercice;
+2033D;11;BH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, augmentations, dotations de l'exercice;
+2033D;11;BN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, augmentations;
+2033D;11;CA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, diminutions, reprises de l'exercice;
+2033D;11;CB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, diminutions, reprises de l'exercice;
+2033D;11;CC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, diminutions, reprises de l'exercice;
+2033D;11;CD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, diminutions, reprises de l'exercice;
+2033D;11;CE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, diminutions, reprises de l'exercice;
+2033D;11;CF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, diminutions, reprises de l'exercice;
+2033D;11;CG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, diminutions, reprises de l'exercice;
+2033D;11;CH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, diminutions, reprises de l'exercice;
+2033D;11;CN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, diminutions;
+2033D;11;DA;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées, amortissements dérogatoires, montant à la fin de l'exercice;
+2033D;11;DB;MOA;C516.5004.01;NON;;Valeur;Autres provisions réglementées, diminutions, montant à la fin de l'exercice;
+2033D;11;DC;MOA;C516.5004.01;NON;;Valeur;Provisions pour risques et charges, montant à la fin de l'exercice;
+2033D;11;DD;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur immobilisations, montant à la fin de l'exercice;
+2033D;11;DE;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur stocks et en cours, montant à la fin de l'exercice;
+2033D;11;DF;MOA;C516.5004.01;NON;;Valeur;Provisions pour dépréciation sur clients et comptes rattachés, montant à la fin de l'exercice;
+2033D;11;DG;MOA;C516.5004.01;NON;;Valeur;Autres provisions pour dépréciation, montant à la fin de l'exercice;
+2033D;11;DH;MOA;C516.5004.01;NON;;Valeur;Total des provisions, montant à la fin de l'exercice;
+2033D;11;DN;MOA;C516.5004.01;NON;;Valeur;Provisions réglementées , amortissements dérogatoires, majoration exceptionnelle de 30 %, montant à la fin de l'exercice;
+2033D;11;EA;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur immobilisations incorporelles,;
+2033D;11;EB;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur terrains,;
+2033D;11;EC;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur constructions,;
+2033D;11;ED;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations techniques matériel et outillage,;
+2033D;11;EE;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations générales, agencements et aménagements divers,;
+2033D;11;EF;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur matériel de transport,;
+2033D;11;EG;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur autres immobilisations,;
+2033D;11;EH;MOA;C516.5004.01;NON;;Valeur;Total des provisions pour amortissements dérogatoires,;
+2033D;11;FA;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur immobilisations incorporelles,;
+2033D;11;FB;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur terrains,;
+2033D;11;FC;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur constructions,;
+2033D;11;FD;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations techniques matériel et outillage,;
+2033D;11;FE;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur installations générales, agencements et aménagements divers,;
+2033D;11;FF;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur matériel de transport,;
+2033D;11;FG;MOA;C516.5004.01;NON;;Valeur;Provision pour amortissements dérogatoires sur autres immobilisations,;
+2033D;11;FH;MOA;C516.5004.01;NON;;Valeur;Total des provisions pour amortissements dérogatoires,;
+2033D;11;GJ;FTX;C108.4440.01;OUI;;TexteLibre1;Détail de la ventilation des dotations aux provisions, libellé;
+2033D;11;HA;MOA;C516.5004.01;NON;;Valeur;Dotations aux  provisions pour indemnités pour congés à payer, charges sociales et fiscales correspondantes;
+2033D;11;HH;MOA;C516.5004.01;NON;;Valeur;total des ventilations des dotations aux provisions et charges à payer non déductibles pour l'assiette de l'impôt;
+2033D;11;HJ;MOA;C516.5004.01;OUI;;Valeur;Détail de la ventilation des dotations aux provisions, montant;
+2033D;11;MG;MOA;C516.5004.01;NON;;Valeur;Déficits de l'exercice;
+2033D;11;MH;MOA;C516.5004.01;NON;;Valeur;Total des déficits restant à reporter;
+2033D;11;PF;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033D;11;PG;MOA;C516.5004.01;NON;;Valeur;Déficit restant à reporter au titre de l'exercice précédent;
+2033D;11;PH;MOA;C516.5004.01;NON;;Valeur;Déficits imputés;
+2033D;11;PJ;MOA;C516.5004.01;NON;;Valeur;Déficits reportables;
+2033D;11;PK;MOA;C516.5004.01;NON;;Valeur;Résultat déficitaire résultant de l'article 209C du CGI;
+2033D;11;PL;MOA;C516.5004.01;NON;;Valeur;Déficits étrangers des PME antérieurement déduits (art. 209 C du CGI);
+2033D;11;QA;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt en faveur de la recherche;
+2033D;11;QB;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt en faveur de la formation des dirigeants;
+2033D;11;QC;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt famille;
+2033D;11;QD;MOA;C516.5004.01;NON;;Valeur;Réduction d'impôt en faveur du mécénat;
+2033D;11;QE;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt pour investissement en Corse;
+2033D;11;QF;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt en faveur de l'apprentissage;
+2033D;11;QG;MOA;C516.5004.01;NON;;Valeur;Autres imputations;
+2033D;11;QH;FTX;C108.4440.01;OUI;;TexteLibre1;Détail des autres imputations : libellé;
+2033D;11;QJ;MOA;C516.5004.01;OUI;;Valeur;Détail des autres imputations : montant;
+2033D;11;QK;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt afférent aux valeurs mobilières (BIC);
+2033D;11;QL;CCI;C889.7111.01;NON;TBX;Valeur;Entreprise de transport inscrite au registre des transports art L3113-3 du Code des Transports;
+2033D;11;QM;MOA;C516.5004.01;NON;;Valeur;Montant total des sommes distribuées qui rentrent dans le cadre du dispositif de l'article 235 TER ZCA;
+2033D;11;QN;MOA;C516.5004.01;NON;;Valeur;Crédit d'impôt en faveur de la compétitivité et de l'emploi;
+2033E;11;DB;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033E;11;EA;MOA;C516.5004.01;NON;;Valeur;Ventes de marchandises colonne B;
+2033E;11;ED;MOA;C516.5004.01;NON;;Valeur;Production stockée colonne B;
+2033E;11;EE;MOA;C516.5004.01;NON;;Valeur;Production immobilisée à hauteur des seules charges déductibles ayant concouru à sa formation colonne B;
+2033E;11;EF;MOA;C516.5004.01;NON;;Valeur;Subventions d'exploitation reçues et abandons de créance à caractère financier (en partie) colonne B;
+2033E;11;EH;MOA;C516.5004.01;NON;;Valeur;Production vendue, biens colonne B;
+2033E;11;EJ;MOA;C516.5004.01;NON;;Valeur;Production vendue, services colonne B;
+2033E;11;EL;MOA;C516.5004.01;NON;;Valeur;Autres produits de gestion courante hors quote-parts de résultat sur opérations faites en commun colonne B;
+2033E;11;EM;MOA;C516.5004.01;NON;;Valeur;Transferts de charges refacturées et transferts de charges déductibles de la valeur ajoutée colonne B;
+2033E;11;EN;MOA;C516.5004.01;NON;;Valeur;Redevances pour concessions, brevets, licences et assimilés colonne B;
+2033E;11;EP;MOA;C516.5004.01;NON;;Valeur;Plus-values de cession d'éléments d'immobilisations corporelles et incorporelles, si rattachées à une activité normale et courante colonne B;
+2033E;11;EZ;MOA;C516.5004.01;NON;;Valeur;Total de la production de l'entreprise colonne B;
+2033E;11;FA;MOA;C516.5004.01;NON;;Valeur;Achats de marchandises y compris droits de douane colonne B;
+2033E;11;FB;MOA;C516.5004.01;NON;;Valeur;Variation de stocks de marchandises colonne B;
+2033E;11;FC;MOA;C516.5004.01;NON;;Valeur;Achats de matières premières et autres approvisionnements, droits de douane compris colonne B;
+2033E;11;FD;MOA;C516.5004.01;NON;;Valeur;Variation de stocks de matières premières et autres approvisionnements colonne B;
+2033E;11;FE;MOA;C516.5004.01;NON;;Valeur;Autres achats et charges externes à l'exception des loyers et redevances colonne B;
+2033E;11;FH;MOA;C516.5004.01;NON;;Valeur;Taxes sur le chiffre d'affaires autres que la TVA, contributions directes et TIPP colonne B;
+2033E;11;FJ;MOA;C516.5004.01;NON;;Valeur;Loyers et redevances, à l'exception de ceux afférents à des immobilisations corporelles mises à disposition dans le cadre  d'une convention de location-gérance ou de crédit-bail ou encore d'une convention de location de plus de 6 mois colonne B;
+2033E;11;FK;MOA;C516.5004.01;NON;;Valeur;Autres charges de gestion courante hors quote-parts de résultat sur opérations faites en commun colonne B;
+2033E;11;FL;MOA;C516.5004.01;NON;;Valeur;Abandons de créances à caractère financier (en partie) colonne B;
+2033E;11;FM;MOA;C516.5004.01;NON;;Valeur;Moins-values de cession d'éléments d'immobilisation corporelles et incorporelles, si attachées  à une activité normale et courante colonne B;
+2033E;11;FN;MOA;C516.5004.01;NON;;Valeur;Fraction des dotations aux amortissements afférentes à des immobilisations corporelles mises à disposition dans le cadre  d'une convention de location-gérance ou de crédit-bail ou encore d'une convention de location de plus de 6 mois  colonne B;
+2033E;11;FZ;MOA;C516.5004.01;NON;;Valeur;Total des consommations de biens et services en provenance de tiers colonne B;
+2033E;11;GA;MOA;C516.5004.01;NON;;Valeur;Valeur ajoutée produite colonne B;
+2033E;11;GB;MOA;C516.5004.01;NON;;Valeur;Valeur ajoutée assujettie à la CVAE (à reporter sur le 1329 et la 1330 CVAE);
+2033E;11;GC;MOA;C516.5004.01;NON;;Valeur;Charges déductibles de la valeur ajoutée afférente à la production immobilisée déclarée colonne B;
+2033E;11;GD;MOA;C516.5004.01;NON;;Valeur;Rentrées sur créances amorties lorsqu'elles se rapportent au résultat d'exploitation;
+2033F;11;BA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de l'associé personne physique, ville;NOM/DENOMINATION ADRESSE
+2033F;11;BA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de l'associé personne physique, pays;NOM/DENOMINATION ADRESSE
+2033F;11;BA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de l'associé personne physique, code postal;NOM/DENOMINATION ADRESSE
+2033F;11;BA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de l'associé personne physique, numéro, type et nom voie;NOM/DENOMINATION ADRESSE
+2033F;11;BA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de l'associé personne physique, complément de distribution;NOM/DENOMINATION ADRESSE
+2033F;11;BA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de l'associé personne physique, lieu-dit, hameau;NOM/DENOMINATION ADRESSE
+2033F;11;BA;NAD;C080.3036.01;OUI;;Designation;Nom patronymique, prénoms de l'associé personne physique;NOM/DENOMINATION ADRESSE
+2033F;11;BA;NAD;C080.3036.02;OUI;;DesignationSuite1;Nom marital de l'associé personne physique;NOM/DENOMINATION ADRESSE
+2033F;11;BA;NAD;C080.3036.03;OUI;;DesignationSuite2;Titre de l'associé personne physique;NOM/DENOMINATION ADRESSE
+2033F;11;BD;QTY;C186.6060.01;OUI;;Valeur;Nombre de parts de l'associé personne physique;
+2033F;11;BE;DTM;C507.2380.01;OUI;102;Valeur;Date de naissance de l'associé personne physique;Format attendu : yyyyMMdd
+2033F;11;BF;FTX;C108.4440.01;OUI;;TexteLibre1;Département de naissance de l'associé personne physique;
+2033F;11;BF;FTX;C108.4440.02;OUI;;TexteLibre2;Commune de naissance de l'associé personne physique;
+2033F;11;BF;FTX;C108.4440.03;OUI;;TexteLibre3;Pays de naissance de l'associé personne physique;
+2033F;11;BR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention de l'associé personne physique;
+2033F;11;GA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de l'associé personne morale, ville;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de l'associé personne morale, pays;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de l'associé personne morale, code postal;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de l'associé personne morale, numéro, type et nom voie;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de l'associé personne morale, complément de distribution;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de l'associé personne morale, lieu-dit, hameau;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GA;NAD;C080.3036.01;OUI;;Designation;Dénomination de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GA;NAD;C080.3036.02;OUI;;DesignationSuite1;Complément de désignation de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GA;NAD;C080.3036.03;OUI;;DesignationSuite2;Forme juridique de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GA;NAD;C082.3039.01;OUI;;Identifiant;Numéro SIREN de l'associé personne morale;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033F;11;GD;QTY;C186.6060.01;OUI;;Valeur;Nombre de parts de l'associé personne morale;
+2033F;11;GR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention de l'associé personne morale;
+2033F;11;GS;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033F;11;GT;QTY;C186.6060.01;NON;;Valeur;Nombre total de personnes morales associés ou actionnaires de l'entreprise;
+2033F;11;GU;QTY;C186.6060.01;NON;;Valeur;Nombre total de parts ou d'actions détenus par des associés ou actionnaires personnes morales de l'entreprise;
+2033F;11;GV;QTY;C186.6060.01;NON;;Valeur;Nombre total de personnes physiques associés ou actionnaires de l'entreprise;
+2033F;11;GW;QTY;C186.6060.01;NON;;Valeur;Nombre total de parts ou d'actions détenus par des associés ou actionnaires personnes physiques de l'entreprise;
+2033G;11;GA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de la filiale ou participation, ville;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de la filiale ou participation, pays;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de la filiale ou participation, code postal;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de la filiale ou participation, Numéro type et nom voie;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de la filiale ou participation, complément de distribution;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de la filiale ou participation, lieu-dit hameau;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GA;NAD;C080.3036.01;OUI;;Designation;Désignation de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GA;NAD;C080.3036.02;OUI;;DesignationSuite1;Complément de désignation de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GA;NAD;C080.3036.03;OUI;;DesignationSuite2;Forme juridique de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GA;NAD;C082.3039.01;OUI;;Identifiant;Numéro SIREN de la filiale ou participation;NOM/DENOMINATION IDENTIFIANT ADRESSE
+2033G;11;GR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention;
+2033G;11;GS;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
+2033G;11;GT;QTY;C186.6060.01;NON;;Valeur;Nombre total de filiales détenues par l'entreprise;
+F-IDENTIF;11;AA;NAD;0000.3164.01;NON;;AdresseVille;Adresse du déclarant  ville;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;0000.3207.01;NON;;AdresseCodePays;Identification du déclarant  pays;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;0000.3251.01;NON;;AdresseCodePostal;Adresse du déclarant  code postal;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;C059.3042.01;NON;;AdresseNumero, AdresseType, AdresseVoie;Adresse du déclarant  numéro   type et nom voie;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;C059.3042.02;NON;;AdresseComplement;Adresse du déclarant  complément d'adresse;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;C059.3042.03;NON;;AdresseHameau;Adresse du déclarant  lieu-dit  hameau;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;C076.3148.01;NON;TE;Telephone;Adresse du déclarant  téléphone;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;C076.3148.01;NON;EM;Email;Adresse du déclarant  mail;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;C080.3036.01;NON;;Designation;Identification du déclarant    désignation ou nom prénom;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;C080.3036.02;NON;;DesignationSuite1;Identification du déclarant   qualité ou complément de désignation;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;C080.3036.03;NON;;DesignationSuite2;Identification du déclarant  forme juridique;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AA;NAD;C082.3039.01;NON;;Identifiant;Numéro SIRET ou SIREN;NOM/DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
+F-IDENTIF;11;AB;RFF;C506.1154.01;NON;;Valeur;Code activité NAF;
+F-IDENTIF;11;BA;CCI;C889.7111.01;NON;TCF;Valeur;Catégorie fiscale;
+F-IDENTIF;11;BB;CCI;C889.7111.01;NON;TRF;Valeur;Régime fiscal;
+F-IDENTIF;11;BC;CCI;C889.7111.01;NON;TBS;Valeur;Imposition IS-IR;
+F-IDENTIF;11;BD;CCI;C889.7111.01;NON;TCD;Valeur;Cession ou cessation déclarée;
+F-IDENTIF;11;BF;CCI;C889.7111.01;NON;TDP;Valeur;Indentification de dépôt provisoire;
+F-IDENTIF;11;CA;DTM;C507.2380.01;NON;102;Valeur;Date de début de période;Format attendu : yyyyMMdd
+F-IDENTIF;11;CB;DTM;C507.2380.01;NON;102;Valeur;Date de fin de période;Format attendu : yyyyMMdd
+F-IDENTIF;11;CC;DTM;C507.2380.01;NON;802;Valeur;Durée de l'exercice N;
+F-IDENTIF;11;CD;DTM;C507.2380.01;NON;102;Valeur;Date de clôture de l'exercice N-1;Format attendu : yyyyMMdd
+F-IDENTIF;11;CE;DTM;C507.2380.01;NON;802;Valeur;Durée de l'exercie N-1;
+F-IDENTIF;11;CF;DTM;C507.2380.01;NON;102;Valeur;Date d'arrêté provisoire des comptes;Format attendu : yyyyMMdd
+F-IDENTIF;11;DA;CUX;C504.6345.01;NON;;MonnaieCible;Monnaie de dépôt;
+F-IDENTIF;11;KD;RFF;C506.1154.01;NON;;Valeur;Référence de l'obligation fiscale;
