@@ -29,6 +29,8 @@ class Formulaire
     protected $declarable;
     /* @var $sDictionnaire Dictionnaire */
     protected $sDictionnaire;
+    
+    protected $indexPage;
 
 
     public function __construct(Kernel $kernel, Dictionnaire $sDictionnaire)
@@ -38,9 +40,10 @@ class Formulaire
     }
 
 
-    public function init($declarable)
+    public function init($declarable, $indexPage = null)
     {
         $this->declarable = $declarable;
+        $this->indexPage = $indexPage;
 
         $formulaires = explode(',', $this->declarable->getFormulaires());
         $this->sDictionnaire->init($this->declarable->getGroupe(), substr($this->declarable->getMillesime(),-2), $formulaires);
@@ -213,6 +216,11 @@ class Formulaire
                     $noeudZone->setId($zone);
 
                     $indexs = method_exists($this->declarable, "get" . str_replace('-', '', $formulaire) . "Indexes".$zone) ? $this->declarable->{"get" . str_replace('-', '', $formulaire) . "Indexes".$zone}() : [1];
+                    if($this->indexPage && !in_array($formulaire, ["T-IDENTIF", "F-IDENTIF"])) {
+                        $start = ($this->indexPage * 9999) - 9999;
+                        $indexs = array_slice($indexs, $start, 9999);
+                    }
+                    
                     foreach($indexs as $key => $index) {
                         $cheminTypeOccurrence = $this->getPathClassXml() . "\\OccurrenceType";
                         $noeudOccurrence = null;
