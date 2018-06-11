@@ -24,6 +24,8 @@ class FormulaireDeclaratifType extends FormulaireType
 
     /**
      * @property string $repetition
+     * @Serializer\XmlAttribute()
+     * @Serializer\SerializedName("Repetition")
      */
     private $repetition = null;
 
