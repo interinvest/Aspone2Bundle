@@ -209,6 +209,11 @@ class Formulaire
                 $cheminFormulaireType = in_array($formulaire, ["T-IDENTIF", "F-IDENTIF"]) ? $this->getPathClassXml() . "\\FormulaireType" : $this->getPathClassXml() . "\\FormulaireDeclaratifType";
                 $noeudForm = new $cheminFormulaireType();
                 $noeudForm->setMillesime($annee);
+                if($this->indexPage && $formulaire == 'ANNEXLIB01') {
+                    $noeudForm->setNom("ANNEXLIB01");
+                    $noeudForm->setRepetition("1");
+                }
+                
                 foreach ($zones as $zone => $listeBalises) {
 
                     $cheminZoneType = $this->getPathClassXml() . "\\ZoneType";
@@ -216,9 +221,9 @@ class Formulaire
                     $noeudZone->setId($zone);
 
                     $indexs = method_exists($this->declarable, "get" . str_replace('-', '', $formulaire) . "Indexes".$zone) ? $this->declarable->{"get" . str_replace('-', '', $formulaire) . "Indexes".$zone}() : [1];
-                    if($this->indexPage && !in_array($formulaire, ["T-IDENTIF", "F-IDENTIF"])) {
-                        $start = ($this->indexPage * 9999) - 9999;
-                        $indexs = array_slice($indexs, $start, 9999);
+                    if($this->indexPage && !in_array($formulaire, ["T-IDENTIF", "F-IDENTIF", "ANNEXLIB01"])) {
+                        $start = ($this->indexPage * 5000) - 5000;
+                        $indexs = array_slice($indexs, $start, 5000);
                     }
                     
                     foreach($indexs as $key => $index) {
@@ -267,11 +272,12 @@ class Formulaire
     {
         $serializer = SerializerBuilder::create()->build();
         $xml = $serializer->serialize($xml, 'xml');
+        $content = mb_convert_encoding(str_replace('UTF-8', 'ISO-8859-15', $xml), 'ISO-8859-15', 'UTF-8');
 
         // on supprime les élements vide
-        $doc = new \DOMDocument();
+        $doc = new \DOMDocument("1.0", "ISO-8859-15");
         $doc->preserveWhiteSpace = false;
-        $doc->loadxml($xml, LIBXML_NOCDATA);
+        $doc->loadxml($content, LIBXML_NOCDATA);
         $xpath = new \DOMXPath($doc);
 
         for($i=1;$i<=6;$i++) {
@@ -305,14 +311,13 @@ class Formulaire
 
     public function saveXml()
     {
-        $xml = new \SimpleXMLElement($this->getXml());
-        $verif = new \DOMDocument();
-        $verif->loadXML($xml->asXml());
+        $xml = $this->getXml();
 
         if(!is_dir($this->getXmlPath())){
             @mkdir($this->getXmlPath());
         }
-        $xml->saveXML($this->getXmlPath().'/'.$this->declarable->getId() . '.xml');
+
+        file_put_contents($this->getXmlPath().'/'.$this->declarable->getId() . '.xml', $xml);
 
         return true;
     }
