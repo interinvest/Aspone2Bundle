@@ -222,8 +222,8 @@ class Formulaire
 
                     $indexs = method_exists($this->declarable, "get" . str_replace('-', '', $formulaire) . "Indexes".$zone) ? $this->declarable->{"get" . str_replace('-', '', $formulaire) . "Indexes".$zone}() : [1];
                     if($this->indexPage && !in_array($formulaire, ["T-IDENTIF", "F-IDENTIF", "ANNEXLIB01"])) {
-                        $start = ($this->indexPage * 5000) - 5000;
-                        $indexs = array_slice($indexs, $start, 5000);
+                        $start = ($this->indexPage * 1900) - 1900;
+                        $indexs = array_slice($indexs, $start, 1900);
                     }
                     
                     foreach($indexs as $key => $index) {
