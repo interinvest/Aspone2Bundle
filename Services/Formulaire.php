@@ -124,7 +124,7 @@ class Formulaire
             // XmlEdi
             $cheminXmlEdi = $this->getPathClassXml() . "\\XmlEdi";
             $xmlEdi = new $cheminXmlEdi();
-            $xmlEdi->setTest(1);
+            $xmlEdi->setTest($this->declarable->getIstest() ? 1 : 0);
             // - GroupeFonctionnel
             $cheminGroupeFonctionnel = $this->getPathClassXml() . "\\GroupeFonctionnelType";
             $groupeFonctionnel = new $cheminGroupeFonctionnel();
