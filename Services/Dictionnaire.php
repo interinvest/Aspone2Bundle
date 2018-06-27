@@ -58,19 +58,18 @@ class Dictionnaire
      */
     public function getZones()
     {
-        if(count(array_diff($this->formulaire, array_keys(self::$data))) > 0) {
-            $lines = $this->parseFichier();
+        if(!isset(self::$data[$this->formulaire[0]]) || (isset(self::$data[$this->formulaire[0]]) && !isset(self::$data[$this->formulaire[0]][$this->annee]))) {
+                $lines = $this->parseFichier();
 
-            foreach ($lines as $line) {
-                $valeurs = explode(',', $line[7]);
-                foreach ($valeurs as $valeur) {
-                    if ((in_array($line[0], $this->formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $this->annee) {
-                        // formulaire - annee - zone - balise xml => repetable
-                        self::$data[$line[0]][$line[1]][$line[2]][] = [$valeur => $line[5]];
+                foreach ($lines as $line) {
+                    $valeurs = explode(',', $line[7]);
+                    foreach ($valeurs as $valeur) {
+                        if ((in_array($line[0], $this->formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $this->annee) {
+                            // formulaire - annee - zone - balise xml => repetable
+                            self::$data[$line[0]][$line[1]][$line[2]][] = [$valeur => $line[5]];
+                        }
                     }
                 }
-            }
-
 
 
             if(count(array_diff($this->formulaire, array_keys(self::$data))) > 0) {
