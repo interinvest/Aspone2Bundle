@@ -31,7 +31,7 @@ class Dictionnaire
     public function init($groupe, $annee, Array $formulaire)
     {
         $this->groupe = $groupe;
-        $this->annee = $annee;
+        $this->annee = $annee < (Date('Y') - 1) ? Date('Y') - 1 : $annee;
         $this->formulaire = $formulaire;
     }
 
@@ -72,20 +72,21 @@ class Dictionnaire
                 }
 
 
-            if(count(array_diff($this->formulaire, array_keys(self::$data))) > 0) {
-                $annee = Date('y');
-                $formulaire = array_diff($this->formulaire, array_keys(self::$data));
-
-                $lines = $this->parseFichier();
-                foreach ($lines as $line) {
-                    $valeurs = explode(',', $line[7]);
-                    foreach ($valeurs as $valeur) {
-                        if ((in_array($line[0], $formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $annee) {
-                            self::$data[$line[0]][$line[1]][$line[2]][] = [$valeur => $line[5]];
-                        }
-                    }
-                }
-            }
+            
+//            if(count(array_diff($this->formulaire, array_keys(self::$data))) > 0) {
+//                $annee = Date('y');
+//                $formulaire = array_diff($this->formulaire, array_keys(self::$data));
+//
+//                $lines = $this->parseFichier();
+//                foreach ($lines as $line) {
+//                    $valeurs = explode(',', $line[7]);
+//                    foreach ($valeurs as $valeur) {
+//                        if ((in_array($line[0], $formulaire) || stristr($line[0], "IDENTIF")) && $line[1] == $annee) {
+//                            self::$data[$line[0]][$line[1]][$line[2]][] = [$valeur => $line[5]];
+//                        }
+//                    }
+//                }
+//            }
         }
 
         return self::$data;
