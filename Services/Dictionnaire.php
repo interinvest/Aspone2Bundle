@@ -31,7 +31,7 @@ class Dictionnaire
     public function init($groupe, $annee, Array $formulaire)
     {
         $this->groupe = $groupe;
-        $this->annee = $annee < (Date('Y') - 1) ? Date('Y') - 1 : $annee;
+        $this->annee = $annee < substr(Date('Y') - 1,-2) ? substr(Date('Y') - 1,-2) : $annee;
         $this->formulaire = $formulaire;
     }
 
