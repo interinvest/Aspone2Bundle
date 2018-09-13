@@ -110,7 +110,7 @@ abstract class AsponeDeclaration
 
     public function getMillesime()
     {
-        return $this->periodeStart->format('Y');
+        return $this->periodeEnd->format('Y');
     }
 
 
