@@ -27,7 +27,7 @@ class AsponeDeclarationHistoriqueRepository extends EntityRepository
 
 
     
-    public function getDateEnvoiDeclarationTva(AsponeDeclaration $asponeDeclaration)
+    public function getDateEnvoiDeclarationTva($asponeDeclaration)
     {
         $query = $this->createQueryBuilder('hist')
             ->where('hist.declaration = :asponeDeclaration')->setParameter('asponeDeclaration', $asponeDeclaration)
