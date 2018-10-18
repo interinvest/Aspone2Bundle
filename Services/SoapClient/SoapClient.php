@@ -288,7 +288,7 @@ class SoapClient extends \SoapClient
     {
         // Can use rand() to repeat the word if the server is under high load
         $this->nonce = mt_rand();
-        $this->timestamp = gmdate('Y-m-d\TH:i:s\Z');
+        $this->timestamp = date('Y-m-d\TH:i:s\Z');
         $packedNonce = pack('H*', $this->nonce);
         $packedTimestamp = pack('a*', $this->timestamp);
         $packedPassword = pack('a*', $this->password);
