@@ -340,10 +340,10 @@ class SoapClient extends \SoapClient
     /**
      * @return \SoapVar
      */
-    public function setDepositPagination()
+    public function setDepositPagination($numPage, $length)
     {
-        $soapVarResults = new SoapVar(100, XSD_STRING, null, self::$strContext, 'resultsByPage', self::$strContext);
-        $soapVarPageNum = new SoapVar(1, XSD_STRING, null, self::$strContext, 'pageNum', self::$strContext);
+        $soapVarResults = new SoapVar($length, XSD_STRING, null, self::$strContext, 'resultsByPage', self::$strContext);
+        $soapVarPageNum = new SoapVar($numPage, XSD_STRING, null, self::$strContext, 'pageNum', self::$strContext);
         $soapVarSortOrder = new SoapVar('DESC', XSD_STRING, null, self::$strContext, 'sortOrder', self::$strContext);
         $soapVarOrderBy = new SoapVar('INTERCHANGE_ID', XSD_STRING, null, self::$strContext, 'orderBy', self::$strContext);
         return new SoapVar(array($soapVarResults, $soapVarPageNum, $soapVarSortOrder, $soapVarOrderBy), SOAP_ENC_OBJECT, null, self::$strContext, 'GetInterchangesByDepositIDPagination', self::$strContext);
@@ -373,7 +373,11 @@ class SoapClient extends \SoapClient
         }
         preg_match('/(<wsResponse.*<\/wsResponse>)/', $response, $matches);
 
-        return $matches[0];
+        if(isset($matches[0])){
+            return $matches[0];
+        } else {
+            return false;
+        }
     }
 
     /**
