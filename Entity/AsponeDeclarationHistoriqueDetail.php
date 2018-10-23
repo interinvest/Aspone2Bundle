@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * DeclarationHistoriqueDetail
  *
  * @ORM\Table(name="aspone_declaration_historique_detail")
+ * @ORM\Entity(repositoryClass="InterInvest\Aspone2Bundle\Repository\AsponeDeclarationHistoriqueDetailRepository")
  * @ORM\Entity
  */
 class AsponeDeclarationHistoriqueDetail extends AsponeDetail
