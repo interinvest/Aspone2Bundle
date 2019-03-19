@@ -97,7 +97,7 @@
 		<xs:sequence>
 			<xs:element ref="Siret" minOccurs="1" maxOccurs="1" />
 			<xs:element name="Designation" type="TypeRedacteurRequete" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="DesignationSuite1" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="Adresse" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="ReferenceDossier" minOccurs="0" maxOccurs="1" />

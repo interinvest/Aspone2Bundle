@@ -25,6 +25,8 @@
 	<xs:simpleType name="TypeDestinatairePaiement">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="DGI_EDI_PAYE" /> <!-- DGFip -->
+			<xs:enumeration value="CEC_EDI_PAYE" /> <!-- Expert Comptable identifié par SIRET (doit posséder un compte sur le portail) -->
+			<xs:enumeration value="OGA_EDI_PAYE" /> <!-- OGA identifié par SIRET (doit posséder un compte sur le portail) -->
 		</xs:restriction>
 	</xs:simpleType>	
 	
@@ -100,7 +102,7 @@
 		<xs:sequence>
 			<xs:element ref="Siret" minOccurs="1" maxOccurs="1" />
 			<xs:element name="Designation" type="TypeRedacteurPaiement" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="DesignationSuite1" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="Adresse" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="ReferenceDossier" minOccurs="0" maxOccurs="1" />
@@ -112,12 +114,12 @@
 		======================================================== -->
 	<xs:complexType name="Redevable">
 		<xs:sequence>
-			<xs:element name="Identifiant" type="SirenSiret" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Identifiant" type="Siren" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="Designation" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="Adresse" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="ReferenceDossier" minOccurs="0" maxOccurs="1" />
-			<xs:element ref="Rof" minOccurs="0" maxOccurs="1" />	
+			<xs:element name="ReferenceDossier" type="ReferenceDeclaration" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="Rof" minOccurs="1" maxOccurs="1" />	
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -149,6 +151,11 @@
 	<xs:complexType name="Destinataire">			
 		<xs:sequence>
 			<xs:element name="Designation" type="TypeDestinatairePaiement" minOccurs="1" maxOccurs="1" />
+			<xs:element ref="Identifiant" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="Adresse" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="ReferenceDossier" minOccurs="0" maxOccurs="1" />
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -223,7 +230,7 @@
 			<!-- Zone Multiple d'identification Financière (FII) -->
 			<xs:sequence>
 				<xs:element ref="Iban" minOccurs="1" maxOccurs="1" />
-				<xs:element ref="Bic" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="Bic" minOccurs="1" maxOccurs="1" />
 				<xs:element ref="TitulaireDesignation" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="TitulaireDesignationSuite" minOccurs="0" maxOccurs="1" />
 			</xs:sequence>

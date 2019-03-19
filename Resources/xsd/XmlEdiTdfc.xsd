@@ -1,28 +1,29 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	
-	<xs:include schemaLocation="TypeBase.xsd"/>
-			
-	<!-- ### Définition des énumérations spécifiques à la TDFC ### -->		
+	<xs:include schemaLocation="./TypeBase.xsd"/>
+	<xs:include schemaLocation="./XmlEdiBalance.xsd"/>		
 	
-	<!-- Type Groupe Fonctionnel TDFC -->
-	<xs:simpleType name="TypeGroupeFonctionnelTdfc">
+	<!-- Type Groupe Fonctionnel TDFC INFENT -->
+	<xs:simpleType name="TypeGroupeFonctionnel">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="INFENT" />
+			<xs:enumeration value="BALANC" />
 		</xs:restriction>
-	</xs:simpleType>
-		
-	<!-- Type Rédacteur TDFC -->
+	</xs:simpleType>		
+						
+	<!-- Type Rédacteur TDFC INFENT -->
 	<xs:simpleType name="TypeRedacteurTdfc">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="ENT_EDI_TDFC" />
 			<xs:enumeration value="CEC_EDI_TDFC" />
 			<xs:enumeration value="ATD_EDI_TDFC" />
 			<xs:enumeration value="OGA_EDI_TDFC" />
+			<xs:enumeration value="TPE_EDI_TDFC" />
 		</xs:restriction>
 	</xs:simpleType>		
 			
-	<!-- Type Destinataire TDFC -->
+	<!-- Type Destinataire TDFC INFENT -->
 	<xs:simpleType name="TypeDestinataireTdfc">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="DGI_EDI_TDFC" /> <!-- DGFip -->
@@ -31,10 +32,11 @@
 			<xs:enumeration value="ENT_EDI_TDFC" /> <!-- Entreprise identifiée par SIRET (doit posséder un compte sur le portail) -->
 			<xs:enumeration value="CEC_EDI_TDFC" /> <!-- Expert Comptable identifié par SIRET (doit posséder un compte sur le portail) -->
 			<xs:enumeration value="OGA_EDI_TDFC" /> <!-- OGA identifié par SIRET (doit posséder un compte sur le portail) -->
+			<xs:enumeration value="TPE_EDI_TDFC" /> <!-- Entreprise sans conseil identifiée par SIRET (doit posséder un compte sur le portail) -->
 		</xs:restriction>
 	</xs:simpleType>	
 	
-	<!-- Type Déclaration TDFC -->
+	<!-- Type Déclaration TDFC INFENT -->
 	<xs:simpleType name="TypeDeclarationTdfc">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="CRM" /> <!-- Compte Rendu de mission -->
@@ -44,20 +46,25 @@
 			<xs:enumeration value="ILF" /> <!-- Liasse Fiscale : à destination de la Banque de France uniquement -->
 			<xs:enumeration value="LOY" /> <!-- Déclaration des Loyers -->
 			<xs:enumeration value="IPT" /> <!-- Déclaration de Prix de Transfert -->
+			<xs:enumeration value="IPP" /> <!-- Déclaration Pays par Pays -->
+			<xs:enumeration value="ICG" /> <!-- Informations Centre de gestion : à destination des OGA uniquement -->
+			<xs:enumeration value="IAA" /> <!-- Informations Association agréée : à destination des OGA uniquement -->
+			<xs:enumeration value="ICA" /> <!-- Informations Centre de gestion agricole : à destination des OGA uniquement -->			
 		</xs:restriction>
 	</xs:simpleType>
 			
-			
-	<!-- ### Définition des types complexes ### -->
-	
 	<!-- =======================================================
-		Element racine XmlEdi
-		======================================================== -->
+	Element racine XmlEdi
+	======================================================== -->
 	<xs:element name="XmlEdi" type="XmlEdi" />
 	
 	<xs:complexType name="XmlEdi">
 		<xs:sequence>
-			<xs:element name="GroupeFonctionnel" type="GroupeFonctionnel" minOccurs="1" maxOccurs="1"  />
+			<xs:choice>
+				<xs:sequence>
+					<xs:element name="GroupeFonctionnel" type="GroupeFonctionnel" minOccurs="1" maxOccurs="2" />
+				</xs:sequence>
+			</xs:choice>			
 		</xs:sequence>
 		<xs:attribute name="Test" type="DigitBoolean" use="required" />
 	</xs:complexType>
@@ -65,13 +72,15 @@
 	<!-- =======================================================
 		XmlEdi / GroupeFonctionnel
 		======================================================== -->
+	
 	<xs:complexType name="GroupeFonctionnel">
-		<xs:sequence>
-			<xs:element ref="Declaration" minOccurs="1" maxOccurs="100" />
-		</xs:sequence>
-		<xs:attribute name="Type" type="TypeGroupeFonctionnelTdfc" use="required" />
+		<xs:choice>
+			<xs:element name="Declaration" type="Declaration" minOccurs="1" maxOccurs="100" />
+			<xs:element name="Balance" type="Balance" minOccurs="1" maxOccurs="100" />
+		</xs:choice>		
+		<xs:attribute name="Type" type="TypeGroupeFonctionnel" use="required" />
 	</xs:complexType>
-
+				
 	<!-- =======================================================
 		XmlEdi / GroupeFonctionnel / Declaration
 		======================================================== -->
@@ -87,20 +96,6 @@
 		<xs:attribute name="Type" type="TypeDeclarationTdfc" use="required" />
 		<xs:attribute name="Reference" type="ReferenceDeclaration" use="required" />	
 	</xs:complexType>
-	<xs:element name="Declaration" type="Declaration" />
-	
-	<!-- =======================================================
-		XmlEdi / GroupeFonctionnel / Declaration / Emetteur
-		======================================================== -->
-	<xs:complexType name="Emetteur">
-		<xs:sequence>
-			<xs:element ref="Siret" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="Designation" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
-			<xs:element ref="Adresse" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="ReferenceDossier" minOccurs="0" maxOccurs="1" />
-		</xs:sequence>
-	</xs:complexType>	
 	
 	<!-- =======================================================
 		XmlEdi / GroupeFonctionnel / Declaration / Redacteur
@@ -109,7 +104,7 @@
 		<xs:sequence>
 			<xs:element ref="Siret" minOccurs="1" maxOccurs="1" />
 			<xs:element name="Designation" type="TypeRedacteurTdfc" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="DesignationSuite1" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="Adresse" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="ReferenceDossier" minOccurs="0" maxOccurs="1" />
@@ -125,24 +120,11 @@
 			<xs:element ref="Designation" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="Adresse" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="ReferenceDossier" minOccurs="0" maxOccurs="1" />
+			<xs:element name="ReferenceDossier" type="ReferenceDeclaration" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="Rof" minOccurs="1" maxOccurs="1" />	
 		</xs:sequence>
 	</xs:complexType>
-	
-	<!-- =======================================================
-		XmlEdi / GroupeFonctionnel / Declaration / PartenaireEdi
-		======================================================== -->
-	<xs:complexType name="PartenaireEdi">
-		<xs:sequence>
-			<xs:element name="Identifiant" type="Agrement" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="Designation" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
-			<xs:element ref="Adresse" minOccurs="1" maxOccurs="1" />
-			<xs:element ref="ReferenceDossier" minOccurs="0" maxOccurs="1" />	
-		</xs:sequence>
-	</xs:complexType>
-	
+		
 	<!-- ==================================================================
 		XmlEdi / GroupeFonctionnel / Declaration / ListeDestinataires
 		=================================================================== -->
@@ -208,6 +190,7 @@
 			<!-- Zone Simple -->
 			<xs:sequence>
 				<xs:element name="Valeur" type="String512" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="Unite" minOccurs="0" maxOccurs="1" /> <!-- Nécessaire pour certaine quantité QTY -->
 			</xs:sequence>
 			<!-- Zone Multiple de Coordonnées (NAD) -->
 			<xs:sequence>
@@ -216,7 +199,7 @@
 				<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseNumero" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseT" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="AdresseType" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseVoie" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseComplement" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseHameau" minOccurs="0" maxOccurs="1" />	
@@ -240,6 +223,13 @@
 				<xs:element ref="MonnaieSource" minOccurs="0" maxOccurs="1" />				
 				<xs:element ref="TauxChange" minOccurs="0" maxOccurs="1" />
 			</xs:sequence>
+			<!-- Zone Multiple de Numéro de Compte (CPT) -->
+			<xs:sequence>
+				<xs:element ref="CompteNumero" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="CompteLibelleAbrege" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="CompteLibelle" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="CompteLibelleSuite" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>			
 			<!-- Zone Répétable -->
 			<xs:sequence>
 				<xs:element name="Occurrence" type="Occurrence" minOccurs="1" maxOccurs="unbounded" />
@@ -254,6 +244,7 @@
 			<!-- Occurence Simple -->
 			<xs:sequence>
 				<xs:element name="Valeur" type="String512" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="Unite" minOccurs="0" maxOccurs="1" /> <!-- Nécessaire pour certaine quantité QTY -->
 			</xs:sequence>
 			<!-- Occurence Multiple de Coordonnées (NAD) -->
 			<xs:sequence>
@@ -262,7 +253,7 @@
 				<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseNumero" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseT" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="AdresseType" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseVoie" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseComplement" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseHameau" minOccurs="0" maxOccurs="1" />	
@@ -285,7 +276,14 @@
 				<xs:element ref="MonnaieCible" minOccurs="1" maxOccurs="1" />
 				<xs:element ref="MonnaieSource" minOccurs="0" maxOccurs="1" />				
 				<xs:element ref="TauxChange" minOccurs="0" maxOccurs="1" />
-			</xs:sequence>		
+			</xs:sequence>
+			<!-- Zone Multiple de Numéro de Compte (CPT) -->
+			<xs:sequence>
+				<xs:element ref="CompteNumero" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="CompteLibelleAbrege" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="CompteLibelle" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="CompteLibelleSuite" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
 		</xs:choice>
 		<xs:attribute name="Numero" type="Digit4" use="required" />
 	</xs:complexType>

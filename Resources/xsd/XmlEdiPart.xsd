@@ -3,41 +3,52 @@
 	
 	<xs:include schemaLocation="./TypeBase.xsd"/>
 			
-	<!-- ### Définition des énumérations spécifiques à la TVA ### -->		
+	<!-- ### Définition des énumérations spécifiques à PART ### -->		
 	
-	<!-- Type Groupe Fonctionnel TVA -->
-	<xs:simpleType name="TypeGroupeFonctionnelTva">
+	<!-- Type Groupe Fonctionnel PART -->
+	<xs:simpleType name="TypeGroupeFonctionnelPart">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="INFENT" />
 		</xs:restriction>
 	</xs:simpleType>
 		
-	<!-- Type Rédacteur TVA -->
-	<xs:simpleType name="TypeRedacteurTva">
+	<!-- Type Rédacteur PART -->
+	<xs:simpleType name="TypeRedacteurPart">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="ENT_EDI_TVA" />
-			<xs:enumeration value="CEC_EDI_TVA" />
-			<xs:enumeration value="ATD_EDI_TVA" />
+			<xs:enumeration value="ENT_EDI_PART" />
+			<xs:enumeration value="CEC_EDI_PART" />
+			<xs:enumeration value="ATD_EDI_PART" />
 		</xs:restriction>
 	</xs:simpleType>		
 			
-	<!-- Type Destinataire TVA -->
-	<xs:simpleType name="TypeDestinataireTva">
+	<!-- Type Destinataire PART -->
+	<xs:simpleType name="TypeDestinatairePart">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="DGI_EDI_TVA" /> <!-- DGFip -->
-			<xs:enumeration value="CEC_EDI_TVA" /> <!-- Expert Comptable identifié par SIRET (doit posséder un compte sur le portail) -->
-			<xs:enumeration value="OGA_EDI_TVA" /> <!-- OGA identifié par SIRET (doit posséder un compte sur le portail) -->
+			<xs:enumeration value="DGI_EDI_PART" /> <!-- DGFip -->
 		</xs:restriction>
 	</xs:simpleType>	
 	
-	<!-- Type Déclaration TVA -->
-	<xs:simpleType name="TypeDeclarationTva">
+	<!-- Type Déclaration PART -->
+	<xs:simpleType name="TypeDeclarationPart">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="IDT" /> <!-- Déclaration -->
-			<xs:enumeration value="RBT" /> <!-- Remboursement (non compatible avec les destinataires OGA) -->
+			<xs:enumeration value="IFU" /> <!-- Imprimé fiscal unique -->
+			<xs:enumeration value="HON" /> <!-- Déclaration honoraire -->	
 		</xs:restriction>
 	</xs:simpleType>
 			
+	<!-- Type Adresse -->
+	<xs:simpleType name="TypeAdressePart">
+		<xs:restriction base="xs:string">
+			<!-- BIS -->
+			<xs:enumeration value="B" />
+			<!-- TER -->
+			<xs:enumeration value="T" />
+			<!-- QUATER -->
+			<xs:enumeration value="Q" />
+			<!-- QUINQUIES -->
+			<xs:enumeration value="C" />
+		</xs:restriction>
+	</xs:simpleType>		
 			
 	<!-- ### Définition des types complexes ### -->
 	
@@ -60,7 +71,7 @@
 		<xs:sequence>
 			<xs:element ref="Declaration" minOccurs="1" maxOccurs="100" />
 		</xs:sequence>
-		<xs:attribute name="Type" type="TypeGroupeFonctionnelTva" use="required" />
+		<xs:attribute name="Type" type="TypeGroupeFonctionnelPart" use="required" />
 	</xs:complexType>
 
 	<!-- =======================================================
@@ -75,7 +86,7 @@
 			<xs:element name="ListeDestinataires" type="ListeDestinataires" minOccurs="1" maxOccurs="1" />
 			<xs:element name="ListeFormulaires" type="ListeFormulaires" minOccurs="1" maxOccurs="1" />
 		</xs:sequence>
-		<xs:attribute name="Type" type="TypeDeclarationTva" use="required" />
+		<xs:attribute name="Type" type="TypeDeclarationPart" use="required" />
 		<xs:attribute name="Reference" type="ReferenceDeclaration" use="required" />	
 	</xs:complexType>
 	<xs:element name="Declaration" type="Declaration" />
@@ -99,7 +110,7 @@
 	<xs:complexType name="Redacteur">
 		<xs:sequence>
 			<xs:element ref="Siret" minOccurs="1" maxOccurs="1" />
-			<xs:element name="Designation" type="TypeRedacteurTva" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Designation" type="TypeRedacteurPart" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="DesignationSuite1" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="Adresse" minOccurs="1" maxOccurs="1" />
@@ -112,12 +123,11 @@
 		======================================================== -->
 	<xs:complexType name="Redevable">
 		<xs:sequence>
-			<xs:element name="Identifiant" type="Siren" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Identifiant" type="Siret" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="Designation" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="Adresse" minOccurs="1" maxOccurs="1" />
-			<xs:element name="ReferenceDossier" type="ReferenceDeclaration" minOccurs="0" maxOccurs="1" />
-			<xs:element ref="Rof" minOccurs="1" maxOccurs="1" />	
+			<xs:element ref="ReferenceDossier" minOccurs="0" maxOccurs="1" />
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -148,7 +158,7 @@
 		========================================================================================= -->
 	<xs:complexType name="Destinataire">			
 		<xs:sequence>
-			<xs:element name="Designation" type="TypeDestinataireTva" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Designation" type="TypeDestinatairePart" minOccurs="1" maxOccurs="1" />
 			<xs:element ref="Identifiant" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />
 			<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />
@@ -199,6 +209,7 @@
 			<!-- Zone Simple -->
 			<xs:sequence>
 				<xs:element name="Valeur" type="String512" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="Unite" minOccurs="0" maxOccurs="1" /> <!-- Nécessaire pour certaine quantité QTY -->
 			</xs:sequence>
 			<!-- Zone Multiple de Coordonnées (NAD) -->
 			<xs:sequence>
@@ -207,30 +218,26 @@
 				<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseNumero" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseType" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseVoie" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseComplement" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseHameau" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseCodePostal" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseVille" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseCodePays" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="Telephone" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="Email" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseType" type="TypeAdressePart" minOccurs="0" maxOccurs="1" />
+				<xs:element name="AdresseVoie" type="String26" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseComplement" type="String32" minOccurs="0" maxOccurs="1" />	
+				<xs:element ref="AdresseCodeDivisionTerritoriale" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseDivisionTerritoriale" type="String26" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseCodePostal" type="Digit5" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseVille" type="String26" minOccurs="0" maxOccurs="1" />	
+				<xs:element ref="ContactDesignation" minOccurs="0" maxOccurs="1" />
+				<xs:element name="Telephone" type="String10" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="Email" type="String60" minOccurs="0" maxOccurs="1" />	
 			</xs:sequence>
 			<!-- Zone Multiple de Texte Libre (FTX) -->
 			<xs:sequence>
-				<xs:element ref="TexteLibre1" minOccurs="1" maxOccurs="1" />
-				<xs:element ref="TexteLibre2" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="TexteLibre3" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="TexteLibre4" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="TexteLibre5" minOccurs="0" maxOccurs="1" />
+				<xs:element name="TexteLibre1" type="String40" minOccurs="1" maxOccurs="1" />
 			</xs:sequence>
 			<!-- Zone Multiple d'identification Financière (FII) -->
 			<xs:sequence>
-				<xs:element ref="Iban" minOccurs="1" maxOccurs="1" />
-				<xs:element ref="Bic" minOccurs="1" maxOccurs="1" />
-				<xs:element ref="TitulaireDesignation" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="TitulaireDesignationSuite" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="Compte" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="Etablissement" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="Agence" minOccurs="1" maxOccurs="1" />
 			</xs:sequence>
 			<!-- Zone Répétable -->
 			<xs:sequence>
@@ -243,43 +250,41 @@
 	<!-- Définition d'une Occurrence -->
 	<xs:complexType name="Occurrence">
 		<xs:choice>
-			<!-- Occurence Simple -->
+			<!-- Occurrence Simple -->
 			<xs:sequence>
 				<xs:element name="Valeur" type="String512" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="Unite" minOccurs="0" maxOccurs="1" /> <!-- Nécessaire pour certaine quantité QTY -->
 			</xs:sequence>
-			<!-- Occurence Multiple de Coordonnées (NAD) -->
+			<!-- Occurrence Multiple de Coordonnées (NAD) -->
 			<xs:sequence>
 				<xs:element ref="Identifiant" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="Designation" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="DesignationSuite1" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="DesignationSuite2" minOccurs="0" maxOccurs="1" />	
 				<xs:element ref="AdresseNumero" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseType" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseVoie" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseComplement" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseHameau" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseCodePostal" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseVille" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="AdresseCodePays" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="Telephone" minOccurs="0" maxOccurs="1" />	
-				<xs:element ref="Email" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseType" type="TypeAdressePart" minOccurs="0" maxOccurs="1" />
+				<xs:element name="AdresseVoie" type="String26" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseComplement" type="String32" minOccurs="0" maxOccurs="1" />	
+				<xs:element ref="AdresseCodeDivisionTerritoriale" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseDivisionTerritoriale" type="String26" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseCodePostal" type="Digit5" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="AdresseVille" type="String26" minOccurs="0" maxOccurs="1" />	
+				<xs:element ref="ContactDesignation" minOccurs="0" maxOccurs="1" />
+				<xs:element name="Telephone" type="String10" minOccurs="0" maxOccurs="1" />	
+				<xs:element name="Email" type="String60" minOccurs="0" maxOccurs="1" />	
 			</xs:sequence>
-			<!-- Occurence Multiple de Texte Libre (FTX) -->
+			<!-- Occurrence Multiple de Texte Libre (FTX) -->
 			<xs:sequence>
-				<xs:element ref="TexteLibre1" minOccurs="1" maxOccurs="1" />
-				<xs:element ref="TexteLibre2" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="TexteLibre3" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="TexteLibre4" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="TexteLibre5" minOccurs="0" maxOccurs="1" />
+				<xs:element name="TexteLibre1" type="String40" minOccurs="1" maxOccurs="1" />
 			</xs:sequence>
 			<!-- Zone Multiple d'identification Financière (FII) -->
 			<xs:sequence>
-				<xs:element ref="Iban" minOccurs="1" maxOccurs="1" />
-				<xs:element ref="Bic" minOccurs="1" maxOccurs="1" />
-				<xs:element ref="TitulaireDesignation" minOccurs="0" maxOccurs="1" />
-				<xs:element ref="TitulaireDesignationSuite" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="Compte" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="Etablissement" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="Agence" minOccurs="1" maxOccurs="1" />
 			</xs:sequence>
 		</xs:choice>
 		<xs:attribute name="Numero" type="Digit4" use="required" />
-	</xs:complexType>	
+	</xs:complexType>
+	
 </xs:schema>
