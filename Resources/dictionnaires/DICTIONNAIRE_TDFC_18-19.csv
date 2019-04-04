@@ -17240,7 +17240,7 @@ OGID00;18;FB;NAD;C080.3036.01;NON;;Designation;Nom ou désignation du logiciel co
 2072SA2;19;AL;MOA;C516.5004.01;OUI;;Valeur;Montant nominal des parts au 31 décembre de l'année déclarée;
 2072SA2;19;AM;CCI;C889.7111.01;OUI;TBX;Valeur;Acquisition de parts de la société immobilière au cours de l'année déclarée;
 2072SA2;19;AN;CCI;C889.7111.01;OUI;TBX;Valeur;Cession de parts de la société immobilière au cours de l'année déclarée;
-2072SA2;19;AP;CCI;C889.7111.01;OUI;RFC;Valeur;Catégorie Fiscal;
+2072SA2;19;AP;CCI;C889.7111.01;OUI;RFC;Valeur;Catégorie Fiscale;
 2072SA2;19;AQ;FTX;C108.4440.01;OUI;;TexteLibre1;Immeuble(s) dont l'associé à la jouissance gratuite;
 2072SA2;19;AR;NAD;0000.3164.01;OUI;;AdresseVille;Ville du gérant;NOM DENOMINATION ADRESSE
 2072SA2;19;AR;NAD;0000.3207.01;OUI;;AdresseCodePays;Pays du gérant;NOM DENOMINATION ADRESSE
@@ -19325,7 +19325,7 @@ OGID00;18;FB;NAD;C080.3036.01;NON;;Designation;Nom ou désignation du logiciel co
 2258;19;AT;NAD;C080.3036.01;OUI;;Designation;Désignation de l'entité constitutive résidente de la juridiction fiscale;COMPLET
 2258;19;AT;NAD;C080.3036.02;OUI;;DesignationSuite1;Complément de désignation de l'entité constitutive résidente de la juridiction fiscale;COMPLET
 2258;19;AT;NAD;C080.3036.03;OUI;;DesignationSuite2;Forme juridique de l'entité constitutive résidente de la juridiction fiscale;COMPLET
-2258;19;AT;NAD;C082.3039.01;OUI;;Identifiant;N° de TVA intracommunautaire ou SIREN ou tout autre numéro d'identification fiscalede l'entité constitutive résidente de la juridiction fiscale;COMPLET
+2258;19;AT;NAD;C082.3039.01;OUI;;Identifiant;N° de TVA intracommunautaire ou SIREN ou tout autre numéro d'identification fiscale de l'entité constitutive résidente de la juridiction fiscale;COMPLET
 2258;19;AU;NAD;0000.3207.01;OUI;;AdresseCodePays;Juridiction fiscale de constitution si elle diffère de la juridiction fiscale de résidence;PAYS
 2258;19;AV;CCI;C889.7111.01;OUI;TBX;Valeur;Recherche et développement;
 2258;19;AW;FTX;C108.4440.01;OUI;;TexteLibre1;Ajouter dans cette rubrique les informations ou explications succinctes complémentaires qui vous semblent nécessaires ou qui faciliteraient la compréhension des informations obligatoires fournies dans la déclaration pays par pays (Des informations complémentaires peuvent être ajoutées sur annexe libre jointe au dépôt télétransmis) Veuillez indiquer la source des données utilisée (art 46 quater-0 YE de l'annexe III au CGI);
@@ -20086,7 +20086,7 @@ DRESZONE;19;AX;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Num
 DRESZONE;19;AX;NAD;C059.3042.02;OUI;;AdresseComplement;Complément de distribution - Associés personnes physiques;NOM DENOMINATION ADRESSE
 DRESZONE;19;AX;NAD;C059.3042.03;OUI;;AdresseHameau;Lieu-dit, hameau - Associés personnes physiques;NOM DENOMINATION ADRESSE
 DRESZONE;19;AX;NAD;C080.3036.01;OUI;;Designation;Dénomination - Associés personnes physiques;NOM DENOMINATION ADRESSE
-DRESZONE;19;AX;NAD;C080.3036.01;OUI;;Designation;Complément de dénomination - Associés personnes physiques;NOM DENOMINATION ADRESSE
+DRESZONE;19;AX;NAD;C080.3036.02;OUI;;DesignationSuite1;Complément de dénomination - Associés personnes physiques;NOM DENOMINATION ADRESSE
 DRESZONE;19;AX;NAD;C080.3036.03;OUI;;DesignationSuite2;Complément 2 de dénomination - Associés personnes physiques;NOM DENOMINATION ADRESSE
 F-IDENTIF;19;AA;NAD;0000.3164.01;NON;;AdresseVille;Adresse du déclarant  ville;NOM DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
 F-IDENTIF;19;AA;NAD;0000.3207.01;NON;;AdresseCodePays;Identification du déclarant  pays;NOM DENOMINATION IDENTIFIANT ADRESSE TELEPHONE MAIL
