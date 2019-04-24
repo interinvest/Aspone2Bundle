@@ -37,8 +37,8 @@ class Dictionnaire
 
     public function parseFichier()
     {
-        if(!$file = glob($this->kernel->locateResource('@Aspone2Bundle/Resources/dictionnaires/').'*'.$this->groupe.'*'.$this->annee.'*.csv')){
-            $file =  glob($this->kernel->locateResource('@Aspone2Bundle/Resources/dictionnaires/').'*'.$this->groupe.'*.csv');
+        if(!$file = glob($this->kernel->locateResource('@Aspone2Bundle/Resources/dictionnaires/').'*'.$this->groupe.'*'.$this->annee.'*.csv' or $this->formulaire == '3519')){
+            $file =  glob($this->kernel->locateResource('@Aspone2Bundle/Resources/dictionnaires/').'*'.$this->groupe.'*'.Date('y').'*.csv');
             $this->annee = \substr($file[0], -6, 2);
         }
 
