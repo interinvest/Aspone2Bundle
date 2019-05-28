@@ -24,7 +24,7 @@ class AsponeDepositRepository extends EntityRepository
             ->andWhere('depo.identifiant is not null')
             ->andWhere('depo.retourImmediat = 1');
 
-        return $query->getQuery()->getResult();
+        return $query->getQuery()->iterate();
     }
 
 
