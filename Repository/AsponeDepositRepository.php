@@ -3,9 +3,6 @@
 namespace InterInvest\Aspone2Bundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
-use Doctrine\ORM\Internal\Hydration\IterableResult;
-use II\Bundle\DeclarableAsponeBundle\Entity;
-use II\Bundle\MigrationBundle\Repository\AbstractRepository;
 use InterInvest\Aspone2Bundle\Entity\AsponeDeposit;
 
 /**
@@ -19,7 +16,7 @@ class AsponeDepositRepository extends EntityRepository
 
     public function getDepositsEnvoyes()
     {
-        $dateMin = new DateTime();
+        $dateMin = new \DateTime();
         $dateMin->modify('-3 hours');
 
         $query = $this->createQueryBuilder('depo')
