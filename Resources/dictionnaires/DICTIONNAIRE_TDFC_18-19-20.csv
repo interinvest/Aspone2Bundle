@@ -22716,3 +22716,121 @@ F-IDENTIF;20;KD;RFF;C506.1154.01;NON;;Valeur;Référence de l'obligation fiscale;
 2033G;20;GR;PCD;C501.5482.01;OUI;;Valeur;Pourcentage de détention;
 2033G;20;GS;CCI;C889.7111.01;NON;TBX;Valeur;Déposé néant?;
 2033G;20;GT;QTY;C186.6060.01;NON;;Valeur;Nombre total de filiales détenues par l'entreprise;
+2083;20;AA;NAD;0000.3164.01;OUI;;AdresseVille;Adresse de l'associé ou membre au titre de l'exercice déclaré, commune;COMPLET
+2083;20;AA;NAD;0000.3207.01;OUI;;AdresseCodePays;Adresse de l'associé ou membre au titre de l'exercice déclaré, pays;COMPLET
+2083;20;AA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Adresse de l'associé ou membre au titre de l'exercice déclaré, code postal;COMPLET
+2083;20;AA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Adresse de l'associé ou membre au titre de l'exercice déclaré, N°, type, nom voie;COMPLET
+2083;20;AA;NAD;C059.3042.02;OUI;;AdresseComplement;Adresse de l'associé ou membre au titre de l'exercice déclaré, lieu-dit, hameau;COMPLET
+2083;20;AA;NAD;C059.3042.03;OUI;;AdresseHameau;Adresse de l'associé ou membre au titre de l'exercice déclaré, complément de distribution;COMPLET
+2083;20;AA;NAD;C080.3036.01;OUI;;Designation;Désignation de l'associé ou membre au titre de l'exercice déclaré;COMPLET
+2083;20;AA;NAD;C080.3036.02;OUI;;DesignationSuite1;Complément de désignation de l'associé ou membre au titre de l'exercice déclaré;COMPLET
+2083;20;AA;NAD;C080.3036.03;OUI;;DesignationSuite2;Forme juridique de l'associé ou membre au titre de l'exercice déclaré;COMPLET
+2083;20;AA;NAD;C082.3039.01;OUI;;Identifiant;Numéro SIREN de l'associé ou membre au titre de l'exercice déclaré;COMPLET
+2083;20;AB;PCD;C501.5482.01;OUI;;Valeur;Associé ou membre, quote-part dans les résultats de la personne morale en pourcentage;
+2083;20;AC;DTM;C507.2380.01;OUI;102;Valeur;Date d'achèvement des travaux de réhabilitation ou de rénovation;Format attendu : yyyyMMdd
+2083;20;AD;DTM;C507.2380.01;OUI;102;Valeur;Date d'achèvement des travaux de réhabilitation ou de rénovation;Format attendu : yyyyMMdd
+2083;20;BA;CCI;C889.7111.01;OUI;TIN;Valeur;Code de l'investissement acquis;
+2083;20;BB;CCI;C889.7111.01;OUI;TDO;Valeur;Investissement acquis, Lieu d'exploitation, DOM/COM;
+2083;20;BC;NAD;0000.3164.01;OUI;;AdresseVille;Investissement acquis, Lieu d'exploitation, commune;COMMUNE CODE POSTAL
+2083;20;BC;NAD;0000.3251.01;OUI;;AdresseCodePostal;Investissement acquis, Lieu d'exploitation, code postal;COMMUNE CODE POSTAL
+2083;20;BD;DTM;C507.2380.01;OUI;102;Valeur;Investissement acquis, date de livraison ou d'achèvement de l'immeuble;Format attendu : yyyyMMdd
+2083;20;BE;DTM;C507.2380.01;OUI;102;Valeur;Investissement acquis, date de mise en location;Format attendu : yyyyMMdd
+2083;20;BF;DTM;C507.2380.01;OUI;102;Valeur;Investissement acquis, date de début d'exploitation;Format attendu : yyyyMMdd
+2083;20;BG;MOA;C516.5004.01;OUI;;Valeur;Investissement acquis, prix de revient HT;
+2083;20;BH;MOA;C516.5004.01;OUI;;Valeur;Investissement acquis, base de l'avantage fiscal;
+2083;20;BJ;CCI;C889.7111.01;OUI;TCG;Valeur;Investissement acquis, avantage fiscal, article du CGI;
+2083;20;BK;PCD;C501.5482.01;OUI;;Valeur;Investissement acquis, taux de la réduction d'impôts;
+2083;20;BL;QTY;C186.6060.01;OUI;;Valeur;Investissement acquis, impact, emplois créés;
+2083;20;BM;QTY;C186.6060.01;OUI;;Valeur;Investissement acquis, impact, emplois maintenus;
+2083;20;BN;CCI;C889.7111.01;OUI;TDA;Valeur;Investissement acquis, nature de la décision;
+2083;20;BP;DTM;C507.2380.01;OUI;102;Valeur;Investissement acquis, date de la décision;Format attendu : yyyyMMdd
+2083;20;BQ;MOA;C516.5004.01;OUI;;Valeur;Financement de l'investissement, montant des aides accordées;
+2083;20;BR;CCI;C889.7111.01;OUI;TPV;Valeur;Financement de l'investissement, partie versante des aides accordées;
+2083;20;BS;DTM;C507.2380.01;OUI;102;Valeur;Financement de l'investissement, date d'attribution des aides accordées;Format attendu : yyyyMMdd
+2083;20;BT;MOA;C516.5004.01;OUI;;Valeur;Financement de l'investissement, montant de la TVA perçue non récupérée;
+2083;20;BU;MOA;C516.5004.01;OUI;;Valeur;Financement de l'investissement, montant des aides accordées au titre d'un régime fiscal local;
+2083;20;BV;DTM;C507.2380.01;OUI;102;Valeur;Investissement acquis, date d'achèvement des fondations;Format attendu : yyyyMMdd
+2083;20;BW;DTM;C507.2380.01;OUI;102;Valeur;Investissement acquis, date de souscript...;NOM DENOMINATION ADRESSE, Format attendu : yyyyMMdd
+2083;20;BX;MOA;C516.5004.01;OUI;;Valeur;Investissement acquis, montant de souscr...;
+2083;20;CA;CCI;C889.7111.01;OUI;TDO;Valeur;Logement secteur libre, lieu de situation, DOM et COM;
+2083;20;CB;NAD;0000.3164.01;OUI;;AdresseVille;Logement secteur libre, lieu de situation, commune;COMMUNE CODE POSTAL
+2083;20;CB;NAD;0000.3251.01;OUI;;AdresseCodePostal;Logement secteur libre, lieu de situation, code postal;COMMUNE CODE POSTAL
+2083;20;CC;QTY;C186.6060.01;OUI;;Valeur;Logement secteur libre, superficie totale habitable en m2;
+2083;20;CD;QTY;C186.6060.01;OUI;;Valeur;Logement secteur libre, nombre de logements de type F1;
+2083;20;CE;QTY;C186.6060.01;OUI;;Valeur;Logement secteur libre, nombre de logements de type F2;
+2083;20;CF;QTY;C186.6060.01;OUI;;Valeur;Logement secteur libre, nombre de logements de type F3;
+2083;20;CG;QTY;C186.6060.01;OUI;;Valeur;Logement secteur libre, nombre de logements de type F4;
+2083;20;CH;QTY;C186.6060.01;OUI;;Valeur;Logement secteur libre, nombre de logements de type F5 ou plus;
+2083;20;CK;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur libre, date d'achèvement des fondations;Format attendu : yyyyMMdd
+2083;20;CL;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur libre, date de livraison ou d'achèvement de l'immeuble;Format attendu : yyyyMMdd
+2083;20;CM;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur libre, date de mise en location du dernier logement;Format attendu : yyyyMMdd
+2083;20;CN;CCI;C889.7111.01;OUI;TBX;Valeur;Logement secteur libre, logement situé en ZUS;
+2083;20;CP;CCI;C889.7111.01;OUI;TBX;Valeur;Logement secteur libre, logement comportant des équipements d'énergie renouvelable;
+2083;20;CQ;MOA;C516.5004.01;OUI;;Valeur;Logement secteur libre, prix de revient total hors taxes;
+2083;20;CR;MOA;C516.5004.01;NON;;Valeur;Logement secteur libre, total des prix de revient hors taxes;
+2083;20;CT;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur libre, date de souscrip...;COMPLET, Format attendu : yyyyMMdd
+2083;20;CU;MOA;C516.5004.01;OUI;;Valeur;Logement secteur libre, montant de sousc...;
+2083;20;DA;CCI;C889.7111.01;OUI;TDO;Valeur;Logement secteur intermédiaire, lieu de situation DOM/COM;
+2083;20;DB;NAD;0000.3164.01;OUI;;AdresseVille;Logement secteur intermédiaire, lieu de situation, commune;COMMUNE CODE POSTAL
+2083;20;DB;NAD;0000.3251.01;OUI;;AdresseCodePostal;Logement secteur intermédiaire, lieu de situation, code postal;COMMUNE CODE POSTAL
+2083;20;DC;QTY;C186.6060.01;OUI;;Valeur;Logement secteur intermédiaire, superficie totale habitable en m2;
+2083;20;DD;QTY;C186.6060.01;OUI;;Valeur;Logement secteur intermédiaire, nombre de logements de type F1;
+2083;20;DE;QTY;C186.6060.01;OUI;;Valeur;Logement secteur intermédiaire, nombre de logements de type F2;
+2083;20;DF;QTY;C186.6060.01;OUI;;Valeur;Logement secteur intermédiaire, nombre de logements de type F3;
+2083;20;DG;QTY;C186.6060.01;OUI;;Valeur;Logement secteur intermédiaire, nombre de logements de type F4;
+2083;20;DH;QTY;C186.6060.01;OUI;;Valeur;Logement secteur intermédiaire, nombre de logements de type F5 et plus;
+2083;20;DK;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur intermédiaire, date d'achèvement des fondations;Format attendu : yyyyMMdd
+2083;20;DL;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur intermédiaire, date de livraison ou d'achèvement de l'immeuble;Format attendu : yyyyMMdd
+2083;20;DM;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur intermédiaire, date de mise en location du dernier logement;Format attendu : yyyyMMdd
+2083;20;DN;CCI;C889.7111.01;OUI;TBX;Valeur;Logement secteur intermédiaire, logement situé en ZUS;
+2083;20;DP;CCI;C889.7111.01;OUI;TBX;Valeur;Logement secteur intermédiaire, logement comportant des équipements d'énergie renouvelable;
+2083;20;DQ;MOA;C516.5004.01;OUI;;Valeur;Logement secteur intermédiaire, prix de revient total hors taxes;
+2083;20;DR;MOA;C516.5004.01;NON;;Valeur;Logement secteur intermédiaire, total des prix de revient total hors taxes;
+2083;20;DT;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur intermédiaire, date de ...;Format attendu : yyyyMMdd
+2083;20;DU;MOA;C516.5004.01;OUI;;Valeur;Logement secteur intermédiaire, montant ...;
+2083;20;EA;CCI;C889.7111.01;OUI;TDO;Valeur;Logement secteur social ou très social, lieu de situation DOM/COM;
+2083;20;EB;NAD;0000.3164.01;OUI;;AdresseVille;Logement secteur social ou très social, commune du lieu de situation;COMMUNE CODE POSTAL
+2083;20;EB;NAD;0000.3251.01;OUI;;AdresseCodePostal;Logement secteur social ou très social, code postal du lieu de situation;COMMUNE CODE POSTAL
+2083;20;ED;QTY;C186.6060.01;OUI;;Valeur;Logement secteur social ou très social, superficie habitable en m2;
+2083;20;EE;QTY;C186.6060.01;OUI;;Valeur;Logement secteur social ou très social, nombre de logements de type F1;
+2083;20;EF;QTY;C186.6060.01;OUI;;Valeur;Logement secteur social ou très social, nombre de logements de type F2;
+2083;20;EG;QTY;C186.6060.01;OUI;;Valeur;Logement secteur social ou très social, nombre de logements de type F3;
+2083;20;EH;QTY;C186.6060.01;OUI;;Valeur;Logement secteur social ou très social, nombre de logements de type F4;
+2083;20;EJ;QTY;C186.6060.01;OUI;;Valeur;Logement secteur social ou très social, nombre de logements de type F5 ou plus;
+2083;20;EK;CCI;C889.7111.01;OUI;TAC;Valeur;Logement secteur social ou très social, logements acquis, construits ou réhabilités;
+2083;20;EL;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur social ou très social, date d'achèvement des fondations;Format attendu : yyyyMMdd
+2083;20;EM;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur social ou très social, date de livraison ou d'achèvement de l'immeuble;Format attendu : yyyyMMdd
+2083;20;EN;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur social ou très social, date de mise en location du dernier logement;Format attendu : yyyyMMdd
+2083;20;EP;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, prix de revient total hors taxes;
+2083;20;EQ;MOA;C516.5004.01;NON;;Valeur;Logement secteur social ou très social, total des prix de revient total hors taxes;
+2083;20;ET;DTM;C507.2380.01;OUI;102;Valeur;Logement secteur social ou très social, ...;Format attendu : yyyyMMdd
+2083;20;EU;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, ...;
+2083;20;EV;CCI;C889.7111.01;OUI;TBX;Valeur;Logement secteur social ou très social s...;
+2083;20;EW;CCI;C889.7111.01;OUI;TBX;Valeur;Logement secteur social ou très social c...;
+2083;20;PA;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, dont montant HT des équipements particuliers, chauffe eau solaire;
+2083;20;PB;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, dont montant HT des équipements particuliers, panneaux photovoltaiques;
+2083;20;PC;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, dont montant HT des équipements particuliers, géothermie;
+2083;20;PD;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, dont montant HT des équipements particuliers, biomasse;
+2083;20;PE;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, dont montant HT des équipements particuliers, éolien;
+2083;20;PF;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, dont montant HT des équipements particuliers, matériaux d'isolation phonique;
+2083;20;PG;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, dont montant HT des équipements particuliers, matériaux d'isolation thermique;
+2083;20;PH;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, dont montant HT des équipements particuliers, logement adapté aux personnes agées de plus de 65 ans;
+2083;20;PJ;MOA;C516.5004.01;OUI;;Valeur;Logement secteur social ou très social, dont montant HT des équipements particuliers, logement adapté aux personnes en situation de handicap;
+2083;20;TA;NAD;0000.3164.01;OUI;;AdresseVille;Entreprise exploitante ou locataire de l'investissement, ville;COMPLET
+2083;20;TA;NAD;0000.3207.01;OUI;;AdresseCodePays;Entreprise exploitante ou locataire de l'investissement, pays;COMPLET
+2083;20;TA;NAD;0000.3251.01;OUI;;AdresseCodePostal;Entreprise exploitante ou locataire de l'investissement, code postal;COMPLET
+2083;20;TA;NAD;C059.3042.01;OUI;;AdresseNumero, AdresseType, AdresseVoie;Entreprise exploitante ou locataire de l'investissement, numéro, type et nom de la voie;COMPLET
+2083;20;TA;NAD;C059.3042.02;OUI;;AdresseComplement;Entreprise exploitante ou locataire de l'investissement, complément de distribution;COMPLET
+2083;20;TA;NAD;C059.3042.03;OUI;;AdresseHameau;Entreprise exploitante ou locataire de l'investissement, lieu-dit, hameau;COMPLET
+2083;20;TA;NAD;C080.3036.01;OUI;;Designation;Entreprise exploitante ou locataire de l'investissement, dénomination ou nom-prénom;COMPLET
+2083;20;TA;NAD;C080.3036.02;OUI;;DesignationSuite1;Entreprise exploitante ou locataire de l'investissement, complément de désignation;COMPLET
+2083;20;TA;NAD;C080.3036.03;OUI;;DesignationSuite2;Entreprise exploitante ou locataire de l'investissement, forme juridique;COMPLET
+2083;20;TA;NAD;C082.3039.01;OUI;;Identifiant;Entreprise exploitante ou locataire de l'investissement, SIREN;COMPLET
+2083;20;TB;RFF;C506.1154.01;OUI;;Valeur;Entreprise exploitante ou locataire de l'investissement, code APE;
+2083;20;TC;PCD;C501.5482.01;OUI;;Valeur;Entreprise exploitante ou locataire de l'investissement, nature des liens avec la personne morale en pourcentage;
+2083;20;TD;PCD;C501.5482.01;OUI;;Valeur;Entreprise exploitante ou locataire de l'investissement, quote part de l'aide fiscale rétrocédée par la personne morale en pourcentage;
+2083;20;TG;MOA;C516.5004.01;OUI;;Valeur;Valeur réelle des biens;
+2083;20;TH;MOA;C516.5004.01;OUI;;Valeur;Chiffre d'affaires de l'entreprise exploitante;
+2083;20;TJ;CCI;C889.7111.01;OUI;TAA;Valeur;Logement secteur libre, logement acquis, construit ou réhabilité;
+2083;20;TK;CCI;C889.7111.01;OUI;TAA;Valeur;Logement secteur intermédiaire, logement construit, acquis ou réhabilité;
+2083;20;TL;FTX;C108.4440.01;OUI;;TexteLibre1;Investissement acquis, caractéristiques du bien (véhicule,navire...);
