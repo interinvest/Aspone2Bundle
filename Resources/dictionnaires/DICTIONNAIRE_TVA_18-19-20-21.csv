@@ -2356,3 +2356,31 @@ T-IDENTIF;20;KF;DTM;C507.2380.01;NON;610;Valeur;Échéance;2379 = 610 (SSAAMM), Fo
 3519;21;FJ;FTX;C108.4440.05;NON;;TexteLibre5;Commentaires type 1, ligne 5;5° zone de 512 c
 3519;21;FK;CCI;C889.7111.01;NON;TBX;Valeur;Demande de remboursement à créditer au compte désigné;Table TBX avec X pour sélectionné, CCI/7037 = CAV/1131 = TBX
 3519;21;FL;CCI;C889.7111.01;NON;TBX;Valeur;Demande de remboursement à imputer sur échéance future;Table TBX avec X pour sélectionné, CCI/7037 = CAV/1131 = TBX
+T-IDENTIF;21;AA;NAD;0000.3164.01;NON;;AdresseVille;Adresse du déclarant, ville;
+T-IDENTIF;21;AA;NAD;0000.3207.01;NON;;AdresseCodePays;Adresse du déclarant, pays;
+T-IDENTIF;21;AA;NAD;0000.3251.01;NON;;AdresseCodePostal;Adresse du déclarant, code postal;
+T-IDENTIF;21;AA;NAD;C059.3042.01;NON;;AdresseNumero, AdresseType, AdresseVoie;Adresse du déclarant, numéro, type et nom voie;
+T-IDENTIF;21;AA;NAD;C059.3042.02;NON;;AdresseComplement;Adresse du déclarant, complément d'adresse;
+T-IDENTIF;21;AA;NAD;C080.3036.01;NON;;Designation;Identification du déclarant , désignation ou nom prénom;Données facultatives et non intégrées dans les applications DGFiP
+T-IDENTIF;21;AA;NAD;C080.3036.02;NON;;DesignationSuite1;Identification du déclarant , qualité ou complément de désignation;
+T-IDENTIF;21;AA;NAD;C080.3036.03;NON;;DesignationSuite2;Identification du déclarant, titre du redevable;
+T-IDENTIF;21;AA;NAD;C082.3039.01;NON;;Identifiant;Identifiant de l'entreprise, numéro SIREN ou Identifiant spécifique IDSP;9 c alphanumériques
+T-IDENTIF;21;BB;DTM;C507.2380.01;NON;102;Valeur;Date de cession, cessation;2379 = 102 (SSAAMMJJ), Format attendu : yyyyMMdd
+T-IDENTIF;21;BC;CCI;C889.7111.01;NON;TBX;Valeur;Dépôt relatif à un paiement d'une société tête d'un groupe;"Table TBX avec X pour ""Dépôt relatif paiement  Groupe"" sélectionné, CCI/7037 = CAV/1131 = TBX"
+T-IDENTIF;21;CA;DTM;C507.2380.01;NON;102;Valeur;Date de début de période;2379 = 102 (SSAAMMJJ), Format attendu : yyyyMMdd
+T-IDENTIF;21;CB;DTM;C507.2380.01;NON;102;Valeur;Date de fin de période;2379 = 102 (SSAAMMJJ), Format attendu : yyyyMMdd
+T-IDENTIF;21;GA;FII;C078.3194.01;NON;;Iban;IBAN CB TLRA 1;IBAN : jusqu'à 34 caractères alphanumériques, BIC : 8 ou 11 caractères alphanumériques
+T-IDENTIF;21;GA;FII;C088.3433.01;NON;;Bic;BIC CB TLRA 1;IBAN : jusqu'à 34 caractères alphanumériques, BIC : 8 ou 11 caractères alphanumériques
+T-IDENTIF;21;GB;FII;C078.3194.01;NON;;Iban;IBAN CB TLRA 2;IBAN : jusqu'à 34 caractères alphanumériques, BIC : 8 ou 11 caractères alphanumériques
+T-IDENTIF;21;GB;FII;C088.3433.01;NON;;Bic;BIC CB TLRA 2;IBAN : jusqu'à 34 caractères alphanumériques, BIC : 8 ou 11 caractères alphanumériques
+T-IDENTIF;21;GC;FII;C078.3194.01;NON;;Iban;IBAN CB TLRA 3;IBAN : jusqu'à 34 caractères alphanumériques, BIC : 8 ou 11 caractères alphanumériques
+T-IDENTIF;21;GC;FII;C088.3433.01;NON;;Bic;BIC CB TLRA 3;IBAN : jusqu'à 34 caractères alphanumériques, BIC : 8 ou 11 caractères alphanumériques
+T-IDENTIF;21;HA;MOA;C516.5004.01;NON;;Valeur;Montant TLRA 1;En euros (pas de centimes différents de 00).
+T-IDENTIF;21;HB;MOA;C516.5004.01;NON;;Valeur;Montant TLRA 2;En euros (pas de centimes différents de 00).
+T-IDENTIF;21;HC;MOA;C516.5004.01;NON;;Valeur;Montant TLRA 3;En euros (pas de centimes différents de 00).
+T-IDENTIF;21;KA;RFF;C506.1154.01;NON;;Valeur;Référence TLRA 1;Référence paiement : 31 caractères alphanumériques
+T-IDENTIF;21;KB;RFF;C506.1154.01;NON;;Valeur;Référence TLRA 2;Référence paiement : 31 caractères alphanumériques
+T-IDENTIF;21;KC;RFF;C506.1154.01;NON;;Valeur;Référence TLRA 3;Référence paiement : 31 caractères alphanumériques
+T-IDENTIF;21;KD;RFF;C506.1154.01;NON;;Valeur;Référence de l'obligation fiscale;La structure de la donnée reste à déterminer
+T-IDENTIF;21;KE;DTM;C507.2380.01;NON;102;Valeur;Date du redressement judiciaire;2379 = 102 (SSAAMMJJ), Format attendu : yyyyMMdd
+T-IDENTIF;21;KF;DTM;C507.2380.01;NON;610;Valeur;Échéance;2379 = 610 (SSAAMM), Format attendu : yyyyMM
