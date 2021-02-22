@@ -2384,3 +2384,70 @@ T-IDENTIF;21;KC;RFF;C506.1154.01;NON;;Valeur;Référence TLRA 3;Référence paiement
 T-IDENTIF;21;KD;RFF;C506.1154.01;NON;;Valeur;Référence de l'obligation fiscale;La structure de la donnée reste à déterminer
 T-IDENTIF;21;KE;DTM;C507.2380.01;NON;102;Valeur;Date du redressement judiciaire;2379 = 102 (SSAAMMJJ), Format attendu : yyyyMMdd
 T-IDENTIF;21;KF;DTM;C507.2380.01;NON;610;Valeur;Échéance;2379 = 610 (SSAAMM), Format attendu : yyyyMM
+3310CA3;21;BA;FTX;C108.4440.01;NON;;TexteLibre1;Commentaires type 1, ligne 1;1ère zone de 512 c
+3310CA3;21;BA;FTX;C108.4440.02;NON;;TexteLibre2;Commentaires type 1, ligne 2;2ème zone de 512 c
+3310CA3;21;BA;FTX;C108.4440.03;NON;;TexteLibre3;Commentaires type 1, ligne 3;3ème zone de 512 c
+3310CA3;21;BA;FTX;C108.4440.04;NON;;TexteLibre4;Commentaires type 1, ligne 4;4ème zone de 512 c
+3310CA3;21;BA;FTX;C108.4440.05;NON;;TexteLibre5;Commentaires type 1, ligne 5;5ème zone de 512 c
+3310CA3;21;BB;CCI;C889.7111.01;NON;TBX;Valeur;Paiement par imputation; Table TBX avec X pour sélectionné, CCI/7037 = CAV/1131 = TBX
+3310CA3;21;BC;CCI;C889.7111.01;NON;TBX;Valeur;Mention expresse;Table TBX avec X pour sélectionné, CCI/7037 = CAV/1131 = TBX
+3310CA3;21;CA;MOA;C516.5004.01;NON;;Valeur;Opérations imposables HT - Ventes, prestations de services;
+3310CA3;21;CB;MOA;C516.5004.01;NON;;Valeur;Opérations imposables HT - Autres opérations imposables;
+3310CA3;21;CC;MOA;C516.5004.01;NON;;Valeur;Opérations imposables - acquisitions intra-communautaires, base hors taxe;
+3310CA3;21;CD;MOA;C516.5004.01;NON;;Valeur;Opérations imposables HT - dont ventes à distance et/ou opérations de montage;
+3310CA3;21;CE;MOA;C516.5004.01;NON;;Valeur;Opérations imposables HT - régularisation;
+3310CA3;21;CF;MOA;C516.5004.01;NON;;Valeur;Livraisons d'electricité, de gaz naturel, de chaleur ou de froid imposables en France, base hors taxe;
+3310CA3;21;CG;MOA;C516.5004.01;NON;;Valeur;Opérations imposables HT - achats de biens ou de prestations de services réalisés auprès d'un assujetti non établi en France, art 283-1 du CGI;
+3310CA3;21;DA;MOA;C516.5004.01;NON;;Valeur;Montant des exportations hors communauté européenne non imposables;
+3310CA3;21;DB;MOA;C516.5004.01;NON;;Valeur;Autres opérations non imposables;
+3310CA3;21;DC;MOA;C516.5004.01;NON;;Valeur;Opérations non imposables, livraisons intra-communautaires - ventes B to B;
+3310CA3;21;DD;MOA;C516.5004.01;NON;;Valeur;Opérations non imposables - Achats en franchise;
+3310CA3;21;DE;MOA;C516.5004.01;NON;;Valeur;Opérations non imposables - régularisations;
+3310CA3;21;DF;MOA;C516.5004.01;NON;;Valeur;Livraisons d'electricité , de gaz naturel, de chaleur ou de froid non imposables en France;
+3310CA3;21;DG;MOA;C516.5004.01;NON;;Valeur;Opérations non imposables - vente de biens ou de prestations de services réalisées par un assujetti non établi en France, art 283-1 du CGI;
+3310CA3;21;DH;MOA;C516.5004.01;NON;;Valeur;Ventes à distance au profit de particuliers (consommateurs finaux) - ventes B to C;
+3310CA3;21;FB;MOA;C516.5004.01;NON;;Valeur;Opérations imposables au taux réduit en France métropolitaine : base HT;
+3310CA3;21;FC;MOA;C516.5004.01;NON;;Valeur;Opérations imposables aux anciens taux (France métropolitaine ou DOM) : base HT;
+3310CA3;21;FD;MOA;C516.5004.01;NON;;Valeur;Opérations imposables à un taux particulier base HT;
+3310CA3;21;FG;MOA;C516.5004.01;NON;;Valeur;Ligne utilisable pour une nouveau taux en métropole (base HT)   (ligne à blanc);
+3310CA3;21;FH;MOA;C516.5004.01;NON;;Valeur;Ligne utilisable pour une nouveau taux en métropole (taxe due)  (ligne à blanc);
+3310CA3;21;FJ;MOA;C516.5004.01;NON;;Valeur;Ligne utilisable pour une nouveau taux dans les DOM (base HT)   (ligne à blanc);
+3310CA3;21;FK;MOA;C516.5004.01;NON;;Valeur;Ligne utilisable pour une nouveau taux dans les DOM (taxe due)  (ligne à blanc);
+3310CA3;21;FM;MOA;C516.5004.01;NON;;Valeur;Opérations réalisées dans les DOM imposables au taux normal : base HT;
+3310CA3;21;FN;MOA;C516.5004.01;NON;;Valeur;Opérations imposables réalisées dans les DOM au taux réduit base HT;
+3310CA3;21;FP;MOA;C516.5004.01;NON;;Valeur;Opérations imposables au taux normal de 20% en France métropolitaine : base HT;
+3310CA3;21;FR;MOA;C516.5004.01;NON;;Valeur;Opérations imposables au taux réduit de 10% en France métropolitaine : base HT;
+3310CA3;21;GB;MOA;C516.5004.01;NON;;Valeur;Opérations imposables au taux réduit en France métropolitaine : Taxe due;
+3310CA3;21;GC;MOA;C516.5004.01;NON;;Valeur;Opérations imposables aux anciens taux (France métropolitaine ou DOM) : taxe due;
+3310CA3;21;GD;MOA;C516.5004.01;NON;;Valeur;Opérations imposables à un taux particulier taxe due;
+3310CA3;21;GG;MOA;C516.5004.01;NON;;Valeur;TVA antérieurement déduite à reverser, taxe due;
+3310CA3;21;GH;MOA;C516.5004.01;NON;;Valeur;Total général de la TVA brute due;
+3310CA3;21;GJ;MOA;C516.5004.01;NON;;Valeur;TVA brute sur acquisitions intra-communautaires;
+3310CA3;21;GK;MOA;C516.5004.01;NON;;Valeur;TVA brute due sur opérations à destination de Monaco.;
+3310CA3;21;GM;MOA;C516.5004.01;NON;;Valeur;Opérations réalisées dans les DOM imposables au taux normal : taxe due;
+3310CA3;21;GN;MOA;C516.5004.01;NON;;Valeur;Opérations réalisées dans les DOM imposables au taux réduit : taxe due;
+3310CA3;21;GP;MOA;C516.5004.01;NON;;Valeur;Opérations imposables au taux normal de 20% en France métropolitaine : taxe due;
+3310CA3;21;GR;MOA;C516.5004.01;NON;;Valeur;Opérations imposables au taux réduit de 10% en France métropolitaine : Taxe due;
+3310CA3;21;HA;MOA;C516.5004.01;NON;;Valeur;TVA déductible sur biens constituant des immobilisations;
+3310CA3;21;HB;MOA;C516.5004.01;NON;;Valeur;TVA déductible sur autres biens et services (déduction sur facture);
+3310CA3;21;HC;MOA;C516.5004.01;NON;;Valeur;Autre TVA à déduire, omissions ou compléments de déductions;
+3310CA3;21;HD;MOA;C516.5004.01;NON;;Valeur;Report du crédit apparaissant sur la précédente déclaration;
+3310CA3;21;HE;PCD;C501.5482.01;NON;;Valeur;Pourcentage de déduction applicable pour la période s'il est différent de 100%;Valeur entière et au plus 2 décimales
+3310CA3;21;HF;MOA;C516.5004.01;NON;;Valeur;Dont TVA déductible sur importations;
+3310CA3;21;HG;MOA;C516.5004.01;NON;;Valeur;Total de la TVA déductible;
+3310CA3;21;HH;MOA;C516.5004.01;NON;;Valeur;TVA déductible, part des régularisations sur de la TVA collectée compris dans le montant /autre TVA à déduire/;
+3310CA3;21;HJ;CCI;C889.7111.01;NON;TBX;Valeur;Mention membre d'un groupe;Table TBX avec X pour sélectionné, CCI/7037 = CAV/1131 = TBX
+3310CA3;21;JA;MOA;C516.5004.01;NON;;Valeur;Crédit de TVA;
+3310CA3;21;JB;MOA;C516.5004.01;NON;;Valeur;Remboursement de crédit demandé sur formulaire n° 3519 joint;
+3310CA3;21;JC;MOA;C516.5004.01;NON;;Valeur;Crédit à reporter sur déclaration suivante;
+3310CA3;21;KA;MOA;C516.5004.01;NON;;Valeur;TVA nette due;
+3310CA3;21;KB;MOA;C516.5004.01;NON;;Valeur;Report du montant de taxes assimilées calculées sur annexe 3310A;
+3310CA3;21;KE;MOA;C516.5004.01;NON;;Valeur;Total à payer;
+3310CA3;21;KF;CCI;C889.7111.01;NON;TBX;Valeur;Mention déclaration néante;Table TBX avec X pour sélectionné, CCI/7037 = CAV/1131 = TBX
+3310CA3;21;KH;MOA;C516.5004.01;NON;;Valeur;Achats de prestations de services intracommunautaires (art 283-2 du code général des impôts) Base hors taxe;
+3310CA3;21;KJ;MOA;C516.5004.01;NON;;Valeur;Crédit de TVA transféré à la société tête de groupe;
+3310CA3;21;KL;MOA;C516.5004.01;NON;;Valeur;Total à payer acquitté par la société tête de groupe;
+3310CA3;21;KR;MOA;C516.5004.01;NON;;Valeur;Importations (entreprises ayant opté pour le dispositif d'autoliquidation de la TVA à l'importation);
+3310CA3;21;KS;MOA;C516.5004.01;NON;;Valeur;Sommes à ajouter, y compris acompte congés (exprimées en euro);
+3310CA3;21;KT;MOA;C516.5004.01;NON;;Valeur;Dont TVA sur importations bénéficiant du dispositif d'auto-liquidation;
+3310CA3;21;KU;MOA;C516.5004.01;NON;;Valeur;Sommes à imputer, y compris acompte congés (exprimées en euro);
